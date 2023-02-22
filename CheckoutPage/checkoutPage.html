@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./checkoutPage.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <hr
+        style="
+          height: 1px;
+          border-width: 0;
+          color: gray;
+          background-color: gray;
+        "
+      />
+      <img src="./LOGOS/LOGO FINALhhhhh.jpg" alt="" />
+      <hr
+        style="
+          height: 1px;
+          border-width: 0;
+          color: gray;
+          background-color: gray;
+          margin-bottom: 10px;
+        "
+      />
+    </div>
+    <div id="maindiv">
+      <div id="Billingadd">
+        <form>
+          <h1>Billing Address</h1>
+          <label>First Name</label><br />
+          <input type="text" name="name" id="Fname" required /><br />
+          <label>Last Name</label><br />
+          <input type="text" name="name" id="Lname" required /><br />
+          <label>Email</label><br />
+          <input type="text" name="email" id="email" required /><br />
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">--Select Country--</option>
+
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Australia">Australia</option>
+            <option value="Canada">Canada</option>
+            <option value="China">China</option>
+            <option value="india">India</option>
+
+            <option value="Nepal">Nepal</option>
+
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="UAE">UAE</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="United States Of America ">USA</option>
+          </select>
+          <br />
+          <label for="state">Address Line 1</label><br />
+          <input type="text" name="Addressl1" id="Addressl1" required /><br />
+          <label for="city">City / Suburb</label><br />
+          <input type="text" name="city" id="city" required /><br />
+          <label for="pincode">Zip / Postcode</label><br />
+          <input type="text" name="pincode" id="pincode" required /><br />
+          <label for="mobile">Mobile Phone</label><br />
+          <input type="number" name="mobile" id="mobile" required /><br />
+        </form>
+      </div>
+      <div id="option">
+        <form>
+          <input
+            type="radio"
+            id="show-form"
+            name="form-type"
+            value="show-form"
+          />
+          <label for="show-form">Add an alternative delivery address </label>
+          <br />
+
+          <input
+            type="radio"
+            id="hide-form"
+            name="form-type"
+            value="hide-form"
+          />
+          <label for="hide-form">Default (same as billing address)</label>
+
+          <div id="form-container" style="display: none">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" /><br />
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" /><br />
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <option value="">--Select Country--</option>
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="China">China</option>
+              <option value="india">India</option>
+
+              <option value="Nepal">Nepal</option>
+
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="UAE">UAE</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Ukraine">Ukraine</option>
+              <option value="United States Of America ">USA</option>
+            </select>
+            <br />
+
+            <label for="address1">Address1:</label>
+            <input type="text" id="address1" name="address1" /><br />
+
+            <label for="address2">Address2:</label>
+            <input type="text" id="address2" name="address2" /><br />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" /><br />
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" /><br />
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="text" id="mobile-number" name="mobile-number" /><br />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Payment Details Div Below -->
+    <div id="PaymentMainDiv">
+      <div class="payment-info">
+        <h1>Payment Details</h1>
+        <form>
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" name="card-number" required />
+          <label for="expiration-date">Expiration Date:</label>
+          <input
+            type="text"
+            id="expiration-date"
+            name="expiration-date"
+            required
+          />
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required />
+          <label for="name-on-card">Name on Card:</label>
+          <input type="text" id="name-on-card" name="name-on-card" required />
+        </form>
+        <p id="tnc">
+          By clicking Pay and place order, you agree to purchase your <br> item(s)
+          from Global-e as merchant of record for this transaction, <br> on
+          Global-e's Terms and Conditions and Privacy Policy. Global-e is <br> an 
+          international fulfilment service provider to Fullbeauty Brands.
+        </p>
+
+        <a href="./orderSuccessPage.html"><button id="loginbtn" type="submit">Pay and Place Order</button></a>
+      </div>
+      <div id="Payment-methodDiv">
+        <img src="./LOGOS/paymentOPTIONS.jpg" alt="" id="paymentimg">
+        <br>
+        <!-- <div p-img>
+          <img src="./LOGOS/American Express.png" alt="">
+        <img src="./LOGOS/Paypal.png" alt="">
+        <img src="./LOGOS/Master.png" alt="">
+
+        </div> -->
+        
+      </div>
+
+
+
+    </div>
+
+    <!-- Footer Div Below -->
+
+    <div>
+      <img src="./LOGOS/footer.jpg" alt="" id="footer" />
+    </div>
+  </body>
+  <script src="./checkoutPage.js"></script>
 </html>

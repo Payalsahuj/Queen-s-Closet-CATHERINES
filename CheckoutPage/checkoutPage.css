@@ -1,0 +1,197 @@
+ *{
+    margin: 1px;
+    box-sizing: border-box;
+}
+
+#navbar img{
+    height: 110px;
+    margin-left: 35px;
+}
+
+#maindiv{
+    display: flex;
+    margin-left: 75px;
+}
+
+/* #Billingadd{
+    margin-left: 15px;
+} */
+
+
+h1{
+    margin-bottom: 20px;
+}
+
+select{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: block;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    width: 500px;
+    height: 50px;
+    
+    margin-top: 10px;
+}
+
+input{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: block;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+label{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(55, 55, 55);
+    font-weight: 600;
+}
+
+
+#option{
+margin-left: 159px;
+}
+
+
+#show-form{
+    width: 15px;
+    height: 15px;
+    display: initial;
+}
+
+
+#hide-form{
+    width: 15px;
+    display: initial;
+    height: 15px;
+}
+
+#PaymentMainDiv{
+    display: flex;
+}
+
+#PaymentMainDiv{
+    margin-left: 75px;
+}
+#tnc{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: auto;
+    font-weight: lighter;
+}
+
+#footer{
+width: 100%;
+}
+
+#loginbtn{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: block;
+    width: 100%;
+    background-color: rgb(69, 47, 148);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    width: 500px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: azure;
+    font-size: medium;
+}
+#paymentimg{
+    padding: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* }
+
+#p-img{
+    display: flex;
+}
+
+
+#p-img image{
+    height: 25px;
+    width: 25px;
+}
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+/* #Maindiv{
+   padding: 60px;
+}
+
+#mainbillingdiv{
+    display: flex;
+}
+#billingDiv input{
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: block;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    width: 500px;
+    height: 50px;
+    
+    margin-top: 10px;
+
+}
+label{
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(55, 55, 55);
+    font-weight: 600;
+}
+#optionsDiv{
+margin-left: 500px;
+}
+#image{
+    height: 400px;
+    width: 250px;
+} */ 
