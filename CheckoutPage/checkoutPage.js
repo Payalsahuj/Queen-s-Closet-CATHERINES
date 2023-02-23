@@ -29,7 +29,9 @@ Addform.addEventListener("submit", (e) => {
 
   addressFormData();
 });
-let formDataArr = JSON.parse(localStorage.getItem("userform"))  || []; //empty-Array
+let formDataArr = JSON.parse(localStorage.getItem("userform"))  || [];
+//
+//empty-Array
 
 function addressFormData() {
   let formDataObj = {
