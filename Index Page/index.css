@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 /* headers starts here */
 .not1{
@@ -30,9 +31,8 @@ img {vertical-align: middle;}
 .text {
   color: white;
   font-size: 15px;
-  padding: 20px 12px 20px 12px;
-  position: absolute;
-  bottom: 8px;
+  padding: 10px 12px 0px 12px;
+  position: relative;
   width: 100%;
   font-weight: bolder;
   letter-spacing: .5x;
@@ -42,13 +42,11 @@ img {vertical-align: middle;}
     color:white
 }
 
-
-
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 2px 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -115,6 +113,20 @@ img {vertical-align: middle;}
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color: black;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+=======
   
 .navbar a {
     float: left;
@@ -145,55 +157,7 @@ img {vertical-align: middle;}
     background-color: red;
 }
   
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: 1200px;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content .header {
-    background: red;
-    padding: 16px;
-    color: white;
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-  
-  /* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    background-color: #ccc;
-    height: 250px;
-}
-  
-.column a {
-    float: none;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-  
-.column a:hover {
-    background-color: #ddd;
-}
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  
+
 /* header ends here */
 
 .not2{
@@ -203,6 +167,29 @@ img {vertical-align: middle;}
     /* border:1px solid black; */
     padding: 0.9% 15%;
 }
+
+/* shop items starts here */
+#shop{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap:10px;
+}
+
+#shop > button{
+    background-color: #FF007F;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-size: bolder;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+/* shop item ends here */
 
 .sale-poster{
     margin: auto;
@@ -216,6 +203,219 @@ img {vertical-align: middle;}
     text-align: center;
     /* border: 1px solid black; */
 }
+
+/* offer poster starts here */
+.offer-poster{
+    width: 80%;
+    background-color: #4C0099;
+    border: 1px solid black;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+.offer-poster > h1{
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+.offer-poster >button{
+    background-color: #4C0099;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    padding: 10px 20px;
+}
+.offer-poster > img{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+/* offer poster ends here */
+
+/* offer poster 2 starts here */
+.offer-poster2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #4C0099;
+    background-color: #4C0099;
+    justify-content:space-evenly ;
+    display: flex;
+    cursor: pointer;
+    padding: 20px;
+}
+.offer-poster2 > h1{
+    color: white;
+    font-size: 32px;
+    font-family: "PlayFair display", "san-serif";
+}
+.offer-poster2 > h3{
+    padding-top: 10px;
+    color: white;  
+}
+.offer-poster2 > button{
+    background-color: white;
+    color: #4C0099;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border:1px solid #4C0099;
+    font-size: 9px;
+    cursor: pointer;
+}
+/* offer poster 2 ends here */
+
+/* offer poster 3 starts here */
+.offer-poster3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top:20px ;
+    cursor: pointer;
+}
+/* offer poster 3 ends here */
+
+/* offer poster 4 starts here */
+.offer-poster4{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top:20px ;
+    cursor: pointer;
+}
+/* offer poster 4 ends here */
+
+/* offer poster 5 starts here */
+.offer-poster5{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top:20px ;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid black;
+}
+.offer-poster5 > img{
+    height: 60%;
+
+}
+.sub-offer-poster5{
+    display: flex;
+    border: 1px solid black;
+    position: absolute;
+    margin-top: -450px;
+}
+
+/* offer poster 5 ends here */
+
+/* shoe offers starts here */
+.shoe-offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+/* shoe offer ends here */
+
+/* outfit offer starts here */
+.outfits{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+/* outfit offer ends here */
+
+/* footer media starts here */
+#footer{
+    width: 80%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+#footer > .footer1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 10px;  
+    justify-content: space-around;
+}
+#footer > .footer1 > #icon{
+    width: 6.5%;
+    margin: 10px;
+}
+
+#footer > .footer2{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    border: 1px solid black;
+    margin-top: 20 px;
+    justify-content: space-evenly;
+}
+#footer > .footer2 > .sub1{
+    display: flex;
+    margin: 10px;
+    width: 45%;
+    border:1px solid black;
+    background-color: #f0ecec;
+} 
+#footer > .footer2 > .sub1 > .sub11 >  img{
+    width:100%;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+#footer > .footer2 > .sub1 > .sub12{
+    padding:10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+#footer > .footer2 > .sub1 > .sub12 > h4{
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+#footer > .footer2 > .sub1 > .sub12 > p{
+    /* border: 1px solid black; */
+    text-align: right;
+    cursor: pointer;
+}
+#footer > .footer2 > .sub2{
+    margin: 10px;
+    width: 45%;
+    display: flex;
+    background-color: #f0ecec;
+    border: 1px solid black;
+}
+#footer > .footer2 > .sub2 > .sub21 > img{
+    width:90%;
+    margin: 10px;
+    border: 1px solid black;
+}
+#footer > .footer2 > .sub2 > .sub22{
+    padding:10px;
+    margin: 10px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+#footer > .footer2 > .sub2 > .sub22 > h4{
+    margin: 10px;
+    font-weight: lighter;
+}
+#footer > .footer2 > .sub2 > .sub22 > p{
+    border: 1px solid black;
+    /* margin-top: 300px */
+    text-align: right;
+    cursor: pointer;
+}
+/* footer ends here */
 
 /* footer starts here */
 #service {
@@ -241,7 +441,6 @@ img {vertical-align: middle;}
 #service > div > div >h3, p:hover{
     cursor: pointer;
 }
-
 /* footer ends here */
 
 /* footer brands starts here */
