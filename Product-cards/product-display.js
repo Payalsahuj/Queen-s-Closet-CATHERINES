@@ -71,7 +71,7 @@ let renderData = (data)=>{
             data.map((item)=>{
                 if(item.id==pro.getAttribute("data-id")){
                 localStorage.setItem("product-id",item.id);
-                // window.location.href= ""
+                location.href= "/Product_Description/Product.html"
                 // console.log(pro.getAttribute("data-id"))
             }
 
@@ -93,6 +93,8 @@ let red = document.getElementById("red");
 let pink = document.getElementById("pink");
 let green = document.getElementById("green");
 let white = document.getElementById("white");
+let blue = document.getElementById("blue");
+let grey = document.getElementById("grey");
 
 let filterData = (e) =>{
     let arr = []
@@ -100,7 +102,7 @@ let filterData = (e) =>{
     checkbox.forEach((input)=>{
         if(input.checked){
             arr.push(input.name);
-        }else if(black.checked == false && red.checked==false && pink.checked==false && green.checked==false && white.checked==false){
+        }else if(black.checked == false && red.checked==false && pink.checked==false && green.checked==false && white.checked==false && blue.checked==false && grey.checked==false){
             getData();
         }
     })
