@@ -76,15 +76,10 @@ let renderData = (data)=>{
             }
 
             })
-           
-            // if(data.id==e.target.dataset.id){
-            //     localStorage.setItem("product-id",e.target.dataset.id);
-            // }
     })
         })
     }
 }
-
 
 
 
