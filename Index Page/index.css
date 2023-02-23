@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
 }
 /* headers starts here */
 .not1{
@@ -68,7 +68,9 @@ img {vertical-align: middle;}
     height:20%;
     border:1px solid black;
 }
-
+#title-box > #title > img{
+    border:1px solid black;
+}
 #title-box > #search-bar{
     margin-left: 10%;
     width:60%;
