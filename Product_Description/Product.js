@@ -137,7 +137,7 @@ function displayData(data){
 
 
    <div>
-     <img src="images/Screenshot (292).png" alt="">
+     <img src="productimage/Screenshot (292).png" alt="">
    </div>
      `
   });
