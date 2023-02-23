@@ -38,9 +38,9 @@ let pagination = document.getElementById("pagination-wrapper");
         }
     }
     getData();
-// }
 
-let descriptionPage = localStorage.getItem("product-id") || [];
+
+let descriptionPage = localStorage.getItem("product-id");
 
 
 let renderData = (data)=>{
@@ -72,19 +72,13 @@ let renderData = (data)=>{
                 if(item.id==pro.getAttribute("data-id")){
                 localStorage.setItem("product-id",item.id);
                 location.href= "/Product_Description/Product.html"
-                // console.log(pro.getAttribute("data-id"))
             }
 
             })
-           
-            // if(data.id==e.target.dataset.id){
-            //     localStorage.setItem("product-id",e.target.dataset.id);
-            // }
     })
         })
     }
 }
-
 
 //<---- Filtration Code Color ---->
 
@@ -106,7 +100,6 @@ let filterData = (e) =>{
             getData();
         }
     })
-    // console.log(globalData);
     let filteredArray = globalData.filter((item)=>{
         let colorCheck = item.color;
         let flag = false;
@@ -125,7 +118,6 @@ let filterData = (e) =>{
     // console.log(arr);
     console.log(filteredArray);
     renderData(filteredArray);
-    // console.log(e.target);
 }
 console.log(checkbox);
 
