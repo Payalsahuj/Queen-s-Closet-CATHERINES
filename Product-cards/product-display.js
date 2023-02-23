@@ -102,7 +102,6 @@ let filterData = (e) =>{
             getData();
         }
     })
-    // console.log(globalData);
     let filteredArray = globalData.filter((item)=>{
         let colorCheck = item.color;
         let flag = false;
