@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Product-Display></Product-Display></title>
+    <link rel="stylesheet" href="product-display.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Navigation Bar</h1>
+    </div>
+    <div id="main-body">
+        <div id="side-container">
+            <div id="side-filter-top">
+                <p>Home / Plus Size Coats & Jackets </p>
+                <p>Plus Size Coats & Jackets</p>
+                <h2>Catagory</h2>
+                <ul id="filter-catagory" >
+                    <li>
+                        <a href="product-catagory.html">Denim Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="#">Kimonos & Shrugs</a>
+                    </li>
+                    <li>
+                        <a href="#">Leather Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Rain Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Puffers</a>
+                    </li>
+                    <li>
+                        <a href="#">Parkas</a>
+                    </li>
+                    <li>
+                        <a href="#">Wool Coats</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Kimonos & Shrugs</a>
+                    </li>
+                    <li>
+                        <a href="#">Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoodies & Sweatshirts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Active Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Petites</a>
+                    </li>
+                    <li>
+                        <a href="#">Curvy Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Liz & Me Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Wear to Work Tops</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div id="side-sort">
+                <!-- <h2>Sort By</h2> -->
+                <select name="sorting" id="sort-products">
+                    <option value="">Sort By</option>
+                    <option value="featured">Featured</option>
+                    <option value="asc">Price High to Low</option>
+                    <option value="desc">Price Low to High</option>
+                </select>
+
+                <!-- <h2> Sort By </h2>
+                <input type="radio" id="featured" value="featured" class="sort-inp">
+                <label for="featured"> Featured</label> <br>
+                <input type="radio" id="top-rated" value="top-rated" class="sort-inp">
+                <label for="top-rated"> Top Rated</label> <br>
+                <input type="radio" id="highest-price" value="highest-price" class="sort-inp">
+                <label for="highest-price"> Highest Price</label> <br>
+                <input type="radio" id="lowest-price" value="lowest-price" class="sort-inp">
+                <label for="lowest-price"> Lowest Price</label> <br> -->
+            </div>
+            <div id="select-filter">
+                <h2 id="filter-by">Filter By</h2>
+                <div class="selectbtn-color">
+                    <!-- <p class="btn-text-color"> Color </p>  -->
+                    <span class="btn-text-color">Color</span> <br>
+                    <input type="checkbox" name="Black" id="black" class="inputcheck">
+                    <label for="black" class="options">Black</label> <br>
+                    <input type="checkbox" name="Blue" id="blue" class="inputcheck">
+                    <label for="blue" class="options">Blue</label> <br>
+                    <input type="checkbox" name="Pink" id="pink" class="inputcheck">
+                    <label for="black" class="options">Pink</label> <br>
+                    <input type="checkbox" name="Red" id="red" class="inputcheck">
+                    <label for="black" class="options">Red</label> <br>
+                    <input type="checkbox" name="Green" id="green" class="inputcheck">
+                    <label for="black" class="options">Green</label> <br>
+                    <input type="checkbox" name="White" id="white" class="inputcheck">
+                    <label for="black" class="options">White</label><br>
+                    <input type="checkbox" name="Grey" id="grey" class="inputcheck">
+                    <label for="grey" class="options">Gray</label> <br>
+                    <input type="checkbox" name="Purple" id="purple" class="inputcheck">
+                    <label for="purple" class="options">Purple</label> <br>
+                    <input type="checkbox" name="Brown" id="brown" class="inputcheck">
+                    <label for="brown" class="options">Brown</label> <br>
+                </div>
+                <div class="selectbtn-stock">
+                    <p class="btn-text-stock"> Stock </p> 
+                    <input type="checkbox" name="In Stock" id="">
+                    <label for="In Stock">In Stock</label> <br>
+                    <input type="checkbox" name="Out of Stock" id="">
+                    <label for="In Stock">Out of Stock</label> <br>
+                </div>
+            </div>
+        </div>
+        <div id="product-container">
+            <!-- <div class="products"> -->
+                <!-- <img src="" alt="">
+                <div class="rating">rating</div>
+                <h4 class="top">top</h4>
+                <span class="price">From</span><h3 class="price">price</h3> <span class="price">Category</span>
+                <h4 class="title">Title</h4>
+                <p class="desc">Description</p>
+                <div class="colorpallate">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+            <!-- </div> -->
+            
+        </div>
+       
+    </div>
+
+    <div class="pagination-wrapper" id="pagination-wrapper"></div>
+   
+   
+</body>
+<script src="product-display.js"> </script>
+</html>
