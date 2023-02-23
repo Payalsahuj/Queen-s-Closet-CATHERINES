@@ -120,7 +120,6 @@ let filterData = (e) =>{
     // console.log(arr);
     console.log(filteredArray);
     renderData(filteredArray);
-    // console.log(e.target);
 }
 console.log(checkbox);
 
