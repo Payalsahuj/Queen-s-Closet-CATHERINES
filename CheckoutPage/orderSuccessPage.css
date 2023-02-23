@@ -1,0 +1,39 @@
+* {
+    margin: 2px;
+}
+/* #navbar{
+    display: flex;
+} */
+
+#navbar img{
+    height: 110px;
+    margin-left: 35px;
+}
+
+#thanksImg {
+    width: 50%;
+}
+
+/* #navbar a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    
+    margin-right: 15px;
+  
+    font-size: larger;
+} */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+#thanksMsg{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(38, 170, 38);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
