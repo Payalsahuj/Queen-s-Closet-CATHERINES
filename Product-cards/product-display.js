@@ -72,7 +72,6 @@ let renderData = (data)=>{
                 if(item.id==pro.getAttribute("data-id")){
                 localStorage.setItem("product-id",item.id);
                 location.href= "/Product_Description/Product.html"
-                // console.log(pro.getAttribute("data-id"))
             }
 
             })
