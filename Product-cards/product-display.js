@@ -86,6 +86,8 @@ let renderData = (data)=>{
 }
 
 
+
+
 //<---- Filtration Code Color ---->
 
 let black = document.getElementById("black");
