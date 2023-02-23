@@ -1,21 +1,20 @@
 let container = document.getElementById("container")
 let ratings= document.getElementById("ratings")
+let baseUrl = `https://63f1ba774f17278c9a18b9b9.mockapi.io/product`
 
 let key = localStorage.getItem("product-id")
 console.log(key);
 
-
-
-fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product`).then((res)=>{
+fetch(`${baseUrl}/${key}`).then((res)=>{
     return res.json()
 })
 .then((data)=>{
-  // console.log(data);
+  console.log(data);
     displayData(data)
 })
 
-function displayData(data){
-  data.forEach(element => {
+function displayData(element){
+  
      container.innerHTML = `
       
      <!-- for small images -->
@@ -140,7 +139,7 @@ function displayData(data){
      <img src="productimage/Screenshot (292).png" alt="">
    </div>
      `
-  });
+  
 }
 
 
