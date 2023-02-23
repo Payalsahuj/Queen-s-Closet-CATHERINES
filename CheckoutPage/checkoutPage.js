@@ -74,3 +74,16 @@ function addressFormData() {
 //       window.clearTimeout(tID);		// clear time out.
 //   }, 2000);
 // }
+
+
+
+//console.log("hello")
+
+// let redirect_Page = () => {
+//   let clic = document.getElementById("loginbtn")
+
+//   let tID = setTimeout(function () {
+//       window.location.href = "C:\Users\shiva\OneDrive\Desktop\CheckOutPage\orderSuccessPage.html";
+//       window.clearTimeout(tID);		// clear time out.
+//   }, 2000);
+// }
