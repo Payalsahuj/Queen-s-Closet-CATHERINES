@@ -4,8 +4,11 @@
 }
 
 #navbar img{
-    height: 110px;
+    height: 80px;
     margin-left: 35px;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    
 }
 
 #maindiv{
