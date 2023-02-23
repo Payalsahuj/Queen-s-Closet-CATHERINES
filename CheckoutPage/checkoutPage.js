@@ -39,7 +39,7 @@ function addressFormData() {
     lastname: lastname.value,
     Email: Email.value,
     country: country.value,
-    Address1: Add,
+    Address1: Add.value,
     city: city.value,
     pincode: pincode.value,
     mobile: mobile.value,
