@@ -5,6 +5,7 @@ let key = localStorage.getItem("product-id")
 console.log(key);
 
 
+
 fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product`).then((res)=>{
     return res.json()
 })
