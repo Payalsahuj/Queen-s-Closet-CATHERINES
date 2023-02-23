@@ -40,7 +40,7 @@ let pagination = document.getElementById("pagination-wrapper");
     getData();
 // }
 
-// let descriptionPage = JSON.parse(localStorage.getItem("description")) || [];
+let descriptionPage = localStorage.getItem("product-id") || [];
 
 
 let renderData = (data)=>{
@@ -48,7 +48,7 @@ let renderData = (data)=>{
     productEl.innerHTML = `
     ${data.map((item)=>(
         `
-        <div class="products">
+        <div data-id="${item.id}" class="products">
                 <img src="${item.image1}" alt="err">
                 <div class="rating">${item.rating}</div>
                 <h4 class="top">${item.top}</h4>
@@ -59,10 +59,40 @@ let renderData = (data)=>{
         `
     )).join("")}
     `
+    let products = document.querySelectorAll(".products");
+    for(let pro of products){
+        pro.addEventListener("click", (e)=> {
+            e.preventDefault();
+          
+         fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product`)
+        .then((res)=>{
+        return res.json()
+        }).then((data)=>{
+            data.map((item)=>{
+                if(item.id==pro.getAttribute("data-id")){
+                localStorage.setItem("product-id",item.id);
+                // window.location.href= ""
+                // console.log(pro.getAttribute("data-id"))
+            }
+
+            })
+           
+            // if(data.id==e.target.dataset.id){
+            //     localStorage.setItem("product-id",e.target.dataset.id);
+            // }
+    })
+        })
+    }
 }
 
 
 //<---- Filtration Code Color ---->
+
+let black = document.getElementById("black");
+let red = document.getElementById("red");
+let pink = document.getElementById("pink");
+let green = document.getElementById("green");
+let white = document.getElementById("white");
 
 let filterData = (e) =>{
     let arr = []
@@ -70,6 +100,8 @@ let filterData = (e) =>{
     checkbox.forEach((input)=>{
         if(input.checked){
             arr.push(input.name);
+        }else if(black.checked == false && red.checked==false && pink.checked==false && green.checked==false && white.checked==false){
+            getData();
         }
     })
     // console.log(globalData);
