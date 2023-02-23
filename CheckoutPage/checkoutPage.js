@@ -29,7 +29,7 @@ Addform.addEventListener("submit", (e) => {
 
   addressFormData();
 });
-let formDataArr = []; //empty-Array
+let formDataArr = JSON.parse(localStorage.getItem("userform"))  || []; //empty-Array
 
 function addressFormData() {
   let formDataObj = {
@@ -49,6 +49,19 @@ function addressFormData() {
 
   window.location.href = "./orderSuccessPage.html"
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 //console.log("hello")
 
 // let redirect_Page = () => {
