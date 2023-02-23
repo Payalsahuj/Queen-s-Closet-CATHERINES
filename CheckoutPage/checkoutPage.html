@@ -30,7 +30,7 @@
     </div>
     <div id="maindiv">
       <div id="Billingadd">
-        <form>
+        <form id="billForm">
           <h1>Billing Address</h1>
           <label>First Name</label><br />
           <input type="text" name="name" id="Fname" required /><br />
@@ -57,18 +57,18 @@
             <option value="United States Of America ">USA</option>
           </select>
           <br />
-          <label for="state">Address Line 1</label><br />
-          <input type="text" name="Addressl1" id="Addressl1" required /><br />
+          <label for="state">Address </label><br />
+          <input type="text" name="Address" id="Address" required /><br />
           <label for="city">City / Suburb</label><br />
           <input type="text" name="city" id="city" required /><br />
           <label for="pincode">Zip / Postcode</label><br />
           <input type="text" name="pincode" id="pincode" required /><br />
           <label for="mobile">Mobile Phone</label><br />
           <input type="number" name="mobile" id="mobile" required /><br />
-        </form>
+       
       </div>
       <div id="option">
-        <form>
+        
           <input
             type="radio"
             id="show-form"
@@ -127,7 +127,7 @@
             <label for="mobile-number">Mobile Number:</label>
             <input type="text" id="mobile-number" name="mobile-number" /><br />
           </div>
-        </form>
+        
       </div>
     </div>
 
@@ -135,7 +135,7 @@
     <div id="PaymentMainDiv">
       <div class="payment-info">
         <h1>Payment Details</h1>
-        <form>
+        
           <label for="card-number">Card Number:</label>
           <input type="text" id="card-number" name="card-number" required />
           <label for="expiration-date">Expiration Date:</label>
@@ -149,16 +149,18 @@
           <input type="text" id="cvv" name="cvv" required />
           <label for="name-on-card">Name on Card:</label>
           <input type="text" id="name-on-card" name="name-on-card" required />
-        </form>
+        
         <p id="tnc">
           By clicking Pay and place order, you agree to purchase your <br> item(s)
           from Global-e as merchant of record for this transaction, <br> on
           Global-e's Terms and Conditions and Privacy Policy. Global-e is <br> an 
           international fulfilment service provider to Fullbeauty Brands.
         </p>
-
-        <a href="./orderSuccessPage.html"><button id="loginbtn" type="submit">Pay and Place Order</button></a>
+<input type="submit" id="loginbtn"  value="Pay and Place Order">
+        <!-- <a href="./orderSuccessPage.html"> </a> -->
+        <!-- <button id="loginbtn" type="submit">Pay and Place Order</button> -->
       </div>
+    </form>
       <div id="Payment-methodDiv">
         <img src="./LOGOS/paymentOPTIONS.jpg" alt="" id="paymentimg">
         <br>
