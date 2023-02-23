@@ -160,9 +160,16 @@ justify-content: space-evenly;
 
 .pagination-wrapper{
 border: solid red;
-width: 20%;
+width: 50%;
 margin: auto;
 text-align: center;
+margin-top: 20px;
+}
+
+.pagination-btn{
+    width: 40px;
+    height: 30px;
+    border: none;
 }
 
 #sort-products{
@@ -195,3 +202,4 @@ font-size: 16px;
 /* display: flex; */
 align-items: center;
 }
+
