@@ -40,7 +40,7 @@ let pagination = document.getElementById("pagination-wrapper");
     getData();
 // }
 
-let descriptionPage = localStorage.getItem("product-id") || [];
+let descriptionPage = localStorage.getItem("product-id");
 
 
 let renderData = (data)=>{
