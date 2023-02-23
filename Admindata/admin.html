@@ -10,16 +10,12 @@
         * {
             margin: 0px;
             padding: 0px;
-            font-style: oblique;
-            
-
+            /* font-style: oblique; */
+          
         }
 
         #outter {
             width: 100%;
-
-            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-            /* border: 2px solid blue; */
         }
 
         #parent {
@@ -29,7 +25,6 @@
         }
 
         #parentone {
-            /* border: 2px solid red; */
 
             width: 15%;
             text-align: justify;
@@ -42,8 +37,8 @@
             border: 1px solid rgb(63, 63, 63) ;
             border-radius: 33px 0px;
             width: 85%;
-         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background-color: rgb(223, 231, 231);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: #3a2a7c;
 
 
         }
@@ -55,7 +50,8 @@
 
         #parentone>h2:hover {
             cursor: pointer;
-            color: black;
+            color:blue;
+            transform: scale(1.1);
         }
 
         #mainsection {
@@ -82,7 +78,7 @@
         }
 
         #firstbox {
-            background-color: rgb(240, 171, 43);
+            background-color: rgb(219, 153, 249);
             padding: 40px 15px;
             display: flex;
             justify-content: space-between;
@@ -90,7 +86,7 @@
         }
 
         #secondbox {
-            background-color: rgb(231, 231, 90);
+            background-color: rgb(202, 240, 114);
             padding: 40px 15px;
             display: flex;
             justify-content: space-between;
@@ -134,7 +130,7 @@
         #productimg {
             display: block;
             width: 100%;
-            height: 220px;
+           height: 350px;
             border-radius: 7px;
 
         }
@@ -145,7 +141,7 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
         }
-
+       
         #productdiv:hover {
             transform: scale(1.1);
             cursor: pointer;
@@ -430,21 +426,27 @@
         #addmember{
             padding: 6px 30px;
             font-size:22px;
-            border-color:rgb(89, 167, 223); 
-            border-radius: 9px;
-            background-color: rgb(89, 167, 223); 
-            color: white;
+            border-color:#3a2a7c; 
+            border-radius: 9px; 
+            background-color: white; 
+            color: #3a2a7c;
         }
 
         #addmember:hover{
             cursor: pointer;
             transform: scale(1.1);
         }
+        #createparentdivv h2{
+            color: white;
+        }
+        #createparentdivv h3{
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <div>
+    <div style="border: 7px solid #3a2a7c;">
         <div id="outter">
             <img src="./image/logo.jpg" style=" display: block; height: 50px; width: 190px; padding-left: 10px; padding-top: 5px;" alt="">
         </div>
@@ -464,7 +466,7 @@
             </div>
             <div id="parenttwo">
                 <div id="mainsection">
-                    <h2 style="font-size: 25px;"><u>Dashboard </u></h2>
+                    <h2 style="font-size: 25px; color: white;"><u>Dashboard </u></h2>
                     <div id="dash">
                         <!-- No of product -->
                         <div id="firstbox">
@@ -597,7 +599,7 @@
 
         Dashboard.addEventListener("click", () => {
             mainSection.innerHTML = "";
-            mainSection.innerHTML = `<h2 style="font-size: 25px;">Dashboard</h2>
+            mainSection.innerHTML = `<h2 style="font-size: 25px; color: white;">Dashboard</h2>
                     <div id="dash">
                         <!-- No of product -->
                         <div id="firstbox">
@@ -672,7 +674,7 @@
 
     function renderproduct(data) {
         mainSection.innerHTML = `<div>
-            <h2 style="font-size: 25px; margin-bottom: 30px; "><u>Product list</u></h2>
+            <h2 style="font-size: 25px; margin-bottom: 30px; color:white;"><u>Product list</u></h2>
             <div id="crud" style="font-size:18px; margin-bottom: 10px;  display:flex; justify-content: space-around; background-color:white; padding: 10px;">
                         <h3 id="addbtn">Add Product</h3>
                         <h3 id="removebtn">Remove Product</h3>
@@ -1165,54 +1167,92 @@
     createaccount.addEventListener("click",()=>{
         mainSection.innerHTML = "";
         mainSection.innerHTML=`
-                        <div>
-                            <h2 style="margin-bottom: 30px;">Create Admin Account</h2>
+                        <div id="createparentdivv">
+                            <h2 style="margin-bottom: 30px;"><u>Create Admin Account</u></h2>
                             <div style="width:100%;">
                                 <form action="">
                                     <div id="createmain">
                                     <div>
                                     <h3>Firstname</h3>
-                                    <input placeholder="Firstname" type="text">
+                                    <input id="createfirstname" placeholder="Firstname" type="text">
                                     </div>
                                     <div>
                                     <h3>Lastname</h3>
-                                    <input placeholder="Lastname" type="text">
+                                    <input id="createlastname" placeholder="Lastname" type="text">
                                     </div>
                                     <div>
                                     <h3>Phone number</h3>
-                                    <input placeholder="Phone number" type="number">
+                                    <input id="createphonenumber" placeholder="Phone number" type="number">
                                     </div>
                                     <div>
                                     <h3>Description</h3>
-                                    <input placeholder="Description" type="text">
+                                    <input id="createdescription" placeholder="Description" type="text">
                                     </div>
                                     <div>
                                     <h3>Location url</h3>
-                                    <input placeholder="Location url" type="text">
+                                    <input id="createlocationurl" placeholder="Location url" type="text">
                                     </div>
                                     <div>
                                     <h3>Imageurl</h3>
-                                    <input placeholder="Image url" type="text">
+                                    <input id="createimageurl" placeholder="Image url" type="text">
                                     </div>
                                     <div>
                                     <h3>Email</h3>
-                                    <input placeholder="Email" type="email">
+                                    <input id="createemail" placeholder="Email" type="email">
                                     </div>
                                     <div>
                                     <h3>Password</h3>
-                                    <input placeholder="Set password" type="password">
+                                    <input id="createpassword" placeholder="Set password" type="password">
                                     </div>
                                     </div>
                                     <div style="display: flex; justify-content:center;  text-align:center; padding-right:80px; margin-top: 40px; ">
                                     <input id="addmember"  type="submit">
                                     </div>
-                                    <div style="height: 200px; background-color: rgb(223, 231, 231);">
+                                    <div style="height: 200px; background-color: #3a2a7c;">
                                     </div>
                                 </form>
                             </div>
                         </div>
 
         `
+
+
+        let form=document.querySelector("form")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            let obj={
+                "image":form.createimageurl.value,
+                "firstname":form.createfirstname.value,
+                "surname":form.createlastname.value,
+                "mobile":form.createphonenumber.value,
+                "email":form.createemail.value,
+                "description":form.createdescription.value,
+                "location":form.createlocationurl.value,
+                "password":form.createpassword.value
+            }
+
+            fetch(`${loginurl}`,{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json",
+            },
+            body: JSON.stringify(obj)
+           }).then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            window.location.href="admin.html"
+         
+        })
+            
+        })
+
+
+
+
+
+
     })
 
 </script>
