@@ -9,7 +9,7 @@
     font-weight: lighter;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-size: 14px;
 }
 
@@ -20,7 +20,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   position: relative;
   margin: auto;
   color: white;
@@ -57,20 +57,23 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 #title-box {
-    border:1px solid black;
+    /* border:1px solid black; */
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 0.5% 5%;
+    padding: 0% 5%;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 #title-box > #title{
+    margin:10px;
     width:20%;
-    height:20%;
-    border:1px solid black;
+    height:15%;
+    /* border:1px solid black; */
 }
 #title-box > #title > img{
-    border:1px solid black;
+    /* border:1px solid black; */
+    width:8%
 }
 #title-box > #search-bar{
     margin-left: 10%;
@@ -79,11 +82,15 @@ img {vertical-align: middle;}
 }
 #title-box > #search-bar> input{
     font-size: 20px;
+    margin-top: 15px;
+    padding: 10px;
     padding-left: 10px;
-    width:80%
+    width: 80%;
 }
 #title-box > #search-bar> .submit{
     padding: 6px 10px;
+    font-size: 25px;
+
 }
 
 #title-box > #icons{
@@ -99,65 +106,107 @@ img {vertical-align: middle;}
     text-align: center;
 }
 #title-box > #icons > div > img{
-    height:20px;
-    width:20px
+    height: 40px;
+    width: 30px;
 }
 #title-box > #icons > div > h3{
     font-size: 11px;
 }
-
-.navbar {
-    list-style: none;
-    overflow: hidden;
-    background-color: #333;
+/* categories starts here */
+#categories{
+    /* border:1px solid black; */
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 .dropbtn {
     /* background-color: #04AA6D; */
     color: black;
-    font-weight: bold;
+    font-weight: lighter;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     padding: 16px;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
 }
   
 .dropdown {
     position: relative;
     display: inline-block;
-=======
-  
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-  
-.dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font: inherit;
-    margin: 0;
-}
-  
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
 }
   
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    font-weight: lighter;
+    background-color: #f1f1f1;
+    min-width: 1100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* border: 1px solid black; */
+}
+.dropdown-content1 {
+    display: none;
+    position: fixed;
+    font-size: 12px;
+    font-weight: lighter;
+    background-color: #f1f1f1;
+    min-width: 1100px;
+    left:510px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* border: 1px solid black; */
+}
+.dropdown-content >.d11 .d21{
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.dropdown-content > .d11{
+    padding: 20px;
+    width: 170px;
+    /* border: 1px solid black; */
+}
+.dropdown-content .d11 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {display: flex;}
+
+.dropdown-content1 >.d11 .d21{
+    width: 170px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.dropdown-content1 > .d11{
+    padding: 20px;
+    width: 170px;
+    /* border: 1px solid black; */
+}
+.dropdown-content1 .d11 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+}
+  
+.dropdown-content1 a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content1 {display: flex;}
+
+
+/* categories starts here */
 /* header ends here */
 
 .not2{
@@ -165,9 +214,11 @@ img {vertical-align: middle;}
     text-align: center;
     display: flex;
     /* border:1px solid black; */
-    padding: 0.9% 15%;
+    padding: 0.9% 20%;
 }
-
+.not2 img{
+    padding: 0px 5px;
+}
 /* shop items starts here */
 #shop{
     /* border: 1px solid black; */
@@ -208,30 +259,107 @@ img {vertical-align: middle;}
 .offer-poster{
     width: 80%;
     background-color: #4C0099;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
     margin: auto;
+    position: relative;
     margin-top: 10px;
 }
-.offer-poster > h1{
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    letter-spacing: 0.5px;
-    word-spacing: 3px;
+.offer-poster img{
+    width:100%;
+    display: block;
 }
-.offer-poster >button{
+.offer-poster > .o1{
+    top:30px;
+    left:15%;
+    display: flex;
+    /* border: 1px solid black; */
+    color: white;
+    position: absolute;
+}
+.offer-poster > .o1 > h1{
+    margin: auto;
+    font-size: 42px;
+    text-align: center;
+}
+.offer-poster > .o2{
+    top: 13%;
+    /* border: 1px solid white; */
+    position: absolute;
+    margin: auto;
+    left:38%;
+    text-align: center;
+}
+.offer-poster > .o2 > button {
     background-color: #4C0099;
     color: white;
+    padding: 10px;
     border: 1px solid white;
-    border-radius: 5px;
-    position: relative;
-    padding: 10px 20px;
+    border-radius: 10px ;    
 }
-.offer-poster > img{
-    width: 100%;
-    height: auto;
-    position: relative;
+.offer-poster > .o3{
+    top: 25%;
+    left: 32%;
+    position: absolute;
+    color: white;
+}
+.offer-poster > .o3 > button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #4C0099;
+}
+.offer-poster > .o4{
+    top: 25%;
+    left: 76%;
+    position: absolute;
+    color: white;
+}
+.offer-poster > .o4 > button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #4C0099;
+}
+.offer-poster > .o5{
+    top: 70%;
+    left: 8%;
+    position: absolute;
+    color: white;
+}
+.offer-poster > .o5 > button{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #4C0099;
+}
+.offer-poster > .o6{
+    top: 70%;
+    left: 53%;
+    position: absolute;
+    color: white;
+}
+.offer-poster > .o6 > button{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #4C0099;
+}
+
+@media screen and (min-width:200px) and (max-width:900px){
+    .offer-poster > .o1{
+        top: 20px;
+        left:20%
+    }
+    .offer-poster > .o1 > h1{
+        font-size: 24px;
+    }
+    .offer-poster > .o2{
+        top: 60px;
+        border: 1px solid white;
+        position: absolute;
+        
+    }
 }
 /* offer poster ends here */
 
@@ -274,7 +402,62 @@ img {vertical-align: middle;}
     margin: auto;
     text-align: center;
     margin-top:20px ;
+    position: relative;
     cursor: pointer;
+    /* border:1px solid black; */
+}
+.offer-poster3 > img {
+    width: 100%;
+    display: block;
+}
+.offer-poster3 > .o11{
+    top:5px;
+    left:38%;
+    /* border: 1px solid black; */
+    /* color: white; */
+    position: absolute;
+}
+.offer-poster3 > .o11 > h1{
+    font-size: 42px;
+    font-family: "Trirong", serif;
+    font-weight: lighter;
+}
+.offer-poster3 > .o11 > h2{
+    font-weight: lighter;
+    font-size: 36px;
+    font-family: "Snell Roundhand", serif;
+    font-style: italic;
+    color: black;
+}
+.offer-poster3 > .o11 > h4{
+    font-weight: lighter;
+    padding-top: 4px;
+}
+.offer-poster3 > .o12 {
+    top:42%;
+    left:40%;
+    position: absolute;
+}
+.offer-poster3 > .o12 > h1{
+    font-style: normal;
+    font-size: 36px;
+}
+.offer-poster3 > .o12 > h2{
+    color:red;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 40px;
+}
+.offer-poster3 > .o12 > button{
+    display: block;
+    margin-top: 15px;
+    padding: 13px 0px;
+    font-size: 18px;
+    width: 260px;
+    color: white;
+    border: 1px solid #4c0099;
+    background-color: #4C0099;
+    border-radius: 5px;
 }
 /* offer poster 3 ends here */
 
@@ -284,12 +467,55 @@ img {vertical-align: middle;}
     margin: auto;
     text-align: center;
     margin-top:20px ;
+    margin-bottom: 20px;
     cursor: pointer;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.offer-poster4 img{
+    width: 100%;
+    display: block;
+}
+.offer-poster4 > .o21{
+    top:35px;
+    left:2%;
+    /* border: 1px solid black; */
+    /* color: white; */
+    position: absolute;
+}
+.offer-poster4 > .o21 > h1{
+    font-size: 52px;
+    font-family: "Trirong", serif;
+    font-weight: lighter;
+}
+.offer-poster4 > .o21 > h2{
+    font-weight: lighter;
+    font-size: 46px;
+    font-family: "Snell Roundhand", serif;
+    font-style: italic;
+    color: red;
+}
+.offer-poster4 > .o21 > h4{
+    font-weight: lighter;
+    padding-top: 4px;
+    font-size: 24px;
+}
+
+.offer-poster4 > .o21 > button{
+    display: block;
+    margin-top: 15px;
+    padding: 15px 0px;
+    font-size: 18px;
+    width: 280px;
+    color: white;
+    border: 1px solid #4c0099;
+    background-color: #4C0099;
+    border-radius: 5px;
 }
 /* offer poster 4 ends here */
 
 /* offer poster 5 starts here */
-.offer-poster5{
+/* .offer-poster5{
     width: 80%;
     margin: auto;
     text-align: center;
@@ -300,14 +526,13 @@ img {vertical-align: middle;}
 }
 .offer-poster5 > img{
     height: 60%;
-
 }
 .sub-offer-poster5{
     display: flex;
     border: 1px solid black;
     position: absolute;
     margin-top: -450px;
-}
+} */
 
 /* offer poster 5 ends here */
 
@@ -316,23 +541,257 @@ img {vertical-align: middle;}
     width: 80%;
     margin: auto;
     text-align: center;
-    margin-top: 20px;
+    margin-top:20px ;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.shoe-offer > img{
+    width: 100%;
+    display: block;
+}
+.shoe-offer > .o31{
+    top:25px;
+    left:35%;
+    /* border: 1px solid black; */
+    /* color: white; */
+    position: absolute;
+}
+.shoe-offer > .o31 > h2{
+    font-size: 54px;
+    color: red;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-family: "Snell Roundhand", serif;
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* border:1px solid black; */
+}
+.shoe-offer > .o31 > .o311{
+    display: flex;
+    top:25px;
+    left:32%;
+    width: fit-content;
+    color: #4C0099;
+    padding-left: 10px;
+    font-size: 40px;
+    justify-content: space-evenly;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+} 
+.shoe-offer > .o31 > .o311 > h2{
+    color: red;
+    font-size: 54px;
+    font-family: "Snell Roundhand", serif;
+    font-style: italic;
+    padding-top: 10px;
+    padding-left: 10px;
+    /* border:1px solid black; */
+}
+.shoe-offer > .o31 > .o312 {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    /* border: 1px solid black; */
+    width: fit-content;
+}
+.shoe-offer > .o31 > .o312 > h1{
+    font-size: 66px;
+    color: #4C0099;
+}
+.shoe-offer > .o31 > .o312 > .o3121{
+    display: block;
+    /* border: 1px solid black; */
+    color: #4C0099;
+}
+.shoe-offer > .o31 > h3{
+    font-family: "Snell Roundhand", serif ;
+    font-style: normal;
+    color: #4C0099;
+    padding-top: 20px;
+    font-size: 35px;
+}
+.shoe-offer > .o31 > button {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 15px;
+    padding:10px 30px;
+    color: white;
+    background-color: #4C0099;
+    border: 1px solid #4C0099;
+}
+.shoe-offer > .o31 > p {
+    font-size: 24px;
+    margin-top: 15px;
 }
 /* shoe offer ends here */
 
 /* outfit offer starts here */
 .outfits{
     width: 80%;
+    /* height:70px; */
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 0.4;
+}
+/* outfit offer ends here */
+
+/* spring starts here */
+.spring{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.spring img {
+    width: 100%;
+    display: block;
+}
+.spring .s01{
+    top : 40px;
+    left: 30%;
+    position: absolute;
+    color: white;
+}
+.spring > .s01 > h1{
+    font-size: 64px;
+    font-family: "Montserrat","Inter Tight","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center !important;
+}
+.spring > .s01 > h2{
+    font-family: "Inter Tight","Helvetica Neue","cursive";
+    font-size: 52px;
+    font-style: italic;
+    width: fit-content;
+    padding-left: 90px;
+    width: fit-content;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+}
+.spring > .s01 > h3{
+    font-size: 44px;
+    font-family: "Montserrat","Inter Tight","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center !important;
+}
+.spring > .s01 > h4{
+    font-size: 120px;
+    font-family: "Montserrat","Inter Tight","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 1200;
+    width: max-content;
+
+    font-style: normal;
+    letter-spacing: 5px;
+    text-align: center !important;
+}
+.spring > .s01 > button {
+    width: 300px;
+    color: brown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    background-color: #fff;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+/* spring ends here */
+
+/* trend not starts here */
+.trend{
+    width: 80%;
+    height:70px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    background-color: 	#e6e6fa;
+    z-index: 0.5;
+    padding: 10px 0px;
+    display: flex;
+}
+.trend > img{
+    width:100px;
+    padding-left: 40px;
+}
+.trend > h3{
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #4c0099;
+}
+/* trend not ends here */
+
+/* trending products are here */
+.trend1{
+    width: 80%;
+    /* border:1px solid black; */
     margin: auto;
     text-align: center;
     margin-top: 20px;
 }
-/* outfit offer ends here */
+.trend1 > h2{
+    color:black;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.trend1 > .t01{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    margin: 10px 20px;
+    
+}
+.trend1 > .t01 > h1{
+    width: 30px;
+    /* border: 1px solid black; */
+    /* padding: 0px 20px; */
+    margin: 0px 10px;
+    padding: 150px 0px;
+}
+.trend1 > .t01 > .t011{
+    /* border: 1px solid black; */
+    margin: 0px 10px;
+    width: 300px;
+    /* height: 200px; */
+}
+.trend1 > .t01 > .t011 > img{
+    width:100%;
+    height: 220px;
+}
+.trend1 > .t01 > .t011 > h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.trend1 > .t01 > .t011 > h5,p{
+    margin-top: 7px;
+}
+.trend1 > .t01 > .t011 > p::first-line{
+    text-decoration: line-through;
+}
+.trend1 > .t01 > .t011 > h4{
+    font-weight: lighter;
+    margin-top: 7px;
+    font-style: normal;
+}
+/* trending products are end here */
 
 /* footer media starts here */
 #footer{
     width: 80%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     margin-top: 20px;
     text-align: center;
@@ -341,7 +800,7 @@ img {vertical-align: middle;}
     width: 50%;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 20px;
     padding: 10px;  
     justify-content: space-around;
@@ -356,7 +815,7 @@ img {vertical-align: middle;}
     margin: auto;
     text-align: center;
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 20 px;
     justify-content: space-evenly;
 }
@@ -364,7 +823,7 @@ img {vertical-align: middle;}
     display: flex;
     margin: 10px;
     width: 45%;
-    border:1px solid black;
+    /* border:1px solid black; */
     background-color: #f0ecec;
 } 
 #footer > .footer2 > .sub1 > .sub11 >  img{
@@ -375,7 +834,7 @@ img {vertical-align: middle;}
 #footer > .footer2 > .sub1 > .sub12{
     padding:10px;
     margin: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #footer > .footer2 > .sub1 > .sub12 > h4{
     margin-bottom: 10px;
@@ -391,26 +850,30 @@ img {vertical-align: middle;}
     width: 45%;
     display: flex;
     background-color: #f0ecec;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+#footer > .footer2 > .sub2 > .sub21{
+    width: 100%;
+    margin: 10px;
 }
 #footer > .footer2 > .sub2 > .sub21 > img{
     width:90%;
     margin: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #footer > .footer2 > .sub2 > .sub22{
     padding:10px;
     margin: 10px;
     margin: auto;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 #footer > .footer2 > .sub2 > .sub22 > h4{
     margin: 10px;
     font-weight: lighter;
 }
 #footer > .footer2 > .sub2 > .sub22 > p{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* margin-top: 300px */
     text-align: right;
     cursor: pointer;
@@ -454,18 +917,18 @@ img {vertical-align: middle;}
     margin: auto;
     padding: 10px 20px;
     text-align: center;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 #footer-brands > div > .fb{
     padding: 0px 20px;
-    border:1px solid black; 
+    /* border:1px solid black;  */
 }
 
 #footer-brands > div > .fb1{
     width: 50%;
     margin: auto;
     text-align: center;
-    border:1px solid black;
+    /* border:1px solid black; */
 }
 #footer-brands > div > .fb1 > p{
     font-weight: bold;
