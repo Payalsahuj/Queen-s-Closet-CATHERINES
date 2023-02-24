@@ -213,6 +213,14 @@ function renderproduct(data) {
                             <p><b>Color of Product</b></p>
                             <input id="addcolorinput" type="text" placeholder="Color of product">
                         </div>
+                        <div>
+                            <p><b>Set Size</b></p>
+                            <input id="addsize" type="text" placeholder="Set size of product">
+                        </div>
+                        <div>
+                            <p><b>Set Product Type</b></p>
+                            <input id="addproducttype" type="text" placeholder="Type of product">
+                        </div>
                         
                         
                     </div>
@@ -286,6 +294,14 @@ function renderproduct(data) {
                         <div>
                             <p><b>Set Stock</b></p>
                             <input id="putstock" type="text" placeholder="Set stock">
+                        </div>
+                        <div>
+                            <p><b>Size of Product</b></p>
+                            <input id="putsize" type="text" placeholder="Set product size">
+                        </div>
+                        <div>
+                            <p><b>Type of product</b></p>
+                            <input id="puttype" type="text" placeholder="Set product type">
                         </div>
                         
                         
@@ -433,6 +449,8 @@ function renderproduct(data) {
     let addpriceinput = document.getElementById("addpriceinput")
     let adddiscountinput = document.getElementById("adddiscountinput")
     let addcolorinput = document.getElementById("addcolorinput")
+    let addsize=document.getElementById("addsize")
+    let addproducttype=document.getElementById("addproducttype")
     let addingbtn = document.getElementById("addingbtn")
     // ====================Remove Product====================
     let removeid = document.getElementById("removeid")
@@ -449,7 +467,10 @@ function renderproduct(data) {
     let putcolor = document.getElementById("putcolor")
     let putstock = document.getElementById("putstock")
     let putid = document.getElementById("putid")
+    let putsize=document.getElementById("putsize")
+    let puttype=document.getElementById("puttype")
     let updattingallbtn = document.getElementById("updattingallbtn")
+    
     // ====================Update single( PATCH )===================
     let patchid = document.getElementById("patchid")
     let patchprice = document.getElementById("patchprice")
@@ -477,7 +498,9 @@ function renderproduct(data) {
                     putprice.value = data.price;
                     putdiscount.value = data.category;
                     putcolor.value = data.color;
-                    putstock.value = data.Stock
+                    putstock.value = data.Stock;
+                    putsize.value=data.size;
+                    puttype.value=data.productType;
                     removeid.value = data.id;
                     patchid.value = data.id;
                     patchprice.value = data.price;
@@ -491,9 +514,15 @@ function renderproduct(data) {
 
     // =================================== (POST) operation ==========================
     addingbtn.addEventListener("click", () => {
+        let flag=false;
+       if(adddiscountinput.value!="" && addcolorinput.value!="" && adddescriptioninput.value!="" && addfimageinput.value!="" && addsimageinput.value!="" && addtimageinput.value!="" && addfoimageinput.value!="" && addpriceinput.value!="" && addtitleinput.value!="" && addsize.value!="" && addproducttype.value!=""){
+        flag=true;
+        }
+        
+        if(flag==true){
         let obj = {
             "Stock": "In Stock",
-            "category": `--Save up to $${adddiscountinput.value}`,
+            "category": `${adddiscountinput.value}`,
             "color": `${addcolorinput.value}`,
             "description1": `${adddescriptioninput.value}`,
             "image1": `${addfimageinput.value}`,
@@ -503,7 +532,9 @@ function renderproduct(data) {
             "price": `${addpriceinput.value}`,
             "rating": "⭐⭐⭐⭐⭐",
             "title": `${addtitleinput.value}`,
-            "top": "Limited Time price!"
+            "top": "Limited Time price!",
+            "size":`${addsize.value}`,
+            "productType":`${addproducttype.value}`
         }
 
         fetch(`${producturl}`, {
@@ -519,6 +550,12 @@ function renderproduct(data) {
                 console.log(data)
                 fetchurlofproduct()
             })
+        }
+        else{
+            alert("You have to fill all of the details")
+        }
+        
+       
 
     })
 
@@ -539,6 +576,7 @@ function renderproduct(data) {
     // =================================== (PUT) operation ==========================
     updattingallbtn.addEventListener("click", () => {
         let idwewant = putid.innerText;
+        
         let obj = {
             "Stock": `${putstock.value}`,
             "category": `${putdiscount.value}`,
@@ -551,7 +589,9 @@ function renderproduct(data) {
             "price": `${putprice.value}`,
             "rating": "⭐⭐⭐⭐⭐",
             "title": `${puttitle.value}`,
-            "top": "Limited Time price!"
+            "top": "Limited Time price!",
+            "size":`${putsize.value}`,
+            "productType":`${puttype.value}`
         }
 
         fetch(`${producturl}/${idwewant}`, {
