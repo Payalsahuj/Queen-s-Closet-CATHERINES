@@ -86,7 +86,6 @@ b{
     padding-top: 18px;
     padding-bottom: 25px;
     border-top: 1px solid rgb(105, 103, 103);
-    border-bottom: 1px solid rgb(105, 103, 103);
     grid-template-columns: repeat(2,1fr);
 }
 
@@ -175,7 +174,7 @@ b{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #AF3434;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 .crud{
     margin-right: 40px;
