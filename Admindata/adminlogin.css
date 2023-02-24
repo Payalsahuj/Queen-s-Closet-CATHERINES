@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 100vh;
     top: 50%;
     border: 2px solid green;
     margin: 0;
