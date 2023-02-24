@@ -764,7 +764,7 @@ createaccount.addEventListener("click", () => {
                                 <div style="display: flex; justify-content:center;  text-align:center; padding-right:80px; margin-top: 40px; ">
                                 <input id="addmember"  type="submit">
                                 </div>
-                                <div style="height: 200px; background-color: #3a2a7c;">
+                                <div style="height: 400px; background-color: #3a2a7c;">
                                 </div>
                             </form>
                         </div>
