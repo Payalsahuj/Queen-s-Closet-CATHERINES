@@ -21,19 +21,20 @@ let pagination = document.getElementById("pagination-wrapper");
 // })
 
 // function check(totalItems){
-    let getData = async(pageNumber=1)=>{
+    let getData = async()=>{
         try {
-            let res = await fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product?limit=12&page=${pageNumber}`,{
-                headers: {
-                    'X-Total-Count' : 100
-                }
-            });
-        let totalItems = res.headers.get("X-Total-Count");
-        let totalPage = Math.ceil(totalItems/12);
-        showPagination(totalItems,12)
+            let res = await fetch("https://63f1ba774f17278c9a18b9b9.mockapi.io/product?productType=Hoodie")
+            // ,{
+                // headers: {
+                //     'X-Total-Count' : 100
+                // }
+            // });
+        // let totalItems = res.headers.get("X-Total-Count");
+        // let totalPage = Math.ceil(totalItems/12);
+        // showPagination(totalItems,12)
         let data = await res.json();
         console.log(globalData);
-        console.log(totalPage);
+        // console.log(totalPage);
         globalData = data;
         renderData(globalData);
         } catch (error) {
@@ -52,7 +53,7 @@ let renderData = (data)=>{
     ${data.map((item)=>(
         `
         <div data-id="${item.id}" class="products">
-                <img id="setImage" onmouseover="setNewImage()" onmouseout="setOldImage()" src="${item.image1}" alt="err")>
+                <img src="${item.image1}" alt="err" onmouseover="changeImage(${item.image2},this)" onmouseout="changeImage(2,this)")>
                 <div class="rating">${item.rating}</div>
                 <h4 class="top">${item.top}</h4>
                 <span class="price">${"From"}</span><h3 class="price">  ₹ ${item.price}</h3> <span class="price">${item.category}</span>
@@ -84,17 +85,14 @@ let renderData = (data)=>{
 }
 
 
-// function setNewImage(){
-// document.getElementById("setImage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=240&sh=346&sm=fit&yocs=j_m_";
-// }
-
-// function setOldImage(){
-//     document.getElementById("setImage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwcbc58e4c/images/hi-res/2324_11512_mc_0092.jpg?colorid=4221755&sw=240&sh=346&sm=fit&yocs=j_m_";
-// }
-
-
-    
-
+function changeImage(x,image){
+    if(x==1){
+        image.src = "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwa0c3225a/images/on-hover/2302_12203_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
+    }
+    // if(x==2){
+    //     image.src = "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
+    // }
+}
 
 //<---- Filtration Code Color ---->
 
@@ -148,7 +146,6 @@ let JessicaLondon = document.getElementById("by-Jessica-London");
 let Romans = document.getElementById("by-Roman's");
 let Ellos = document.getElementById("by-Ellos");
 let Liz_Me = document.getElementById("by-Liz&Me");
-
 
 
 let filterData3 = (e) =>{
@@ -362,35 +359,35 @@ checkbox5.forEach((input)=>{
 //  <----- Pagination Code ------->
 
 
-function showPagination(totalItems,limit){
-    let numofButtons = Math.ceil(totalItems/limit);
-    pagination.innerHTML = `
-    ${getaButton(1,1)}
-    ${getaButton(2,2)}
-    ${getaButton(3,3)}
-    ${getaButton(4,4)}
-    `
+// function showPagination(totalItems,limit){
+//     let numofButtons = Math.ceil(totalItems/limit);
+//     pagination.innerHTML = `
+//     ${getaButton(1,1)}
+//     ${getaButton(2,2)}
+//     ${getaButton(3,3)}
+//     ${getaButton(4,4)}
+//     `
 
-    let paginationButtons = document.querySelectorAll(".pagination-btn");
+    // let paginationButtons = document.querySelectorAll(".pagination-btn");
     // console.log(paginationButtons);
 
-    for(let btn of paginationButtons){
-        btn.addEventListener("click",function(e){
-            let page_Number = e.target.dataset["pageNumber"];
+//     for(let btn of paginationButtons){
+//         btn.addEventListener("click",function(e){
+//             let page_Number = e.target.dataset["pageNumber"];
 
-            console.log(page_Number);
-            // check(page_Number);
-            getData(page_Number)
-        })
-    }
+//             console.log(page_Number);
+//             // check(page_Number);
+//             getData(page_Number)
+//         })
+//     }
 
-}
+// }
 
-function getaButton(text,pageNumber){
-return `
-<button class="pagination-btn" data-page-number="${pageNumber}">${text}</button>
-`
-}
+// function getaButton(text,pageNumber){
+// return `
+// <button class="pagination-btn" data-page-number="${pageNumber}">${text}</button>
+// `
+// }
 
 
 
@@ -447,7 +444,6 @@ document.querySelector(".select-field-productType").addEventListener("click", ()
     document.querySelector(".down-arrow5").classList.toggle("rotate180");
 })
 
-
 document.getElementById("jacket-btn").addEventListener("click", ()=>{
     window.location.href = "product-catagory-Jacket.html"
 })
@@ -457,7 +453,6 @@ document.getElementById("coat-btn").addEventListener("click", ()=>{
 document.getElementById("hoodie-btn").addEventListener("click", ()=>{
     window.location.href = "product-catagory-hoodie.html"
 })
-
 
 
 // document.getElementById("sort-products").addEventListener("change",function(e){

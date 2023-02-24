@@ -11,6 +11,7 @@
             margin: 0px;
             padding: 0px;
             font-style: oblique;
+            
 
         }
 
@@ -24,6 +25,7 @@
         #parent {
             width: 100%;
             display: flex;
+            
         }
 
         #parentone {
@@ -32,16 +34,16 @@
             width: 15%;
             text-align: justify;
             padding-top: 40px;
-            /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+         
 
         }
 
         #parenttwo {
-            border: 2px solid green;
+            border: 1px solid rgb(63, 63, 63) ;
             border-radius: 33px 0px;
             width: 85%;
-
-            background-color: rgb(187, 204, 216);
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: rgb(223, 231, 231);
 
 
         }
@@ -53,7 +55,7 @@
 
         #parentone>h2:hover {
             cursor: pointer;
-            color: rgb(78, 172, 239);
+            color: black;
         }
 
         #mainsection {
@@ -76,7 +78,7 @@
         #dash>div:hover {
             transform: scale(1.1);
             cursor: pointer;
-            border: 2px solid green;
+            border: 1px solid black;
         }
 
         #firstbox {
@@ -109,7 +111,7 @@
 
         #donutchart:hover {
             cursor: pointer;
-            border: 2px solid green;
+            border: 1px solid black;
         }
 
         #chart {
@@ -147,7 +149,7 @@
         #productdiv:hover {
             transform: scale(1.1);
             cursor: pointer;
-            border: 2px solid green;
+            border: 1px solid black;
         }
 
         .edit:hover {
@@ -157,8 +159,10 @@
 
         #crud {
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border: 2px solid green;
             border-radius: 9px;
+        }
+        #crud:hover{
+            border: 1px solid black; 
         }
 
         #crud>h3:hover {
@@ -168,10 +172,10 @@
         #mainsectionofcrud {
             display: none;
             width: 100%;
-            border: 2px solid green;
+            border: 1px solid black;
             background-color: white;
             border-radius: 9px;
-            padding: 10px 0px;
+            padding: 30px 0px;
             margin-bottom: 30px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
@@ -188,11 +192,23 @@
             padding: 0px 10px;
         }
 
+        #addingbtn{
+            padding: 6px 23px; 
+            font-size:20px; 
+            border-color:rgb(89, 167, 223); 
+            border-radius: 9px; 
+            background-color: rgb(89, 167, 223); 
+            color: white;
+        }
+        #addingbtn:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
         #add>div>input {
             display: block;
-            width: 100%;
+            width: 95%;
             height: 30px;
-            padding: 2px;
+            padding: 4px;
             border-radius: 7px;
         }
 
@@ -201,7 +217,7 @@
         #mainsectionofremove {
             display: none;
             width: 100%;
-            border: 2px solid green;
+            border: 1px solid black;
             background-color: white;
             border-radius: 9px;
             padding: 10px 0px;
@@ -253,7 +269,7 @@
         #mainsectionupdateall {
             display: none;
             width: 100%;
-            border: 2px solid green;
+            border: 1px solid black;
             background-color: white;
             border-radius: 9px;
             padding: 10px 0px;
@@ -275,45 +291,47 @@
 
         #updateall>div>input {
             display: block;
-            width: 100%;
+            width: 95%;
             height: 30px;
-            padding: 2px;
+            padding: 5px;
             border-radius: 7px;
+        }
+        #updattingallbtn{
+            padding: 6px 23px; 
+            font-size:20px; 
+            border-color:rgb(89, 167, 223); 
+            border-radius: 9px; 
+            background-color: rgb(89, 167, 223); 
+            color: white;
+        }
+        #updattingallbtn:hover{
+            cursor: pointer;
+            transform: scale(1.1);
         }
 
         /* -----------------------------------------update single-------------------------- */
         #mainsectionupdatesingle {
             display: none;
             width: 100%;
-            border: 2px solid green;
+            border: 1px solid black;
             background-color: white;
             border-radius: 9px;
-            padding: 40px 0px;
-            margin-bottom: 30px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
 
-        #updatesingle {
-            padding: 0px 10px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30%;
-            padding: 20px 20px;
+        #updatesinglepro{
+            display: flex;
+            margin: 20px 20px;
         }
-
-        #updatesingle>div>input {
-            display: block;
-            width: 100%;
-            height: 30px;
-            padding: 10px;
-            border-radius: 7px;
-
+        #updatesinglepro>div{
+            width: 50%;
         }
-
-        #updatesingle>div>p {
-            margin-bottom: 8px;
+        #updatesinglepro input{
+            width: 90%;
+            padding: 10px 5px;
+            border-radius: 9px;
+            font-size: 15px;
         }
-
         #updatesinglebtn {
             padding: 10px 10px;
             border-radius: 9px;
@@ -330,7 +348,8 @@
 
         /* ------------------------------------profile--------------------------- */
         #profilehead {
-            border: 2px solid green;
+            /* border: 2px solid rgb(127, 0, 217); */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             margin-bottom: 20px;
             background-color: white;
             color: black;
@@ -374,6 +393,7 @@
             background-color: white;
             color: black;
             border-radius: 7px;
+            /* border: 2px solid rgb(127, 0, 217); */
         }
         #detailsection{
             display: flex;
@@ -403,16 +423,30 @@
             gap: 30px
         }
         #createmain input{
-            width: 100%;
+            width: 80%;
+            padding: 10px;
+            border-radius: 9px;
+        }
+        #addmember{
+            padding: 6px 30px;
+            font-size:22px;
+            border-color:rgb(89, 167, 223); 
+            border-radius: 9px;
+            background-color: rgb(89, 167, 223); 
+            color: white;
         }
 
+        #addmember:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
 <body>
     <div>
         <div id="outter">
-            <img src="./image/logo.jpg" style=" display: block; height: 50px; width: 190px;" alt="">
+            <img src="./image/logo.jpg" style=" display: block; height: 50px; width: 190px; padding-left: 10px; padding-top: 5px;" alt="">
         </div>
         <div id="parent">
             <div id="parentone">
@@ -495,6 +529,7 @@
             return res.json()
         })
             .then((data) => {
+                console.log(data)
                 render(data)
             })
     }
@@ -644,47 +679,53 @@
                         <h3 id="updateallitem">Update Data</h3>
                         <h3 id="updatekey">Update key value</h3>
                     </div>
+
+                    
                     <div id="mainsectionofcrud">
                         <div id="add">
                             <div>
                                 <p><b>Title of product</b></p>
-                                <input type="text" placeholder="Name of product">
+                                <input id="addtitleinput" type="text" placeholder="Name of product">
                             </div>
                             <div>
                                 <p><b>First Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="addfimageinput" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Second Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="addsimageinput" type="text" placeholder="Image url">
                             </div>
                             
                             <div>
                                 <p><b>Third Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="addtimageinput" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Fourth Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="addfoimageinput" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Description</b></p>
-                                <input type="text" placeholder="Brand">
+                                <input id="adddescriptioninput" type="text" placeholder="Brand">
                             </div>
                             <div>
                                 <p><b>Price</b></p>
-                                <input type="number" placeholder="Price">
+                                <input id="addpriceinput" type="number" placeholder="Price">
                             </div>
                             <div>
                                 <p><b>Set Discount</b></p>
-                                <input type="number" placeholder="Set discount">
+                                <input id="adddiscountinput" type="text" placeholder="Set discount">
                             </div>
                             <div>
                                 <p><b>Color of Product</b></p>
-                                <input type="text" placeholder="Color of product">
+                                <input id="addcolorinput" type="text" placeholder="Color of product">
                             </div>
                             
+                            
                         </div>
+                        <div style="display: flex; justify-content:center; aling-item:center; margin-top:20px; ">
+                                <button id="addingbtn" >Add</button>
+                            </div>
 
                     </div>
 
@@ -692,7 +733,7 @@
                         <div id="removeproduct">
                             <div>
                                 <p><b>ID of product</b></p>
-                                <input type="text" placeholder="Product ID">
+                                <input id="removeid" type="text" placeholder="Product ID">
                             </div>
                             <div>
                                 <p><b>Remove Items</b></p>
@@ -709,67 +750,76 @@
                     <div id="mainsectionupdateall">
                         <div id="updateall">
                             <div>
+                                <h4>Working on ID number<h4>
+                                <h1 style="text-align:center; margin-top:10px;" id="putid"><h1>
+                            </div>
+                            <div>
                                 <p><b>Title of product</b></p>
-                                <input type="text" placeholder="Name of product">
+                                <input id="puttitle" type="text" placeholder="Name of product">
                             </div>
                             <div>
                                 <p><b>First Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="putfimage" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Second Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="putsimage" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Third Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="puttimage" type="text" placeholder="Image url">
                             </div>
                             
                             <div>
                                 <p><b>Fourth Image</b></p>
-                                <input type="text" placeholder="Image url">
+                                <input id="putfoimage" type="text" placeholder="Image url">
                             </div>
                             <div>
                                 <p><b>Description</b></p>
-                                <input type="text" placeholder="Brand">
+                                <input id="putdescription" type="text" placeholder="Brand">
                             </div>
                             <div>
                                 <p><b>Price</b></p>
-                                <input type="number" placeholder="Price">
+                                <input id="putprice" type="number" placeholder="Price">
                             </div>
                             <div>
                                 <p><b>Set Discount</b></p>
-                                <input type="number" placeholder="Set discount">
+                                <input id="putdiscount" type="text" placeholder="Set discount">
                             </div>
                             <div>
                                 <p><b>Color of Product</b></p>
-                                <input type="text" placeholder="Color of product">
+                                <input id="putcolor" type="text" placeholder="Color of product">
+                            </div>
+                            <div>
+                                <p><b>Set Stock</b></p>
+                                <input id="putstock" type="text" placeholder="Set stock">
                             </div>
                             
+                            
                         </div>
+                        <div style="display: flex; justify-content:center; aling-item:center; margin-top:20px; ">
+                                <button id="updattingallbtn" >Update All</button>
+                            </div>
 
                     </div>
 
                     <div id="mainsectionupdatesingle">
                         <div id="updatesingle">
+                            <div id="updatesinglepro">
                             <div>
                                 <p><b>ID of product</b></p>
-                                <input type="text" placeholder="Product ID">
+                                <input id="patchid" type="password" placeholder="Product ID">
                             </div>
+                            
                             <div>
-                                <p><b>Remove Items</b></p>
+                                <p><b>Product price</b></p>
+                                <input id="patchprice" type="number" placeholder="Product price">
+                            </div>
+                            </div>
+                            <div style="display: flex; justify-content:center; align-item:center; padding-right:10px; margin-top:20px; margin-bottom: 20px;">
+                                
                                 <button id="updatesinglebtn" >
-                                    Remove Product
-                                </button>
-                            </div>
-                            <div>
-                                <p><b>ID of product</b></p>
-                                <input type="text" placeholder="Product ID">
-                            </div>
-                            <div>
-                                <p><b>Remove Items</b></p>
-                                <button id="updatesinglebtn" >
-                                    Remove Product
+                                    Update price
                                 </button>
                             </div>
                             
@@ -849,15 +899,177 @@
 
 
 
+        // -----------------------------------------------------crud operations--------------------------------------
+        let eachdiv=document.querySelectorAll(".eachdiv")
+        // =================add input tags( POST )=================
+        let addtitleinput=document.getElementById("addtitleinput")
+        let addfimageinput=document.getElementById("addfimageinput")
+        let addsimageinput=document.getElementById("addsimageinput")
+        let addtimageinput=document.getElementById("addtimageinput")
+        let addfoimageinput=document.getElementById("addfoimageinput")
+        let adddescriptioninput=document.getElementById("adddescriptioninput")
+        let addpriceinput=document.getElementById("addpriceinput")
+        let adddiscountinput=document.getElementById("adddiscountinput")
+        let addcolorinput=document.getElementById("addcolorinput")
+        let addingbtn=document.getElementById("addingbtn")
+        // ====================Remove Product ( DELETE )==============
+        let removeid=document.getElementById("removeid")
+        let removebttn=document.getElementById("removebttn")
+        // ====================Update all( PUT )======================
+        let puttitle=document.getElementById("puttitle")
+        let putfimage=document.getElementById("putfimage")
+        let putsimage=document.getElementById("putsimage")
+        let puttimage=document.getElementById("puttimage")
+        let putfoimage=document.getElementById("putfoimage")
+        let putdescription=document.getElementById("putdescription")
+        let putprice=document.getElementById("putprice")
+        let putdiscount=document.getElementById("putdiscount")
+        let putcolor=document.getElementById("putcolor")
+        let putstock=document.getElementById("putstock")
+        let putid=document.getElementById("putid")
+        let updattingallbtn=document.getElementById("updattingallbtn")
+        // ====================Update single( PATCH )=================
+        let patchid=document.getElementById("patchid")
+        let patchprice=document.getElementById("patchprice")
+        let updatesinglebtn=document.getElementById("updatesinglebtn")
 
+        for(let each of eachdiv){
+        each.addEventListener("click",(e)=>{
+          e.preventDefault()
+          let idofproduct=each.getAttribute("data-id")
+          fetch(`${producturl}/${idofproduct}`)
+          .then((res)=>{
+            return res.json()
+          })
+          .then((data)=>{
+            putid.innerText=data.id;
+            puttitle.value=data.title;
+            putfimage.value=data.image1;
+            putsimage.value=data.image2;
+            puttimage.value=data.image3;
+            putfoimage.value=data.image4;
+            putdescription.value=data.description1;
+            putprice.value=data.price;
+            putdiscount.value=data.category;
+            putcolor.value=data.color;
+            putstock.value=data.Stock
+            removeid.value=data.id;
+            patchid.value=data.id;
+            patchprice.value=data.price;
+
+          })
+        })
+        }
         
 
+        addingbtn.addEventListener("click",()=>{
+           let obj={
+            "Stock":"In Stock",
+            "category":`--Save up to $${adddiscountinput.value}`,
+            "color":`${addcolorinput.value}`,
+            "description1":`${adddescriptioninput.value}`,
+            "image1":`${addfimageinput.value}`,
+            "image2":`${addsimageinput.value}`,
+            "image3":`${addtimageinput.value}`,
+            "image4":`${addfoimageinput.value}`,
+            "price":`${addpriceinput.value}`,
+            "rating":"⭐⭐⭐⭐⭐",
+            "title":`${addtitleinput.value}`,
+            "top":"Limited Time price!"
+           }
+           
+           fetch(`${producturl}`,{
+            method:"POST",
+            headers:{
+                "Content-type":"application/json",
+            },
+            body: JSON.stringify(obj)
+           }).then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            fetchurlofproduct()
+        })
+   
+        })
+
+
+        removebttn.addEventListener("click",()=>{
+            let deleteid=removeid.value;
+            fetch(`${producturl}/${deleteid}`,{
+                method:"DELETE",
+               
+            }).then((res)=>{
+                return res.json()
+            }).then((data)=>{
+                fetchurlofproduct()
+            })
+        })
+        
+
+        updattingallbtn.addEventListener("click",()=>{
+            let idwewant=putid.innerText;
+            let obj={
+            "Stock":`${putstock.value}`,
+            "category":`--Save up to $${putdiscount.value}`,
+            "color":`${putcolor.value}`,
+            "description1":`${putdescription.value}`,
+            "image1":`${putfimage.value}`,
+            "image2":`${putsimage.value}`,
+            "image3":`${puttimage.value}`,
+            "image4":`${putfoimage.value}`,
+            "price":`${putprice.value}`,
+            "rating":"⭐⭐⭐⭐⭐",
+            "title":`${puttitle.value}`,
+            "top":"Limited Time price!"
+            }
+
+            fetch(`${producturl}/${idwewant}`,{
+                method:"PUT",
+                headers:{
+                    "Content-type":"application/json"
+                },
+                body: JSON.stringify(obj)
+            })
+            .then((res)=>{
+                return res.json()
+            })
+            .then((data)=>{
+                fetchurlofproduct()
+            })
+
+
+        })
+
+
+
+        // updatesinglebtn.addEventListener('click',()=>{
+        //     console.log(patchid.value,patchprice.value)
+           
+        //     fetch(`${producturl}/${patchid.value}`,{
+        //         method:"PATCH",
+        //         headers:{
+        //             "Content-type":"application/json"
+        //         },
+        //         body: JSON.stringify({
+        //             "price":`${patchprice.value}`
+        //         })
+        //     })
+        //     .then((res)=>{
+        //         return res.json()
+        //     })
+        //     .then((data)=>{
+        //         // fetchurlofproduct()
+        //     })
+
+        // })
 
 
     }
 
     function getdata(id, img, title, stock, price, desc) {
-        let card = `<div id="productdiv">
+        let card = `<div data-id=${id} class="eachdiv" id="productdiv">
                     <div>
                     <img id="productimg" src="${img}" alt="">
                     </div>
@@ -954,45 +1166,48 @@
         mainSection.innerHTML = "";
         mainSection.innerHTML=`
                         <div>
-                            <h2>Create Admin Account</h2>
-                            <div style="width:100%; border:2px solid red;">
+                            <h2 style="margin-bottom: 30px;">Create Admin Account</h2>
+                            <div style="width:100%;">
                                 <form action="">
                                     <div id="createmain">
                                     <div>
                                     <h3>Firstname</h3>
-                                    <input type="text">
+                                    <input placeholder="Firstname" type="text">
                                     </div>
                                     <div>
                                     <h3>Lastname</h3>
-                                    <input type="text">
+                                    <input placeholder="Lastname" type="text">
                                     </div>
                                     <div>
                                     <h3>Phone number</h3>
-                                    <input type="text">
-                                    </div>
-                                    <div>
-                                    <h3>Email</h3>
-                                    <input type="text">
+                                    <input placeholder="Phone number" type="number">
                                     </div>
                                     <div>
                                     <h3>Description</h3>
-                                    <input type="text">
+                                    <input placeholder="Description" type="text">
                                     </div>
                                     <div>
                                     <h3>Location url</h3>
-                                    <input type="text">
+                                    <input placeholder="Location url" type="text">
                                     </div>
                                     <div>
                                     <h3>Imageurl</h3>
-                                    <input type="text">
+                                    <input placeholder="Image url" type="text">
+                                    </div>
+                                    <div>
+                                    <h3>Email</h3>
+                                    <input placeholder="Email" type="email">
                                     </div>
                                     <div>
                                     <h3>Password</h3>
-                                    <input type="text">
+                                    <input placeholder="Set password" type="password">
                                     </div>
-                                    
                                     </div>
-                                    <input type="submit">
+                                    <div style="display: flex; justify-content:center;  text-align:center; padding-right:80px; margin-top: 40px; ">
+                                    <input id="addmember"  type="submit">
+                                    </div>
+                                    <div style="height: 200px; background-color: rgb(223, 231, 231);">
+                                    </div>
                                 </form>
                             </div>
                         </div>
