@@ -1,0 +1,495 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-style: oblique; */
+
+}
+#logotop{
+    display: block;
+     height: 70px; 
+     width: 210px; 
+     padding-left: 10px; 
+     padding-top: 5px;
+}
+#outter {
+    width: 100%;
+}
+
+#parent {
+    width: 100%;
+    display: flex;
+
+}
+
+#parentone {
+
+    width: 15%;
+    text-align: justify;
+    padding-top: 40px;
+
+
+}
+
+#parenttwo {
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 33px 0px;
+    width: 85%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #3a2a7c;
+
+
+}
+
+#parentone>h2 {
+    padding: 10px 20px;
+
+}
+
+#parentone>h2:hover {
+    cursor: pointer;
+    color: blue;
+    transform: scale(1.1);
+}
+
+#mainsection {
+
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+#dash {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    margin-top: 20px;
+
+}
+
+#dash>div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#firstbox {
+    background-color: rgb(219, 153, 249);
+    padding: 40px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#secondbox {
+    background-color: rgb(202, 240, 114);
+    padding: 40px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+#thirdbox {
+    background-color: rgb(236, 139, 171);
+    padding: 40px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#donutchart {
+    background-color: white;
+    width: 100%; 
+    height: 500px; 
+    padding-bottom: 30px;
+}
+
+#donutchart:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#chart {
+    width: 100%;
+    margin: auto;
+
+}
+
+
+#dashtwo {
+    width: 100%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+#productimg {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border-radius: 7px;
+
+}
+
+#productdiv {
+    border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#productdiv:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.edit:hover {
+    cursor: pointer;
+
+}
+
+#crud {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 9px;
+}
+
+#crud:hover {
+    border: 1px solid black;
+}
+
+#crud>h3:hover {
+    cursor: pointer;
+}
+
+#mainsectionofcrud {
+    display: none;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 9px;
+    padding: 30px 0px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#add {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#add>div {
+    padding: 0px 10px;
+}
+
+#addingbtn {
+    padding: 6px 23px;
+    font-size: 20px;
+    border-color: rgb(89, 167, 223);
+    border-radius: 9px;
+    background-color: rgb(89, 167, 223);
+    color: white;
+}
+
+#addingbtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#add>div>input {
+    display: block;
+    width: 95%;
+    height: 30px;
+    padding: 4px;
+    border-radius: 7px;
+}
+
+/* -------------------------remove-------------------------- */
+
+#mainsectionofremove {
+    display: none;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 9px;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#removeproduct {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    gap: 20px;
+}
+
+#removeproduct>div {
+    padding: 0px 10px;
+}
+
+#removeproduct>div>input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 7px;
+
+}
+
+#removeproduct>div>p {
+    margin-bottom: 8px;
+}
+
+#removebttn {
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 2px solid rgb(89, 167, 223);
+    background-color: rgb(89, 167, 223);
+    color: white;
+    font-size: 20px;
+}
+
+#removebttn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* -------------------------------------update all-------------------- */
+#mainsectionupdateall {
+    display: none;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 9px;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#updateall {
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#updateall>div {
+    padding: 0px 10px;
+}
+
+#updateall>div>input {
+    display: block;
+    width: 95%;
+    height: 30px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+#updattingallbtn {
+    padding: 6px 23px;
+    font-size: 20px;
+    border-color: rgb(89, 167, 223);
+    border-radius: 9px;
+    background-color: rgb(89, 167, 223);
+    color: white;
+}
+
+#updattingallbtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* -----------------------------------------update single-------------------------- */
+#mainsectionupdatesingle {
+    display: none;
+    width: 100%;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#updatesinglepro {
+    display: flex;
+    margin: 20px 20px;
+}
+
+#updatesinglepro>div {
+    width: 50%;
+}
+
+#updatesinglepro input {
+    width: 90%;
+    padding: 10px 5px;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+#updatesinglebtn {
+    padding: 10px 10px;
+    border-radius: 9px;
+    border: 2px solid rgb(89, 167, 223);
+    background-color: rgb(89, 167, 223);
+    color: white;
+    font-size: 20px;
+}
+
+#updatesinglebtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ------------------------------------profile--------------------------- */
+#profilehead {
+    /* border: 2px solid rgb(127, 0, 217); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+#profileimg {
+    display: block;
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+
+#proimgdiv {
+
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    gap: 10px;
+}
+
+#firstpro {
+    width: 30%;
+}
+
+#secondpro {
+    width: 70%;
+}
+
+#secondpro>p {
+    text-align: justify;
+}
+
+#mainofprofile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+#carddiv {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 3% 3%;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    /* border: 2px solid rgb(127, 0, 217); */
+}
+
+#detailsection {
+    display: flex;
+}
+
+#location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
+}
+
+#location>div>img:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+
+}
+
+#userdata {
+    width: 70%;
+    padding-left: 12px;
+}
+
+/* -----------------------------------create------------------------------------ */
+#createmain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px
+}
+
+#createmain input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+#addmember {
+    padding: 6px 30px;
+    font-size: 22px;
+    border-color: #3a2a7c;
+    border-radius: 9px;
+    background-color: white;
+    color: #3a2a7c;
+}
+
+#addmember:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#createparentdivv h2 {
+    color: white;
+}
+
+#createparentdivv h3 {
+    color: white;
+}
+#alltable table{
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 10px 10px;
+    
+}
+#alltable th{
+    border: 2px solid white; 
+    padding-left: 10px;  
+}
+#alltable td{
+    
+    padding: 3px 3px;  
+}
+#network{
+    background-image: url("https://allamericanmag.com/wp-content/uploads/2020/08/image-1.png");
+}
+#network:hover{
+    border: 3px solid white;
+    cursor: pointer;
+}
+#containClickbtn{
+    border:2px solid white;
+    padding:2px 2px;
+    background-color:#3a2a7c;
+}
+#containClickbtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
