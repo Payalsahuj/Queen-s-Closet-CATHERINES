@@ -1,16 +1,12 @@
-a{
-    text-decoration-line: underline;
-    color: black;
-}
-
-#catagory{
-    font-size: 24px;
-}
-
 #nav{
     border: solid red;
     text-align: center;
     margin-bottom: 20px;
+}
+
+a{
+    text-decoration-line: underline;
+    color: black;
 }
 
 #side-filter-top{
@@ -19,9 +15,9 @@ a{
     padding-left: 10px;
     padding-bottom: 20px;
 }
-/* #side-filter-top h2{
-  font-size: 16px;
-} */
+#side-filter-top h2{
+  font-size: 24px;
+}
 
 #side-filter-top > p:nth-child(1){
     /* border: solid red; */
@@ -419,6 +415,7 @@ input{
 }
 
 
+
 #bottom {
     /* border: solid black; */
     width: 90%;
@@ -453,4 +450,3 @@ input{
 .related-btn:hover{
     border: 2px solid blue;
 }
-
