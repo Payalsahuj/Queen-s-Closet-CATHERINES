@@ -125,76 +125,11 @@ width: 100%;
 }
 
 
+@media all and (max-width:700px) {
+    #PaymentMainDiv{
+        flex-direction: column;
+        justify-content: space-around;
+    }
 
-
-
-
-
-
-
-
-
-
-/* }
-
-#p-img{
-    display: flex;
-}
-
-
-#p-img image{
-    height: 25px;
-    width: 25px;
-}
-
-
-
-
-
- */
-
-
-
-
-
-
-
-
-
-
-/* #Maindiv{
-   padding: 60px;
-}
-
-#mainbillingdiv{
-    display: flex;
-}
-#billingDiv input{
-    box-sizing: border-box;
-    margin: 0px;
-    min-width: 0px;
-    display: block;
-    width: 100%;
-    background-color: rgb(242, 242, 242);
-    border-radius: 4px;
-    padding: 10px;
-    border: none;
-    width: 500px;
-    height: 50px;
-    
-    margin-top: 10px;
 
 }
-label{
-    font-size: 18px;
-    font-family: "Open Sans", sans-serif;
-    color: rgb(55, 55, 55);
-    font-weight: 600;
-}
-#optionsDiv{
-margin-left: 500px;
-}
-#image{
-    height: 400px;
-    width: 250px;
-} */ 
