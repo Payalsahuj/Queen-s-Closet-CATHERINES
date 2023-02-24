@@ -5,18 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style media="screen">
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-        body {
-                background-color: #3a2a7c;
-        }
-        center h1{
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="./location.css">
+    <!-- <style  media="screen">
+       
+    </style> -->
 </head>
 <body>
     <center>
@@ -35,12 +27,8 @@
     </center>
 </body>
 </html>
-<script>
-    let locationurl=document.getElementById("locationurl")
-    
-    let localstorageurl=localStorage.getItem("location")
-  
-    locationurl.src=localstorageurl
+<script src="./location.js">
+   
 </script>
 
 

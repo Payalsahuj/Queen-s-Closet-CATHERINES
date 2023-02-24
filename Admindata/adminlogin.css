@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    top: 50%;
+    border: 2px solid green;
+    margin: 0;
+   background-color: #3a2a7c;
+    z-index: 1;
+}
+
+.right {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white; 
+    /* border-radius: 10px; */
+    color: black;
+    padding: 10px 40px;
+    padding-bottom: 25px;
+    z-index: 2;
+}
+
+.sectionloginpart>input {
+    padding: 10px 5px;
+    width: 100%;
+    border-radius: 9px;
+}
+.sectionloginpart>button{
+    display: block;
+    margin: auto;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    border-color: aliceblue;
+}
+.sectionloginpart>button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
