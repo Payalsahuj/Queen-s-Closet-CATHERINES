@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Product-Display></Product-Display></title>
+    <link rel="stylesheet" href="product-display.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Navigation Bar</h1>
+    </div>
+    <div id="main-body">
+        <div id="side-container">
+            <div id="side-filter-top">
+                <p>Home / <a href="product-display.html">Plus Size Coats & Jackets</a></p>
+                <p>Plus Size Coats & Jackets</p>
+                <h2 id="catagory">Catagory</h2>
+                <ul id="filter-catagory" >
+                    <li>
+                        <a href="product-catagory-Jacket.html">Jackets</a>
+                    </li>
+                    <li>
+                        <a href="product-catagory-hoodie.html">Hoodies</a>
+                    </li>
+                    <li>
+                        <a href="product-catagory-coat.html">Coats</a>
+                    </li>
+                    <li>
+                        <a href="#">Leather Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Rain Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Puffers</a>
+                    </li>
+                    <li>
+                        <a href="#">Parkas</a>
+                    </li>
+                    <li>
+                        <a href="#">Wool Coats</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Kimonos & Shrugs</a>
+                    </li>
+                    <li>
+                        <a href="#">Jackets</a>
+                    </li>
+                    <li>
+                        <a href="#">Hoodies & Sweatshirts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Active Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Petites</a>
+                    </li>
+                    <li>
+                        <a href="#">Curvy Tops</a>
+                    </li>
+                    <li>
+                        <a href="#">Liz & Me Tops</a>
+                    </li>
+                </ul>
+                </div>
+                <div id="side-sort">
+                <h2>Sort By</h2> -->
+            </div>
+
+                <div id="side-sort">
+                    <h2>Sort By</h2>
+                    <select name="sorting" id="sort-products">
+                        <!-- <option id="sortby" value="">Sort By</option> -->
+                        <option value="featured">Featured</option>
+                        <option value="asc">Price High to Low</option>
+                        <option value="desc">Price Low to High</option>
+                    </select>
+                </div>
+            
+            <div id="select-filter">
+                <h2 id="filter-by">Filter By</h2>
+
+
+                <div class="select-field">
+
+                    <input type="text" name="" placeholder="Color" id="" class="input-selector" disabled>
+                    <span class="down-arrow1">&blacktriangledown;</span>
+                            </div>
+
+
+                <div class="selectbtn-color">
+
+
+                    <label for="black" class="options">
+                        <input type="checkbox" name="Black" id="black" class="inputcheck">
+                        Black
+                        <!-- <span> 10 mins</span> -->
+                    </label>
+                    <label for="blue" class="options">
+                        <input type="checkbox" name="Blue" id="blue">
+                        Blue
+                        <!-- <span> 20 mins</span> -->
+                    </label>
+                    <label for="pink" class="options">
+                        <input type="checkbox" name="Pink" id="pink">
+                        Pink
+                        <!-- <span> 30 mins</span> -->
+                    </label>
+                    <label for="red" class="options">
+                        <input type="checkbox" name="Red" id="red">
+                        Red
+                        <!-- <span> 30 mins</span> -->
+                    </label>
+                    <label for="green" class="options">
+                        <input type="checkbox" name="Green" id="green">
+                        Green
+                        <!-- <span> 30 mins</span> -->
+                    </label>
+
+                    <label for="white" class="options">
+                        <input type="checkbox" name="White" id="white">
+                        White
+                        <!-- <span> 30 mins</span> -->
+                    </label>
+
+                    <label for="grey" class="options">
+                        <input type="checkbox" name="Grey" id="grey">
+                        Grey
+                        <!-- <span> 30 mins</span> -->
+                    </label>
+                    <!-- <p class="btn-text-color"> Color </p>  -->
+                    <!-- <span class="btn-text-color">Color</span> <br> -->
+
+                    <!-- Checkin Here --- -->
+
+                    <!-- // filter by brand -->
+
+
+                        <!-- // filterby brand -->
+
+
+
+
+                    <!-- <input type="checkbox" name="Black" id="black" class="inputcheck">
+                    <label for="black" class="options">Black</label> <br>
+                    <input type="checkbox" name="Blue" id="blue" class="inputcheck">
+                    <label for="blue" class="options">Blue</label> <br>
+                    <input type="checkbox" name="Pink" id="pink" class="inputcheck">
+                    <label for="black" class="options">Pink</label> <br>
+                    <input type="checkbox" name="Red" id="red" class="inputcheck">
+                    <label for="black" class="options">Red</label> <br>
+                    <input type="checkbox" name="Green" id="green" class="inputcheck">
+                    <label for="black" class="options">Green</label> <br>
+                    <input type="checkbox" name="White" id="white" class="inputcheck">
+                    <label for="black" class="options">White</label><br>
+                    <input type="checkbox" name="Grey" id="grey" class="inputcheck">
+                    <label for="grey" class="options">Gray</label> <br>
+                    <input type="checkbox" name="Purple" id="purple" class="inputcheck">
+                    <label for="purple" class="options">Purple</label> <br>
+                    <input type="checkbox" name="Brown" id="brown" class="inputcheck">
+                    <label for="brown" class="options">Brown</label> <br> -->
+
+                    <!-- Checkin Here--- -->
+
+                </div>
+
+                <div class="select-field-brand">
+
+                    <input type="text" name="" placeholder="Brand" id="" class="input-selector" disabled>
+                    <span class="down-arrow2">&blacktriangledown;</span>
+                            </div>
+
+                            <div class="selectbtn-brand">
+
+                                <label for="by-Jessica-London" class="options">
+                                    <input type="checkbox" name="by Jessica London" id="by-Jessica-London" class="inputcheck">
+                                    by Jessica London
+                                    <!-- <span> 10 mins</span> -->
+                                </label>
+
+                                <label for="by-Roman's" class="options">
+                                    <input type="checkbox" name="by Roaman's" id="by-Roman's" class="inputcheck">
+                                    by Roaman's
+                                    <!-- <span> 10 mins</span> -->
+                                </label>
+
+                                <label for="by-Ellos" class="options">
+                                    <input type="checkbox" name="by Ellos" id="by-Ellos" class="inputcheck">
+                                    by Ellos
+                                    <!-- <span> 10 mins</span> -->
+                                </label>
+
+                                <label for="by-Liz&Me" class="options">
+                                    <input type="checkbox" name="by Liz&Me" id="by-Liz&Me" class="inputcheck">
+                                    by Liz&Me
+                                    <!-- <span> 10 mins</span> -->
+                                </label>
+
+                                
+                                
+                                </div>
+
+                                <div class="select-field-stock">
+
+                                    <input type="text" name="" placeholder="Stock" id="" class="input-selector" disabled>
+                                    <span class="down-arrow3">&blacktriangledown;</span>
+                                            </div>
+                
+                                            <div class="selectbtn-stock">
+                
+                                                <label for="in-stock" class="options">
+                                                    <input type="checkbox" name="In Stock" id="in-stock" class="inputcheck">
+                                                    In Stock
+                                                    <!-- <span> 10 mins</span> -->
+                                                </label>
+
+                                                <label for="out-of-stock" class="options">
+                                                    <input type="checkbox" name="Out of Stock" id="out-of-stock" class="inputcheck">
+                                                    Out of Stock
+                                                    <!-- <span> 10 mins</span> -->
+                                                </label>
+                
+                
+                                            </div>
+
+                                            <div class="select-field-size">
+
+                                                <input type="text" name="" placeholder="Size" id="" class="input-selector" disabled>
+                                                <span class="down-arrow4">&blacktriangledown;</span>
+                                                        </div>
+
+                                                        <div class="selectbtn-size">
+                
+                                                            <label for="size-S" class="options">
+                                                                <input type="checkbox" name="S (10-12)" id="size-S" class="inputcheck">
+                                                                S (10-12)
+                                                                <!-- <span> 10 mins</span> -->
+                                                            </label>
+            
+                                                            <label for="size-M" class="options">
+                                                                <input type="checkbox" name="M (14-16)" id="size-M" class="inputcheck">
+                                                                M (14-16)
+                                                                <!-- <span> 10 mins</span> -->
+                                                            </label>
+
+                                                            <label for="size-L" class="options">
+                                                                <input type="checkbox" name="L (18-20)" id="size-L" class="inputcheck">
+                                                                L (18-20)
+                                                                <!-- <span> 10 mins</span> -->
+                                                            </label>
+
+                                                            <label for="size-XL" class="options">
+                                                                <input type="checkbox" name="XL (22-30)" id="size-Xl" class="inputcheck">
+                                                                XL (22-30)
+                                                                <!-- <span> 10 mins</span> -->
+                                                            </label>
+                            
+                            
+                                                        </div>
+            
+                                                        <div class="select-field-productType">
+
+                                                            <input type="text" name="" placeholder="Product Type" id="" class="input-selector" disabled>
+                                                            <span class="down-arrow5">&blacktriangledown;</span>
+                                                                    </div>
+
+                                                                    <div class="selectbtn-productType">
+
+                                                                        <label for="jacket" class="options">
+                                                                            <input type="checkbox" name="Jacket" id="jacket" class="inputcheck">
+                                                                            Jackets
+                                                                            <!-- <span> 10 mins</span> -->
+                                                                        </label>
+
+                                                                        <label for="coat" class="options">
+                                                                            <input type="checkbox" name="Coat" id="coat" class="inputcheck">
+                                                                            Coat
+                                                                            <!-- <span> 10 mins</span> -->
+                                                                        </label>
+
+                                                                        <label for="hoodie" class="options">
+                                                                            <input type="checkbox" name="Hoodie" id="hoodie" class="inputcheck">
+                                                                            Hoodie
+                                                                            <!-- <span> 10 mins</span> -->
+                                                                        </label>
+
+                                                                        </div>
+
+
+
+                
+                <!-- <div class="selectbtn-stock">
+                    <p class="btn-text-stock"> Stock </p> 
+                    <input type="checkbox" name="In Stock" id="">
+                    <label for="In Stock">In Stock</label> <br>
+                    <input type="checkbox" name="Out of Stock" id="">
+                    <label for="In Stock">Out of Stock</label> <br>
+                </div> -->
+            </div>
+        </div>
+        <div id="product-container">
+            <!-- <div class="products"> -->
+                <!-- <img src="" alt="">
+                <div class="rating">rating</div>
+                <h4 class="top">top</h4>
+                <span class="price">From</span><h3 class="price">price</h3> <span class="price">Category</span>
+                <h4 class="title">Title</h4>
+                <p class="desc">Description</p>
+                <div class="colorpallate">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div> -->
+            <!-- </div> -->
+            
+        </div>
+       
+    </div>
+
+    <div class="pagination-wrapper" id="pagination-wrapper"></div>
+
+    <div id="related-catagories">
+        <div>
+            <h3>Related Categories</h3>
+        </div>
+        <button class="related-btn" id="jacket-btn">Jackets</button>
+        <button class="related-btn" id="coat-btn">Coats</button>
+        <button class="related-btn" id="hoodie-btn">Hoodies</button>
+        <button class="related-btn" id="sweatshirt-btn">Sweatshirts</button>
+        <button class="related-btn" id="tees-btn">Tees</button>
+    </div>
+
+    <div id="bottom">
+        <h3>WHERE CAN I FIND FLATTERING PLUS SIZE JACKETS? </h3>
+        <p>Whether you’re looking for a functional puffer coat or a pocket-heavy hoodie, we make it simple to find stylish plus size jackets that match your body shape and biggest preferences. Discover lightweight overpieces, denim jackets, statement blazers, polished peacoats, fitted trench coats, collarless motos, reversible raincoats, and more stunning styles with endless details and features like longer lengths and stretchy material.</p> 
+
+        <h3>WHAT ARE SOME POPULAR STYLES OF PLUS SIZE JACKETS?</h3>
+        <p>From fleece-lined pockets to adjustable drawstrings, our plus size jackets are designed with features that provide comfort and confidence as the temperatures drop.</p>
+        <p>Serving as a layering piece for cooler mornings and evenings, our Denim Barn Jacket is an especially popular choice. It’s made with flexible material that resists stretching, and the bourbon wash button-front style pairs wonderfully with all of your favorite fall outfits. It even has three patch pockets for additional convenience, but the best part? The relaxed yet structured silhouette offers a just-right blend of comfort and style.</p>
+        <p>If you’re searching for plus size coats with a touch of sophistication, look no further than our Leather Swing Coat. Ideal for complementing your favorite tunics, blouses, and sweaters, the trapeze silhouette is a knockout. You can choose from ivory, blue, black, grey, purple, green, and red colors, and this stylish coat ends just above the knee for coverage and coziness on colder days.</p>
+
+        <h3>DO YOU SELL PLUS SIZE PARKAS?</h3>
+        <p>Bundle up and make a statement this winter with one of our plus size parkas. Take your pick from trendy faux leather, weather-ready side snaps, cozy wool styles, and more.</p>
+        <p>Stay protected from the elements in style with our 4-Pocket High Low Parka, available in hunter green and black. These water-resistant plus size coats feature faux leather piping and a detachable fur-trimmed hood, adding a dash of trendy flair to your cold weather ensemble. The park also features rib storm cuffs and quilted lining, which are designed to leave you snug and secure. Plus, the curved back complements your shape, and the elastic bungee drawstring at the waist makes it easy to achieve the best possible fit.</p>
+    </div>
+   
+   
+</body>
+<script src="product-display.js"> </script>
+</html>

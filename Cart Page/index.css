@@ -1,0 +1,268 @@
+#container{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    height: 800px;
+    gap: 50px;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.leftblog{
+    width: 75%;
+    height: 650px;
+}
+.leftblog .view{
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
+}
+.leftblog > div h3{
+  text-align: left;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
+.leftblog > div h4{
+    margin-right: 10px;
+    text-align: right;
+    font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rightblog{
+    width: 23%;
+}
+.logoimg{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    color: rgb(73, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.logoimg div:nth-child(1){
+    width: 10%;
+}
+.logoimg img{
+    width:50px;
+}
+b{
+    color: black;
+}
+.logoimg a{
+    text-decoration: none;
+    color: rgb(81, 81, 214);
+}
+.detail{
+  font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.detail div:nth-child(1){
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 550;
+}
+.detail div:nth-child(2){
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+}
+.detail div:nth-child(3){
+    
+    font-size: 18px;
+    margin-right: 10px;
+    font-weight: 550;
+}
+#displayCart{
+    width: 100%;
+    display: grid;
+    margin: auto;
+    padding-top: 18px;
+    padding-bottom: 25px;
+    border-top: 1px solid rgb(105, 103, 103);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.productLeft{
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.productLeft .imgdiv{
+    width: 25%;
+    margin-top: 10px;
+}
+.imgdiv img{
+    width: 100%;
+    display: block;
+}
+
+.productLeft .productdetailsdiv{
+    width: 65%;
+    margin-right: 20px;
+}
+.productRight{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+.title{
+    font-size: 18px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(24, 22, 22); 
+}
+.color,.sizeFamily,.size,.available{
+    font-size: 14.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(44, 41, 41);
+}
+.code{
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(71, 70, 70);
+}
+.productdetailsdiv p:nth-child(1){
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.price{
+    font-size: 14.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(71, 69, 69);
+}
+.price b{
+    margin-left: 5px;
+    color: #AF3434;;
+}
+.quantity >div{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    padding-top: 10PX;
+    padding-bottom: 10PX;
+    border: 1px solid rgb(56, 54, 54) ;
+}
+.quantity >div div{
+    font-size: 20px;
+}
+.quantity >div div{
+    cursor: pointer;
+    color: rgb(68, 64, 64);
+   margin-left: 5PX;
+   margin-right: 5PX;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.subtotal{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: #AF3434;
+    margin-top: 80px;
+}
+.subtotal b{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #AF3434;
+    margin-left: 15px;
+}
+.crud{
+    margin-right: 40px;
+    margin-top: 80px;  
+}
+.crud a{
+    display: block;
+    color: rgb(78, 78, 78);
+    font-size:14px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: right;
+    
+   
+}
+.subT , .totalsaving{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+}
+.payment  {
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#checkoutBtn{
+    cursor: pointer;
+    text-align: center;
+    background-color: #3A2A7C;
+    width: 90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+.payment > div{
+  
+ padding-top: 15px;
+ padding-bottom: 15px;
+ border-top: 1px solid rgb(187, 180, 180);
+ border-bottom: 1px solid rgb(194, 189, 189);
+}
+.subT{
+    margin-bottom: 20px;
+}
+
+.subT div:nth-child(2){
+    margin-left: 50px;
+    font-weight: 550;   
+}
+.totalsaving div:nth-child(2){
+    margin-left: 50px;
+    color: #AF3434;
+    font-weight: 550;
+}
+.totalsaving div:nth-child(1){
+    color: #AF3434;
+    font-weight: 550;
+}
+.paymentMethod{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid rgb(161, 154, 154);
+    border-bottom: 1px solid rgb(172, 160, 160);
+
+}
+.paymentMethod p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cardImg{
+    display: grid;
+    width: 85%;
+    justify-content: space-between;
+    grid-template-columns: repeat(5,1fr);
+}
+.abc{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;
+}
+.free{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(12, 133, 12);
+}

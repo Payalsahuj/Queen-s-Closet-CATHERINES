@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+#container{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background: #3a2a7c;
+    overflow:hidden 
+}
+body>div:nth-child(1){
+    margin-bottom: 60px;
+}
+.wrapper{
+    position: relative;
+    width:550px;
+    height:600px;
+}
+.form-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    background: #fff;
+    box-shadow:0 0 10px rgba(0, 0, 0, .2);
+}
+.wrapper.animate-signUp .form-wrapper.sign-in{
+    transform:rotate(7deg);
+    animation: animateRotate .7s ease-in-out forwards;
+    animation-delay: .3s
+}
+.wrapper.animate-signIn .form-wrapper.sign-in{
+   
+    animation: animateSignIn 1.5s ease-in-out forwards;
+    
+}
+@keyframes animateSignIn {
+    0% {
+        transform: translatex(0);
+    }
+    50% {
+        transform: translatex(-500px);
+    }
+   100% {
+        transform: translatex(0) rotate(0deg);
+    }
+}
+.wrapper .form-wrapper.sign-up{
+    transform: rotate(0deg);
+}
+.wrapper.animate-signIn .form-wrapper.sign-up{
+    animation: animateRotate .7s ease-in-out forwards;
+    animation-delay: .3s;
+}
+@keyframes animateRotate {
+    0% {
+        transform: rotate(0deg);
+    }  
+    100% {
+    transform: rotate(0);
+    z-index: 1;
+    }
+}
+.wrapper.animate-signUp .form-wrapper.sign-up{
+    animation: animateSignUp 1.5s ease-in-out forwards;
+
+}
+@keyframes animateSignUp {
+    0% {
+        transform: translatex(0);
+        z-index: 1;
+    }
+    50% {
+        transform: translatex(500px);
+    }
+   100% {
+        transform: translatex(0) rotate(0deg);
+    }
+}
+h2{
+    font-size: 30px;
+    color:#555;
+    text-align:center
+}
+.input-group{
+   
+    position:relative;
+    width: 400px;
+    margin-bottom: 25px;
+}
+.input-group label{
+    position:absolute;
+    top: 50%;
+    left: 5px;
+    transform:translateY(-50%);
+    font-size:16px;
+    color:#333;
+    padding:0 5px;
+    pointer-events:none;
+    transition: .5s;
+}
+.input-group input{
+    width:100%;
+    height: 40px;
+    font-size: 16px;
+    color:#333;
+    padding:0 10px;
+    background: transparent;
+    border: 1px solid #333;
+    outline:none;
+    border-radius:5px;
+
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top:0;
+    font-size: 12px;
+    background:#fff;
+}
+.forgot-pass {
+   margin-left: 25px ;
+}
+
+.forgot-pass a{
+    color:#333;
+    font-size: 14px;
+    text-decoration:none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+.btn{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:50px;
+    background:  #3a2a7c;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .4);
+    font-size: 16px;
+    color:#fff;
+    font-weight:500;
+    cursor:pointer;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+}
+.sign-link{
+    font-size:14px;
+    text-align: center;
+    margin:25px 0;
+}
+.sign-link p{
+    color:#333
+}
+.sign-link p a{
+    color:#e91e63;
+    text-decoration: none;
+    font-weight:600
+}
+.sign-link p a :hover{
+    text-decoration: underline;
+} 
+/* notification button */
+button{
+    padding:20px 30px;
+    font-size: 25px;
+    border-radius: 30px;
+    color:green;
+    border:none;
+    margin-top:-50px;
+    display:none
+}
+/* eye icon  */
+.input-group .fa-eye-slash{
+   position: absolute;
+   right:13px;
+   top:50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+.input-group .fa-eye{
+    position: absolute;
+   right:13px;
+   top:50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+#signUp-link{
+   color:  #3a2a7c;
+}
+#Sh2,.register{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.abc{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-evenly;
+    width: 100%;
+}
+.abc{
+    margin-bottom: 20px;
+}
+.forgot-pass a{
+    color: #3a2a7c;
+}
+/* .input-group #email2{
+   padding-top: 25px;
+   padding-bottom: 25px;
+} */
+.input-group #pass2,#name1,#email1,#pass1,#pass12, #email2{
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ #signIn-link{
+    color: #3a2a7c;
+ }
+ .sign-up , .sign-in{
+    padding-top: 20px;
+    padding-bottom: 10px;
+ }
+ .icon{
+    margin-left: -30px;
+   width: 250px;
+ }
+.icon img{
+  width:100%;
+}

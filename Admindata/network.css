@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+   background-color: #3a2a7c;
+}
+#parent{
+    display: flex;
+
+}
+#parent>div{
+    width: 50%;
+}
+#aboutUs{
+    padding: 30px; 
+    color: white;
+}
+#aboutUs p{
+    font-size: 30px;
+    text-align: justify;
+}
