@@ -111,16 +111,18 @@ img {
     width:70px;
     text-align: center;
 }
-#title-box > #icons > div > img{
+#title-box > #icons > div > a > img{
     height: 40px;
     width: 30px;
 }
-#title-box > #icons > div > h3{
+#title-box > #icons > div > a > h3{
     font-size: 11px;
 }
 @media screen and (min-width:200px) and (max-width:900px){
     #title-box{
         /* border:1px solid black; */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
     #title-box > .row {
         margin-top: 10px;
@@ -132,7 +134,7 @@ img {
         height:60px;
         /* border:1px solid black; */
     }
-    #title-box > #title > img{
+    #title-box > #title > a > img{
         /* border:1px solid black; */
         width:13%
     }
@@ -165,12 +167,12 @@ img {
         width:60px;
         text-align: center;
     }
-    #title-box > #icons > div > img{
+    #title-box > #icons > div > a > img{
         height: 30px;
         width: 25px;
     }
-    #title-box > #icons > div > h3{
-        font-size: 11px;
+    #title-box > #icons > div > h4{
+        font-size: 7px;
     }
 }
 /* categories starts here */
@@ -182,6 +184,9 @@ img {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     
 }
+#mySidenav{
+    display: none;
+}
 .dropbtn {
     /* background-color: #04AA6D; */
     color: black;
@@ -189,7 +194,7 @@ img {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     padding: 12px;
     margin-top: 2.5px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -315,139 +320,40 @@ img {
     text-decoration: 2px underline;
 }
 
-@media screen and (min-width:200px) and(max-width:900px) {
+@media screen and (min-width:200px) and (max-width:900px) {
     #categories{
         /* border:1px solid black; */
         display: none;    
     }
-    .dropbtn {
-        /* background-color: #04AA6D; */
-        color: black;
-        font-weight: lighter;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        padding: 12px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        border-radius: 15px;
-        border: none;
-        /* border: 1px solid black; */
-    }
-      
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        font-size: 12px;
-        font-weight: lighter;
-        background-color: #f1f1f1;
-        min-width: 1050px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
         z-index: 1;
-        /* border: 1px solid black; */
+        top: 0%;
+        left: 0%;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
     }
-    .dropdown-content1 {
-        display: none;
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
         position: absolute;
-        font-size: 12px;
-        font-weight: lighter;
-        background-color: #f1f1f1;
-        min-width: 700px;
-        right:0px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content2 {
-        display: none;
-        position: absolute;
-        font-size: 12px;
-        font-weight: lighter;
-        background-color: #f1f1f1;
-        min-width: 1050px;
-        left: -100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content >.d11 .d21{
-        width: 170px;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content > .d11{
-        padding: 15px;
-        width: 170px;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content .d11 a {
-        color: black;
-        padding: 6px 16px;
-        text-decoration: none;
-        display: block;
-        text-decoration: none;
-    }
-      
-    .dropdown-content a:hover {background-color: #ddd;}
-      
-    .dropdown:hover .dropdown-content {display: flex;}
-    
-    .dropdown-content1 >.d11 .d21{
-        width: 170px;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content1 > .d11{
-        padding: 20px;
-        width: 170px;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content1 .d11 a {
-        color: black;
-        padding: 6px 16px;
-        text-decoration: none;
-        display: block;
-        text-decoration: none;
-    }
-      
-    .dropdown-content1 a:hover {background-color: #ddd;}
-      
-    .dropdown:hover .dropdown-content1 {display: flex;}
-    
-    .dropdown-content2 >.d11 .d21{
-        width: 170px;
-        margin: auto;
-        text-align: center;
-        display: flex;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content2 > .d11{
-        padding: 15px;
-        width: 170px;
-        /* border: 1px solid black; */
-    }
-    .dropdown-content2 .d11 a {
-        color: black;
-        padding: 6px 16px;
-        text-decoration: none;
-        display: block;
-        text-decoration: none;
-    }
-      
-    .dropdown-content2 a:hover {background-color: #ddd;}
-      
-    .dropdown:hover .dropdown-content2 {display: flex;}
-      
-    .dropdown:hover .dropbtn {
-        /* background-color: #3e8e41; */
-        text-decoration: 2px underline;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
     }
 }
 /* categories ends here */

@@ -1,3 +1,5 @@
+
+// slidshow starts here
 let slideIndex = 0;
 showSlides();
 
@@ -24,3 +26,14 @@ $(document).ready(function() {
       return false;
     });
   });
+
+// slidshow end here
+
+// open nav & close nav
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+  
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
