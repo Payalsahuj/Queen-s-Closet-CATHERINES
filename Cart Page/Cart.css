@@ -85,10 +85,17 @@ b{
     margin: auto;
     padding-top: 18px;
     padding-bottom: 25px;
+    grid-template-columns: repeat(1,1fr);
+}
+#displayCart > div {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    padding-top: 18px;
+    padding-bottom: 25px;
     border-top: 1px solid rgb(105, 103, 103);
     grid-template-columns: repeat(2,1fr);
 }
-
 .productLeft{
     margin-left: 25px;
     display: flex;
