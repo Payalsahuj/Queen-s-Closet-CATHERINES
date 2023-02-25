@@ -99,12 +99,12 @@ a{
      grid-template-columns: repeat(4,1fr);
 }
 
-/* #side-container{
-    width: 50%;
-}
+/* * #side-container{ */
+/* } */
+
 #main-body{
     display: flex;
-} */
+}
 
 .products{
     /* border: solid red; */
