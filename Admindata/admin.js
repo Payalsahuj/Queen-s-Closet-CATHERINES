@@ -317,7 +317,7 @@ function renderproduct(data) {
                         <div id="updatesinglepro">
                         <div>
                             <p><b>ID of product</b></p>
-                            <input id="patchid" type="password" placeholder="Product ID">
+                            <input id="patchid" type="number" placeholder="Product ID">
                         </div>
                         
                         <div>
@@ -614,12 +614,13 @@ function renderproduct(data) {
 
     // =================================== (PATCH) operation ==========================
     // updatesinglebtn.addEventListener('click',()=>{
+    
     //     console.log(patchid.value,patchprice.value)
-
+        
     //     fetch(`${producturl}/${patchid.value}`,{
     //         method:"PATCH",
     //         headers:{
-    //             "Content-type":"application/json"
+    //             "Content-type": "application/json" 
     //         },
     //         body: JSON.stringify({
     //             "price":`${patchprice.value}`
@@ -629,13 +630,16 @@ function renderproduct(data) {
     //         return res.json()
     //     })
     //     .then((data)=>{
-    //         // fetchurlofproduct()
+    //         console.log(data)
+    //         fetchurlofproduct()
     //     })
 
     // })
 
 
 }
+
+
 
 
 
@@ -807,8 +811,10 @@ createaccount.addEventListener("click", () => {
 
 
 
+
 // -----------------------------------------------Order List Section--------------------------------------------
 let formDataArr = JSON.parse(localStorage.getItem("userform")) || [];
+
 let orderlist = document.getElementById("order")
 orderlist.addEventListener("click", () => {
     mainSection.innerHTML = "";
@@ -838,7 +844,7 @@ orderlist.addEventListener("click", () => {
         ${formDataArr.map((item) => getdatatable(item.firstName, item.lastname, item.Email, item.pincode, item.mobile, item.Address1, item.city, item.country)).join(" ")}
     </tbody>
 </table>
-<div style="height:100px;"></div>
+<div style="height:400px;"></div>
 </div>
     `
 

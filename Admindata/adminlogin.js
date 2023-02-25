@@ -12,20 +12,22 @@ let loginbtn=document.getElementById("loginbtn")
 
     function checkdata(data){
         loginbtn.addEventListener("click",()=>{
-            
+            let flag=true;
             data.map((item)=>{
                 
             if(item.email==email.value && item.password==password.value){
-                document.getElementById("emailmsg").style.color="white";
-                document.getElementById("passwordmsg").style.color="white";
+                flag=false
+                document.getElementById("emailmsg").style.color="black";
+                document.getElementById("passwordmsg").style.color="black";
                 window.location.href="admin.html"
             }
             
-            else if(item.email!=email.value && item.password!=password.value){
-                document.getElementById("emailmsg").style.color="red";
-                document.getElementById("passwordmsg").style.color="red";
-            }
         })
+        
+        if(flag==true){
+            document.getElementById("emailmsg").style.color="red";
+            document.getElementById("passwordmsg").style.color="red";
+        }
         })
         
     }
