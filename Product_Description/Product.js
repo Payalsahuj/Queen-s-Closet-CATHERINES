@@ -3,15 +3,16 @@ let ratings= document.getElementById("ratings")
 let baseUrl = `https://63f1ba774f17278c9a18b9b9.mockapi.io/product`
 
 let key = localStorage.getItem("product-id")
-console.log(key);
+
 
 fetch(`${baseUrl}/${key}`).then((res)=>{
     return res.json()
 })
 .then((data)=>{
-  console.log(data);
+  
     displayData(data)
 })
+
 
 function displayData(element){
   
@@ -47,6 +48,7 @@ function displayData(element){
 
       <!-- color -->
       <p class="col2"><b class="col">Color :</b>${element.color}</p>
+      <p class="col2"><b class="col">Category :</b>${element.productType}</p>
       <div id="colorOpt">
         <span></span>
         <span></span>
@@ -62,7 +64,7 @@ function displayData(element){
       </div>
       <p class="save">${element.category}</p>
 
-      <p class="slsize"><b>Size :</b>Please Select </p>
+      <p class="slsize"><b>Size :</b>${element.size}</p>
 
       <div class="SizeSelect">
         <div class="mm">
@@ -139,7 +141,32 @@ function displayData(element){
      <img src="productimage/Screenshot (292).png" alt="">
    </div>
      `
+     element.quantity = 1
+    //  Add to cart btn
+
+    let addToBag = document.getElementById("SelectBtn")
+    addToBag.addEventListener("click",(e)=> {
+      let CartData = JSON.parse(localStorage.getItem("CartData")) || []
+    e.preventDefault()
+   
+
+    let flag = false
+    for(let i = 0 ; i<CartData.length ; i++){
+      if(element.id === CartData[i].id){
+        flag = true
+        break;
+      }
+    }
+    
+    if(flag === true){
+      swal("", "Product Already In Bag", "info")
+    }
+    else{
+      CartData.push(element)
+      localStorage.setItem("CartData",JSON.stringify(CartData))
+      swal("", "Item Added To Bag", "success");
+    }
+})
   
 }
-
 
