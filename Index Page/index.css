@@ -4,6 +4,9 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+body {
+    font-family: Verdana, sans-serif;
+}
 /* headers starts here */
 .not1{
     font-weight: lighter;
@@ -12,9 +15,7 @@
     /* border: 1px solid black; */
     font-size: 14px;
 }
-body {
-    font-family: Verdana, sans-serif;
-}
+
 .mySlides {
     display: none;
 }
@@ -202,12 +203,12 @@ img {
     /* border: 1px solid black; */
 
 }
-  
 .dropdown {
     position: relative;
     display: inline-block;
 }
   
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -262,9 +263,7 @@ img {
     display: block;
     text-decoration: none;
 }
-  
-.dropdown-content a:hover {background-color: #ddd;}
-  
+
 .dropdown:hover .dropdown-content {display: flex;}
 
 .dropdown-content1 >.d11 .d21{
@@ -320,45 +319,8 @@ img {
     text-decoration: 2px underline;
 }
 
-@media screen and (min-width:200px) and (max-width:900px) {
-    #categories{
-        /* border:1px solid black; */
-        display: none;    
-    }
-    .sidenav {
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        z-index: 1;
-        top: 0%;
-        left: 0%;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-}
+
 /* categories ends here */
-
-
 .not2{
     margin: auto;
     text-align: center;

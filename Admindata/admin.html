@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+
+<body>
+    <div style="border: 7px solid #3a2a7c;">
+        <div id="outter">
+           <a href="\Index Page\index.html"> <img src="./image/logo.jpg" style=" display: block; height: 70px; width: 200px;" alt=""></a>
+        </div>
+        <div id="parent">
+            <div id="parentone">
+
+                <h2 id="Dashboard">Dashboard</h2>
+                <hr>
+                <h2 id="Product">Products</h2>
+                <hr>
+                <h2 id="order">Order Details</h2>
+                <hr>
+                <h2 id="adminprofile">Admin Profile</h2>
+                <hr>
+                <h2 id="create">Create Profile</h2>
+
+            </div>
+            <div id="parenttwo">
+                <div id="mainsection">
+                    <h2 style="font-size: 25px; color: white;"><u>Dashboard </u></h2>
+                    <div id="dash">
+                        <!-- No of product -->
+                        <div id="firstbox">
+                            <h3 style="text-align: center; font-size: 35px; color: rgb(128, 130, 132);">Number of
+                                Products <br><span id="noofproduct"></span> </h3>
+                            <img src="./image/icons8-open-box-50.png" style="width: 35%;" alt="">
+                        </div>
+                        <!-- variety -->
+                        <div id="secondbox">
+                            <h3 style="text-align: center;font-size: 35px; color: rgb(128, 130, 132);">Total Stock
+                                <br><span id="noofstock"></span>
+                            </h3>
+                            <img src="./image/icons8-successful-delivery-50.png" style="width: 35%;" alt="">
+                        </div>
+                        <!-- Best sellers  -->
+                        <div id="thirdbox">
+                            <h3 style="text-align: center; font-size: 35px; color: rgb(128, 130, 132);">Best Sellers
+                                <br><span id="noofbestseller"></span>
+                            </h3><img src="./image/icons8-best-seller-80.png" style="width: 35%;" alt="">
+                        </div>
+
+
+                    </div>
+                    <div id="chart">
+                        <img style="display: block; width: 100%; margin-top: 30px;" src="./image/Slide72.jpeg" alt="">
+
+                        <div id="donutchart"></div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="admin.js" type="text/javascript">
+
+</script>

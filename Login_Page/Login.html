@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Login Page </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="Shortcut Icon" type="image/png" href="images/ca_favicon.svg">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    
+    
+    
+   <div id="container">
+   
+    <div><button id="btn"><i class="fa-regular fa-circle-check"></i> sign-in successfully</i></button></div>
+    <div class="wrapper">
+        
+        <div class="form-wrapper sign-up">
+            <form id="form1"action="">
+                <div class="icon">
+                    <img src="images/LOGO FINAL.jpg" alt="">    
+                </div>
+                <h2 class="register">Sign Up</h2>
+                <div class="input-group">
+                    <input id="name1"type="text"  required>
+                    <label for=""><i class="fa-solid fa-user"></i> Username</label>
+                </div>
+                <div class="input-group">
+                    <input id="email1" type="email" required>
+                    <label for=""><i class="fa-sharp fa-solid fa-envelope"></i> Email</label>
+                </div>
+                <div class="input-group">
+                    <input id="pass1"type="password" required>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <label for=""><i class="fa-solid fa-lock"></i> Password</label>
+                </div>
+                <div class="input-group">
+                  <input id="pass12" type="password" required>
+                  <i class="fa-solid fa-eye-slash"></i>
+                  <label for=""> <i class="fa-solid fa-lock"></i> Confirm Password</label>
+              </div>
+                <!-- <button type="submit" id="sign-up"class="btn">Sign Up</button> -->
+                <input  class="btn"id="btn1"type="submit">
+                <div class="sign-link">
+                    <p>Already have an account? <a href="#" id="signIn-link" class="signIn-link">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+      
+
+        <div class="form-wrapper sign-in">
+            
+            <form id="form2"action="">
+                <div class="icon">
+                    <img src="images/LOGO FINAL.jpg" alt="">    
+                </div>
+                <h2 id="Sh2">Sign In</h2>
+                <div class="input-group">
+                    <input id="email2"type="text" required>
+                    <label for=""><i class="fa-solid fa-envelope"></i> Email</label>
+                </div>
+                <div class="input-group">
+                    <input id="pass2"type="password" required>
+                    <i class="fa-solid fa-eye-slash"></i>
+                    <label for=""><i class="fa-solid fa-lock"></i> Password</label>
+                </div>
+                <div class="abc">
+                <div class="remeber-me">
+                    <input class="checkbox" type="checkbox">
+                    <label for="">Remember Me</label>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+                <!-- <button type="submit"id="sign-in" class="btn">Login</button> -->
+                <input class="btn" id="btn2"type="submit" >
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" id="signUp-link" class="signUp-link">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div> 
+    <script src="login.js"></script>
+</body>
+
+</html>
