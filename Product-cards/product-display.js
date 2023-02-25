@@ -52,7 +52,8 @@ let renderData = (data)=>{
     ${data.map((item)=>(
         `
         <div data-id="${item.id}" class="products">
-                <img id="setImage" onmouseover="setNewImage()" onmouseout="setOldImage()" src="${item.image1}" alt="err")>
+                <img src="${item.image1}" alt="err")>
+                <img class="hover-img" src="${item.image3}">
                 <div class="rating">${item.rating}</div>
                 <h4 class="top">${item.top}</h4>
                 <span class="price">${"From"}</span><h3 class="price">  ₹ ${item.price}</h3> <span class="price">${item.category}</span>
@@ -84,12 +85,14 @@ let renderData = (data)=>{
 }
 
 
+// id="setImage" class="setimage" onmouseover="setNewImage()" onmouseout="setOldImage()"
+
 // function setNewImage(){
-// document.getElementById("setImage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=240&sh=346&sm=fit&yocs=j_m_";
+// document.querySelector(".setimage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=240&sh=346&sm=fit&yocs=j_m_";
 // }
 
 // function setOldImage(){
-//     document.getElementById("setImage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwcbc58e4c/images/hi-res/2324_11512_mc_0092.jpg?colorid=4221755&sw=240&sh=346&sm=fit&yocs=j_m_";
+//     document.querySelector(".setimage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwcbc58e4c/images/hi-res/2324_11512_mc_0092.jpg?colorid=4221755&sw=240&sh=346&sm=fit&yocs=j_m_";
 // }
 
 
@@ -457,6 +460,11 @@ document.getElementById("coat-btn").addEventListener("click", ()=>{
 document.getElementById("hoodie-btn").addEventListener("click", ()=>{
     window.location.href = "product-catagory-hoodie.html"
 })
+
+
+function show(){
+    document.getElementById("side-container").classList.toggle("active");
+}
 
 
 
