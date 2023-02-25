@@ -112,16 +112,18 @@ img {
     width:70px;
     text-align: center;
 }
-#title-box > #icons > div > img{
+#title-box > #icons > div > a > img{
     height: 40px;
     width: 30px;
 }
-#title-box > #icons > div > h3{
+#title-box > #icons > div > a > h3{
     font-size: 11px;
 }
 @media screen and (min-width:200px) and (max-width:900px){
     #title-box{
         /* border:1px solid black; */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
     }
     #title-box > .row {
         margin-top: 10px;
@@ -133,7 +135,7 @@ img {
         height:60px;
         /* border:1px solid black; */
     }
-    #title-box > #title > img{
+    #title-box > #title > a > img{
         /* border:1px solid black; */
         width:13%
     }
@@ -166,12 +168,12 @@ img {
         width:60px;
         text-align: center;
     }
-    #title-box > #icons > div > img{
+    #title-box > #icons > div > a > img{
         height: 30px;
         width: 25px;
     }
-    #title-box > #icons > div > h3{
-        font-size: 11px;
+    #title-box > #icons > div > h4{
+        font-size: 7px;
     }
 }
 /* categories starts here */
@@ -183,6 +185,9 @@ img {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     
 }
+#mySidenav{
+    display: none;
+}
 .dropbtn {
     /* background-color: #04AA6D; */
     color: black;
@@ -190,7 +195,7 @@ img {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     padding: 12px;
     margin-top: 2.5px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 15px;
     border: none;
     cursor: pointer;
@@ -198,7 +203,6 @@ img {
     /* border: 1px solid black; */
 
 }
-  
 .dropdown {
     position: relative;
     display: inline-block;
