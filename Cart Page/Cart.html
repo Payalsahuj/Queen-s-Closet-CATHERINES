@@ -6,8 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Cart.css">
     <title>My Bag</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="not1">
+    <p>Enjoy our great international shipping rates</p>
+  </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="text">PRESIDENTS DAY SALE UP TO 75% OFF EVERYTHING | <a href="#">Details</a> | <a href="#">View All Deals</a></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="text">AMAZING DEAL $22 SUPREMA PANT! | <a href="#">Details</a> | <a href="#">View All Deals</a></div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="text"> AMAZING DEAL $14 SUPREMA TANK! | <a href="#">Details</a> | <a href="#">View All Deals</a></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="text">SAVE $10, SIGN UP FOR CATHERINES REWARDS TODAY | <a href="#">Details</a> | <a href="#">View All Deals</a></div>
+    </div>
+    
+    <br>
+
+    <div style="text-align:center;";>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+    </div>
+  </div>
+
+  <div id="title-box">   
+    <span class="row" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div id="title">
+      <a href="/Index Page/index.html"><img src="/Index Page/logo/logo.jpeg" style="width:80%;height:90%" alt="logo"></a>
+    </div>
+    <!-- <div id="search-bar">
+      <input type="text" oninput="search()"  placeholder="Keyword or catalog item#" id="search-inp"><button type="submit" class="submit"><i class="fa fa-search"></i></button>
+    </div> -->
+
+    <div id="icons">
+      <div>
+        <a href="/Admindata/adminlogin.html"><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.347/on/demandware.static/Sites-oss-Site/-/default/dwd2aaf350/images/common/icons/icon-catalog.svg?yocs=j_" alt="Admin"></a>
+        <h4>ADMIN</h4>
+      </div>
+      <div>
+        <a href="#"><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.347/on/demandware.static/Sites-oss-Site/-/default/dwd6d800f0/images/common/icons/icon-card.svg?yocs=j_" alt="card"></a>
+        <h4>CARD</h4>
+      </div>
+      <div>
+        <a href="/Login_Page/login.html"><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.347/on/demandware.static/Sites-oss-Site/-/default/dwb5e4330b/images/common/icons/icon-account.svg?yocs=j_" alt="sign in"></a>
+        <h4 id="userId"></h4>
+      </div>
+      <div>
+        <a href="/Cart Page/cart.html"><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.347/on/demandware.static/Sites-oss-Site/-/default/dw496b71e8/images/common/icons/icon-bag-filled.svg?yocs=j_" alt="my bag"></a>
+        <span id="cardlength" style="background-color: #3a2a7c; padding: 2px 5px; border-radius: 50%; color: white;">0</span>
+        <h4>MY BAG</h4>
+      </div>
+    </div>
+  </div>
+
   <div id="container">
     <!-- Left Blog -->
       <div class="leftblog">

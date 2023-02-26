@@ -1,10 +1,188 @@
+.not1{
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    font-size: 14px;
+}
+
+.mySlides {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  /* border: 1px solid black; */
+  position: relative;
+  margin: auto;
+  color: white;
+  background-color: #3a2a7c;
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 10px 12px 0px 12px;
+  position: relative;
+  width: 100%;
+  font-weight: bolder;
+  letter-spacing: .5x;
+  text-align: center;
+}
+.text > a {
+    color:white
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+#title-box {
+    /* border:1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-bottom: 1px solid rgb(151, 145, 145);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0% 2%;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+#title-box > .row{
+    display:none;
+    /* margin-top: 20px; */
+}
+#title-box > #title{
+    margin:10px;
+    width:20%;
+    height:15%;
+    /* border:1px solid black; */
+}
+#title-box > #title > img{
+    /* border:1px solid black; */
+    width:8%
+}
+#title-box > #search-bar{
+    margin-left: 5%;
+    width:70%;
+    /* border:1px solid black */
+}
+#title-box > #search-bar> input{
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 10px;
+    padding-left: 10px;
+    width: 80%;
+}
+#title-box > #search-bar> .submit{
+    padding: 6px 10px;
+    font-size: 24px;
+}
+#title-box > #icons{
+    display: flex;
+    margin-left: 750px;
+    /* border:1px solid black; */
+}
+#title-box > #icons > div{
+    /* border:1px solid black; */
+    margin: 7px;
+    padding: 5px;
+    margin: auto;
+    width:100px;
+    text-align: center;
+}
+#title-box > #icons > div > a > img{
+    /* border: 1px solid black; */
+    height: 40px;
+    width: 30px;
+}
+#title-box > #icons > div > a > h4{
+    font-size: 11px;
+}
+
+
+@media screen and (min-width:200px) and (max-width:900px){
+    #title-box{
+        /* border:1px solid black; */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    #title-box > .row {
+        margin-top: 10px;
+        display: block;
+    }
+    #title-box > #title{
+        margin:5px;
+        width:30%;
+        height:60px;
+        /* border:1px solid black; */
+    }
+    #title-box > #title > a > img{
+        /* border:1px solid black; */
+        width:13%
+    }
+    #title-box > #search-bar{
+        margin-left: 5%;
+        width:70%;
+        /* border:1px solid black */
+    }
+    #title-box > #search-bar> input{
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+        padding-left: 10px;
+        width: 80%;
+    }
+    #title-box > #search-bar> .submit{
+        margin-top: 13px;
+        padding: 5px 10px;
+        font-size: 22px;
+    }
+    #title-box > #icons{
+        display: flex;
+        /* border:1px solid black; */
+    }
+    #title-box > #icons > div{
+        /* border:1px solid black; */
+        margin: 10px;
+        padding: 5px;
+        margin: auto;
+        width:60px;
+        text-align: center;
+    }
+    #title-box > #icons > div > a > img{
+        height: 30px;
+        width: 25px;
+    }
+    #title-box > #icons > div > h4{
+        font-size: 7px;
+    }
+}
+
+
+
 #container{
     width: 80%;
     display: flex;
     margin: auto;
     height: 800px;
     gap: 50px;
-    margin-top: 100px;
+    margin-top: 40px;
     justify-content: space-between;
 }
 .leftblog{
