@@ -80,11 +80,11 @@ Google font/icon links
 
 
 ## Team member 1:- Payal sahu (Team lead)
-She is responsible for making the admin page of the website, where the admin page have the full control over user side of the website. It's having its own secure login page (working eith mock API links) where only admins of the website can login or create accounts for others, Where as admin page consist of dashboard, product, order details, admin profile and create profile section. 
+She is responsible for making the admin page of the website, where the admin page have the full control over user side of the website. It's having its own secure login page (working with mock API links) where only admins of the website can login or create accounts for others, Where as admin page consist of dashboard, product, order details, admin profile and create profile section. 
 1. Dashboard provides the full information of all the product status with the help of google chart.
 2. Product section provides control over the product, it's having functionality to add, remove and update the cart details.
 3. Order details section contains all the customer's information that are buying products from the website and also has the functionality to present network/connection to over the world of the website
-4. Admin profile section contains all information of admins, Its has functionality to present the location of admin with the the help of google map.
+4. Admin profile section contains all information of admins. It has functionality to present the location of admin with the the help of google map.
 5. Create profile section is responsible to add & set the admin details for creating new account to the admin page.
 
 
@@ -93,7 +93,9 @@ She is responsible for making the admin page of the website, where the admin pag
 He is responsible for making the landing page of the website, where all the user get the first intraction to the website . It contains all the necessary categories, offers, discount banners, new released product and information about the website are provided for the users. It is also responsible for chaining all the sections and collecting data for the website.
 
 
-Team member 3:- Ansh Kathpal
+## Team member 3:- Ansh Kathpal
+He is responsible for making the card section of the website to render all the products of the website from different-different categories. This section catching all the products from the API and having various functionalities like-
+1.
 
 
 Team member 4:- Abhishek
