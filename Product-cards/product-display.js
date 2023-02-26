@@ -10,16 +10,6 @@ let checkbox5 = document.querySelectorAll(".selectbtn-productType input")
 let pagination = document.getElementById("pagination-wrapper");
 
 
-// let totalItems = 0;
-// let dataAll = fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product`)
-// .then((res)=>{
-//     return res.json()
-// }).then((globalData)=>{
-//     totalItems = globalData.length;
-//     console.log(totalItems);
-//     check(totalItems)
-// })
-
 // function check(totalItems){
     let getData = async(pageNumber=1)=>{
         try {
@@ -84,16 +74,6 @@ let renderData = (data)=>{
     }
 }
 
-
-// id="setImage" class="setimage" onmouseover="setNewImage()" onmouseout="setOldImage()"
-
-// function setNewImage(){
-// document.querySelector(".setimage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=240&sh=346&sm=fit&yocs=j_m_";
-// }
-
-// function setOldImage(){
-//     document.querySelector(".setimage").src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwcbc58e4c/images/hi-res/2324_11512_mc_0092.jpg?colorid=4221755&sw=240&sh=346&sm=fit&yocs=j_m_";
-// }
 
 
     
@@ -542,104 +522,7 @@ function search(){
 
 
 
-// document.getElementById("sort-products").addEventListener("change",function(e){
-//     let sortby = e.target.value;
-//     console.log(sortby);
-//     if(sortby==="asc"){
-//         getData("https://63f1ba774f17278c9a18b9b9.mockapi.io/product?sort=price&order=asc");
-//         // let sorted = globalData.sort((a,b)=>{
-//         //     return a.price-b.price;
-//         // })
-//         // console.log(sorted);
-//     }else if(sortby === "desc"){
-//         getData("https://63f1ba774f17278c9a18b9b9.mockapi.io/product?sort=price&&order=desc")
-//     }
-// })
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// Previous code
-
-// let productEl = document.getElementById("product-container");
-
-
-// const myapi = "https://63f1ba774f17278c9a18b9b9.mockapi.io/product";
-
-// async function fetchData(){
-//     try {
-//         let response = await fetch(myapi);
-//         response = await response.json();
-//         console.log(response);
-//         displayProductData(response)
-//     } catch (error) {
-//         console.log("err");
-//     }
-// }
-
-// fetchData()
-
-
-// let productArr = JSON.parse(localStorage.getItem("products")) || [];
-
-// function displayProductData(data){
-    
-//     productEl.innerHTML = "";
-
-// data.forEach((element,ind)=>{
-
-// let card = document.createElement("div");
-// card.setAttribute("class","prod-card");
-
-// let image1 = document.createElement("img");
-// image1.setAttribute("src",element.image1);
-
-// let rating = document.createElement("div");
-// rating.innerHTML = element.rating;
-// rating.setAttribute("class","prod-rating");
-
-// let top = document.createElement("p");
-// top.innerText = element.top;
-// top.setAttribute("class","top");
-
-// let text = document.createElement("span");
-// text.innerText = `${"From"} `;
-// text.setAttribute("class","price");
-
-// let price = document.createElement("h3");
-// price.innerText = `₹${element.price}`;
-// price.setAttribute("class","price");
-
-// let category = document.createElement("span");
-// category.innerText = `  ${element.category}`;
-// category.setAttribute("class","price");
-
-// let title = document.createElement("h4");
-// title.innerText = element.title;
-// title.setAttribute("class","title");
-
-// let desc = document.createElement("p");
-// desc.innerText = element.description1;
-// desc.setAttribute("class","desc");
-
-// let colorpallate = document.createElement("div");
-// colorpallate.setAttribute("class", "colorpallate")
-
-// card.append(image1,rating, top, text, price, category,title,desc,colorpallate);
-// productEl.append(card);
-
-// })
-
-
-// }
