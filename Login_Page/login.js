@@ -58,11 +58,12 @@ form1.addEventListener("submit", (e) => {
 })
 
 //sign-in
+let username = localStorage.getItem("username")
 let LoginData = JSON.parse(localStorage.getItem("UserData")) || []
 form2.addEventListener("submit", (e) => {
   e.preventDefault();
   LoginData.forEach((element, index) => {
-    if (form2.email2.value == element.email && form2.pass2.value == element.password) {
+    if (form2.email2.value == element.email && form2.pass2.value == +element.password) {
           
         localStorage.setItem("username",element.username)
         swal("", "Login succesful", "success");

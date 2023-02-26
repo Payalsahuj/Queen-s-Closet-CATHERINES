@@ -78,6 +78,22 @@ function renderData() {
       renderData();
     });
   }
+
+  //  for delete
+  let deleteBtn = document.getElementsByClassName("remove")
+ for(btn of deleteBtn){
+  btn.addEventListener("click",(e)=> {
+    e.preventDefault()
+    CartData.forEach((element,index)=> {
+      if(element.id === e.target.dataset.id){
+        CartData.splice(index,1)
+        localStorage.setItem("CartData", JSON.stringify(CartData));
+        renderData();
+      }
+    })
+  })
+ }
+ 
 }
 renderData();
 
