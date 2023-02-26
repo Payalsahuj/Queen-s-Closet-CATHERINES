@@ -126,7 +126,7 @@ He is responsible for making the product description, login and add to cart page
 ![Screenshot (865)](https://user-images.githubusercontent.com/115584065/221433240-d5ef04dd-4071-4871-8ce5-719ecd30d4c5.png)
 ![Screenshot (866)](https://user-images.githubusercontent.com/115584065/221433248-a23f517e-2ff3-43bd-a7f6-ffd3c8d7ea1b.png)
 ## Product display section
-![Screenshot (867)](https://user-images.githubusercontent.com/115584065/221433303-b55f4624-7efc-4f40-840f-6dc1cbea5d8a.png)
+![Screenshot (882)](https://user-images.githubusercontent.com/115584065/221435149-e6de5ab4-325f-43dd-a622-a152f75b5b1c.png)
 ## Sorting and filtering section
 ![Screenshot (868)](https://user-images.githubusercontent.com/115584065/221433334-e9c612c6-dd19-422c-a7ce-4807f5aec83a.png)
 ## Pagination of website
