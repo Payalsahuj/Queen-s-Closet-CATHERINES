@@ -11,9 +11,28 @@ punchy-crayon-507
 
 │   ├── Product-display.html
 
+
 ├── adminlogin.html
+
 │   ├── network.html
+
 │   ├── location.html
+
+
+├── product-display.html
+
+│   ├── product-category-hoodie.html
+
+│   │   ├── product.html
+
+│   ├── product-category-jacket.html  
+
+│   │   ├── product.html
+
+│   ├── product-category-coat.html  
+
+│   │   ├── product.html
+
 
 
 
