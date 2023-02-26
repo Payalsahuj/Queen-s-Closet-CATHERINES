@@ -12,11 +12,13 @@ punchy-crayon-507
 │   ├── Product-display.html
 
 
+
 ├── adminlogin.html
 
 │   ├── network.html
 
 │   ├── location.html
+
 
 
 ├── product-display.html
@@ -35,17 +37,12 @@ punchy-crayon-507
 
 
 
+├── product.html
 
+│   ├── Cart.html 
 
-Product-dispay.html
-|      ___product-catagory-hoodie.html__             
-|-----|___product-catagory-Jacket.html__|__Product.html
-      |___product-catagory-coat.html____|
+│   │   ├── checkoutPage.html
 
-
-Product.html
-|
-|-----Cart.html---checkoutPage.html
 
 
 ## Queen Closet
