@@ -31,16 +31,23 @@ Queen Closet is basically cloned website of CATHERINES.com. It was started in Me
 
 ## Languages used
 HTML (Hyper Text Markup language)
+
 CSS (Cascading style sheet)
+
 JS (JavaScript)
+
 BootStrap
 
 
 ## Links used
 API links
+
 Google map links
+
 Google chart links
+
 Google location links
+
 Google font/icon links
 
 
