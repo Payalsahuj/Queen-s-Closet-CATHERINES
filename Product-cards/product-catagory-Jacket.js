@@ -53,7 +53,8 @@ let renderData = (data)=>{
     ${data.map((item)=>(
         `
         <div data-id="${item.id}" class="products">
-                <img src="${item.image1}" alt="err" onmouseover="changeImage(${item.image2},this)" onmouseout="changeImage(2,this)")>
+                <img src="${item.image1}" alt="err" )>
+                <img class="hover-img" src="${item.image5}">
                 <div class="rating">${item.rating}</div>
                 <h4 class="top">${item.top}</h4>
                 <span class="price">${"From"}</span><h3 class="price">  ₹ ${item.price}</h3> <span class="price">${item.category}</span>
@@ -453,6 +454,10 @@ document.getElementById("coat-btn").addEventListener("click", ()=>{
 document.getElementById("hoodie-btn").addEventListener("click", ()=>{
     window.location.href = "product-catagory-hoodie.html"
 })
+
+function show(){
+    document.getElementById("side-container").classList.toggle("active");
+}
 
 
 

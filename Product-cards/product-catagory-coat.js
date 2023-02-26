@@ -53,7 +53,8 @@ let renderData = (data)=>{
     ${data.map((item)=>(
         `
         <div data-id="${item.id}" class="products">
-                <img src="${item.image1}" alt="err" onmouseover="changeImage(${item.image2},this)" onmouseout="changeImage(2,this)")>
+                <img src="${item.image1}" alt="err" >
+                <img class="hover-img" src="${item.image5}">
                 <div class="rating">${item.rating}</div>
                 <h4 class="top">${item.top}</h4>
                 <span class="price">${"From"}</span><h3 class="price">  ₹ ${item.price}</h3> <span class="price">${item.category}</span>
@@ -85,14 +86,14 @@ let renderData = (data)=>{
 }
 
 
-function changeImage(x,image){
-    if(x==1){
-        image.src = "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwa0c3225a/images/on-hover/2302_12203_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
-    }
+// function changeImage(x,image){
+//     if(x==1){
+//         image.src = "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwa0c3225a/images/on-hover/2302_12203_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
+//     }
     // if(x==2){
     //     image.src = "https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/3e4618c0f3a6013917457e3461d3e37f.yottaa.net/v~4b.34a/dw/image/v2/BBKT_PRD/on/demandware.static/-/Sites-masterCatalog_JessicaLondon/default/dwaa980c07/images/on-hover/2324_11512_ma_0001.jpg?sw=360&sh=519&sm=fit&yocs=j_m_"
     // }
-}
+// }
 
 //<---- Filtration Code Color ---->
 
@@ -454,6 +455,10 @@ document.getElementById("coat-btn").addEventListener("click", ()=>{
 document.getElementById("hoodie-btn").addEventListener("click", ()=>{
     window.location.href = "product-catagory-hoodie.html"
 })
+
+function show(){
+    document.getElementById("side-container").classList.toggle("active");
+}
 
 // document.getElementById("sort-products").addEventListener("change",function(e){
 //     let sortby = e.target.value;
