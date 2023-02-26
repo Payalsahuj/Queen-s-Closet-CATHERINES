@@ -50,7 +50,7 @@ punchy-crayon-507
 
 
 ## Queen's Closet - Your own wordrobe
-Queen's Closet is basically cloned website of [CATHERINES.com] (https://www.catherines.com/). It was started in Memphis in 1960 and has grown to nearly 500 location nationwide. This website is dedicated to providing the best in women's plus size fashion. Designed specially for the plus size woman & gives guaranteed to fit the customers. 
+Queen's Closet is basically cloned website of [CATHERINES.com](https://www.catherines.com/). It was started in Memphis in 1960 and has grown to nearly 500 location nationwide. This website is dedicated to providing the best in women's plus size fashion. Designed specially for the plus size woman & gives guaranteed to fit the customers. 
 
 
 
