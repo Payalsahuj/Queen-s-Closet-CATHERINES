@@ -16,7 +16,7 @@ if(username==null){
   cardlength.innerText=CartData.length
 }
 
-
+// slideshow here
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -52,14 +52,83 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0px";
 }
 
+let globalData = [];
+
+let getData = async(pageNumber=1)=>{
+  try {
+      let res = await fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product?limit=12&page=${pageNumber}`,{
+          headers: {
+              'X-Total-Count' : 100
+          }
+      });
+  let totalItems = res.headers.get("X-Total-Count");
+  let totalPage = Math.ceil(totalItems/12);
+  showPagination(totalItems,12)
+  let data = await res.json();
+  console.log(globalData);
+  console.log(totalPage);
+  globalData = data;
+  renderData(globalData);
+  } catch (error) {
+      console.log("err");
+  }
+}
+
+
+getData();
+
+
+let renderData = (data)=>{
+let productEl = document.getElementById("product-container");
+productEl.innerHTML = `
+${data.map((item)=>(
+  `
+  <div data-id="${item.id}" class="products">
+          <img src="${item.image1}" alt="err")>
+          <img class="hover-img" src="${item.image3}">
+          <div class="rating">${item.rating}</div>
+          <h4 class="top">${item.top}</h4>
+          <span class="price">${"From"}</span><h3 class="price">  ₹ ${item.price}</h3> <span class="price">${item.category}</span>
+          <h4 class="title">${item.title}</h4>
+          <p class="desc">${item.description1}</p>
+      </div>
+  `
+)).join("")}
+`
+let products = document.querySelectorAll(".products");
+for(let pro of products){
+  pro.addEventListener("click", (e)=> {
+      e.preventDefault();
+    
+   fetch(`https://63f1ba774f17278c9a18b9b9.mockapi.io/product`)
+  .then((res)=>{
+  return res.json()
+  }).then((data)=>{
+      data.map((item)=>{
+          if(item.id==pro.getAttribute("data-id")){
+          localStorage.setItem("product-id",item.id);
+          location.href= "/Product_Description/Product.html"
+      }
+
+      })
+})
+  })
+}
+}
+
+
+
+
 // search functionality starts here
 function search(){
   let q = document.querySelector("#search-inp").value;
   console.log(q);
   let newData = globalData.filter((e)=>{
-   return e.description.toLowerCase().includes(q.toLowerCase());
+   return e.description1.toLowerCase().includes(q.toLowerCase()) || e.title.toLowerCase().includes(q.toLowerCase());
   })
  //  console.log(newData);
- menProducts(newData);
+ renderData(newData);
 }
 // search ends here
+
+
