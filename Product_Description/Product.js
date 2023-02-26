@@ -172,6 +172,7 @@ function displayData(element){
 let sbn = document.getElementById("sbn")
 let SizeValue = document.getElementById("slsize")
 let SizebtnSelect = document.getElementsByClassName("Sizebtn")
+
   for(sizeBtn of SizebtnSelect){
     sizeBtn.addEventListener("click",(e)=> {
       e.preventDefault()
@@ -202,17 +203,10 @@ let SizebtnSelect = document.getElementsByClassName("Sizebtn")
       }
     })
   }
-}
-
-
-// slidshow starts here
-let slideIndex = 0;
-showSlides();
 
 let CartData = JSON.parse(localStorage.getItem("CartData")) || []
 
 let cardlength=document.getElementById("cardlength")
-
 
 let username = localStorage.getItem("username")
 if(username==null){
@@ -221,6 +215,14 @@ if(username==null){
   userId.innerText = username;
   cardlength.innerText=CartData.length
 }
+
+}
+
+
+// slidshow starts here
+let slideIndex = 0;
+showSlides();
+
 
 
 function showSlides() {
