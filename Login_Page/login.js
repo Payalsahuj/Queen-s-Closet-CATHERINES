@@ -59,6 +59,7 @@ form1.addEventListener("submit", (e) => {
 
 //sign-in
 let username = localStorage.getItem("username")
+console.log(username);
 let LoginData = JSON.parse(localStorage.getItem("UserData")) || []
 form2.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -69,6 +70,10 @@ form2.addEventListener("submit", (e) => {
         swal("", "Login succesful", "success");
         setTimeout(() => {
         }, 1000)
+
+        setTimeout(()=>{
+           location.href="/Index Page/index.html"
+        },2000)
  
     } else {
       swal("Wrong Credantials", " Please Enter Valid Email & Password", "error");
