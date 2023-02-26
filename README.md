@@ -2,10 +2,15 @@
 
 ## File Structure
 punchy-crayon-507
+
 ├── index.html
-│   ├── admin.html   
+
+│   ├── admin.html 
+
 │   ├── login.html
+
 │   ├── Product-display.html
+
 ├── adminlogin.html
 │   ├── network.html
 │   ├── location.html
