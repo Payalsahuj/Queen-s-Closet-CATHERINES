@@ -1,16 +1,15 @@
 # punchy-crayon-507
 
 ## File Structure
-punchy-crayon-507                   
-|               ____adminlogin.html
-|--index.html--|____login.html          
-               |____Product-dispay.html
+punchy-crayon-507
+├── index.html
+│   ├── admin.html   
+│   ├── login.html
+│   ├── Product-display.html
+├── adminlogin.html
+│   ├── network.html
+│   ├── location.html
 
-
-adminlogin.html
-|     
-|                 ___network.html
-|----admin.html--|___location.html
 
 
 
