@@ -27,7 +27,6 @@
     text-align: justify;
     padding-top: 40px;
 
-
 }
 
 #parenttwo {
@@ -98,8 +97,10 @@
     justify-content: space-between;
 }
 
+
+
 #donutchart {
-    background-color: white;
+    
     width: 100%; 
     height: 500px; 
     padding-bottom: 30px;
@@ -107,7 +108,7 @@
 
 #donutchart:hover {
     cursor: pointer;
-    border: 1px solid black;
+   
 }
 
 #chart {
@@ -492,4 +493,209 @@
     cursor: pointer;
     transform: scale(1.1);
     
+}
+
+/* --------------------------------responsive--------------------------------- */
+
+@media screen and (min-width: 700px) and (max-width: 900px){
+    #outter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logotop{
+         padding-top: 5px;
+    }
+    #parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #parentone {
+        width: 100%;
+        display: flex;
+        border: 3px solid black;
+        padding-top: 0px;
+    
+    }
+    #parentone>h2{
+        display: block;
+    }
+    
+    #parenttwo {
+        width: 100%;
+        border: 1px solid rgb(63, 63, 63);
+        border-radius: 0px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #3a2a7c;
+    
+    }
+    #mainsection {
+        width: 90%;
+        margin: auto;
+        
+    }
+    #dash {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        
+    
+    }
+    #dash>div{
+        margin-top: 15px;
+    }
+    #firstbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(219, 153, 249);
+        padding: 40px 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    
+    #secondbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(202, 240, 114);
+        padding: 40px 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    
+    #thirdbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(236, 139, 171);
+        padding: 40px 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #donutchart {
+        display: block;
+        /* width: 70%; */
+    }
+    #dashtwo {
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    
+    }
+    #crud>h3{
+        text-decoration: underline;
+    }
+}
+
+@media all and (max-width: 699px){
+    
+    #outter {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logotop{
+         padding-top: 5px;
+    }
+    #parent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #parentone {
+        width: 100%;
+        display: flex;
+        border: 3px solid black;
+        padding-top: 0px;
+    
+    }
+    #parentone>h2{
+        display: block;
+    }
+    
+    #parenttwo {
+        width: 100%;
+        border: 1px solid rgb(63, 63, 63);
+        border-radius: 0px 0px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: #3a2a7c;
+    
+    }
+    #mainsection {
+        width: 90%;
+        margin: auto;
+        
+    }
+    #dash {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        
+    
+    }
+    #dash>div{
+        margin-top: 15px;
+    }
+    #firstbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(219, 153, 249);
+        padding: 40px 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    
+    #secondbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(202, 240, 114);
+        padding: 40px 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    
+    #thirdbox {
+        width: 70%;
+        margin: auto;
+        background-color: rgb(236, 139, 171);
+        padding: 40px 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #donutchart {
+        display: block;
+        /* width: 70%; */
+    }
+    #dashtwo {
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    
+    }
+    #crud>h3{
+        text-decoration: underline;
+    }  
+    #mainofprofile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        
+    }
 }

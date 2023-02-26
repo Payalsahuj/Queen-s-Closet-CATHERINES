@@ -198,6 +198,10 @@ function renderproduct(data) {
                             <input id="addfoimageinput" type="text" placeholder="Image url">
                         </div>
                         <div>
+                            <p><b>Fifth Image</b></p>
+                            <input id="addfivimage" type="text" placeholder="Image url">
+                        </div>
+                        <div>
                             <p><b>Description</b></p>
                             <input id="adddescriptioninput" type="text" placeholder="Brand">
                         </div>
@@ -274,6 +278,10 @@ function renderproduct(data) {
                         <div>
                             <p><b>Fourth Image</b></p>
                             <input id="putfoimage" type="text" placeholder="Image url">
+                        </div>
+                        <div>
+                            <p><b>Fifth Image</b></p>
+                            <input id="putfivimage" type="text" placeholder="Image url">
                         </div>
                         <div>
                             <p><b>Description</b></p>
@@ -445,6 +453,7 @@ function renderproduct(data) {
     let addsimageinput = document.getElementById("addsimageinput")
     let addtimageinput = document.getElementById("addtimageinput")
     let addfoimageinput = document.getElementById("addfoimageinput")
+    let addfivimage = document.getElementById("addfivimage")
     let adddescriptioninput = document.getElementById("adddescriptioninput")
     let addpriceinput = document.getElementById("addpriceinput")
     let adddiscountinput = document.getElementById("adddiscountinput")
@@ -461,6 +470,7 @@ function renderproduct(data) {
     let putsimage = document.getElementById("putsimage")
     let puttimage = document.getElementById("puttimage")
     let putfoimage = document.getElementById("putfoimage")
+    let putfivimage = document.getElementById("putfivimage")
     let putdescription = document.getElementById("putdescription")
     let putprice = document.getElementById("putprice")
     let putdiscount = document.getElementById("putdiscount")
@@ -470,7 +480,7 @@ function renderproduct(data) {
     let putsize=document.getElementById("putsize")
     let puttype=document.getElementById("puttype")
     let updattingallbtn = document.getElementById("updattingallbtn")
-    
+   
     // ====================Update single( PATCH )===================
     let patchid = document.getElementById("patchid")
     let patchprice = document.getElementById("patchprice")
@@ -494,6 +504,7 @@ function renderproduct(data) {
                     putsimage.value = data.image2;
                     puttimage.value = data.image3;
                     putfoimage.value = data.image4;
+                    putfivimage.value = data.image5;
                     putdescription.value = data.description1;
                     putprice.value = data.price;
                     putdiscount.value = data.category;
@@ -529,6 +540,7 @@ function renderproduct(data) {
             "image2": `${addsimageinput.value}`,
             "image3": `${addtimageinput.value}`,
             "image4": `${addfoimageinput.value}`,
+            "image5": `${addfivimage.value}`,
             "price": `${addpriceinput.value}`,
             "rating": "⭐⭐⭐⭐⭐",
             "title": `${addtitleinput.value}`,
@@ -586,6 +598,7 @@ function renderproduct(data) {
             "image2": `${putsimage.value}`,
             "image3": `${puttimage.value}`,
             "image4": `${putfoimage.value}`,
+            "image5": `${putfivimage.value}`,
             "price": `${putprice.value}`,
             "rating": "⭐⭐⭐⭐⭐",
             "title": `${puttitle.value}`,
