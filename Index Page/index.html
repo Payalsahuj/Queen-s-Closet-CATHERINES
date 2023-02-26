@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Home | Queens</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <title>Home | Queens</title>
+  <link rel="website icon" type="png" href="\Admindata\image\icons8-wedding-dress-50.png">
 </head>
 <body>
   <!-- header starts here -->
     <div class="not1">
       <p>Enjoy our great international shipping rates</p>
     </div>
-    
+
     <div class="slideshow-container">
 
       <div class="mySlides fade">
@@ -48,13 +50,28 @@
     </div>
 
     <div id="title-box">   
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">FEATURES</a>
+        <a href="#">TOPS & SWEATERS</a>
+        <a href="#">BOTTOMS</a>
+        <a href="#">DRESSES</a>
+        <a href="#">ACTIVE</a>
+        <a href="#">COATS & JACKETS</a>
+        <a href="#">SLEEPWEAR</a>
+        <a href="#">BRAS & INTIMATES</a>
+        <a href="#">SHOES & ACCESSORIES</a>
+        <a href="#">SWIMWEAR</a>
+        <a href="#">HOME</a>
+        <a href="#">CLEARANCE</a>
+      </div>
       <span class="row" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
       <div id="title">
         <a href="/Index Page/index.html"><img src="/Index Page/logo/logo.jpeg" style="width:80%;height:90%" alt="logo"></a>
       </div>
       <div id="search-bar">
-        <input type="text" oninput="search()"  placeholder="Keyword or catalog item#" id="search-inp"><button type="submit" class="submit"><i class="fa fa-search"></i></button>
-      </div>
+          <input type="text" onkeyup="search()" placeholder="Keyword or catalog item#" id="search-inp"><button type="submit" class="submit"><i class="fa fa-search"></i></button>
+        </div>
 
       <div id="icons">
         <div>
@@ -82,9 +99,9 @@
     <!-- categories starts from here-->
     <div id="categories">
       <div class="dropdown">
-        <button class="dropbtn">FEATURES</button>
-        <div class="dropdown-content">
-          <div class="d11">
+        <button onclick="myFunction()" class="dropbtn">FEATURES</button>
+        <div  class="dropdown-content">
+          <div class="d11" id="myDropdown">
             <a href="#"><h3>NEW & NOW</h3></a>
             <a href="#"><p>Amazing Deals</p></a>
             <a href="#"><p>Catherines Outfits Made Easy</p></a>
