@@ -87,10 +87,6 @@ She is responsible for making the admin page of the website, where the admin pag
 4. Admin profile section contains all information of admins. It has functionality to present the location of admin with the the help of google map.
 5. Create profile section is responsible to add & set the admin details for creating new account to the admin page.
 
-## Admin login page 
-
-![Screenshot (860)](https://user-images.githubusercontent.com/115584065/221432849-0af1cec8-e45a-40f9-9fd6-3decd5e770a4.png)
-
 
 
 ## Team member 2:- Ritesh Kothawade
@@ -118,5 +114,12 @@ He is responsible for making the product description, login and add to cart page
 2. Product description page- This section is displaying the details of the product selected by the user and after selecting the size as per the user the product can be added to the cart, if the user doesn't select the size in that case the product cannot be added to the cart.
 3. Cart page- This section is displaying the products which has been added to the cart by the user and also responsible to update the quantity as well as displaying the total cost of the products added to the cart. 
 
-
+# Website images
+## Landing page
+![Screenshot (861)](https://user-images.githubusercontent.com/115584065/221433059-4557ae84-916d-4350-995d-3953e8dc3c84.png)
+## Navigation mega menu
+![Screenshot (862)](https://user-images.githubusercontent.com/115584065/221433102-ba2d22ae-8ca6-453c-a161-86527efcd770.png)
+## Footer section
+![Screenshot (864)](https://user-images.githubusercontent.com/115584065/221433142-fca2296b-323a-407c-a2c6-62a8becda440.png)
+![Screenshot (863)](https://user-images.githubusercontent.com/115584065/221433129-801ed661-c0b1-4209-b955-00d96b54d2a6.png)
 
