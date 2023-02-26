@@ -95,12 +95,24 @@ He is responsible for making the landing page of the website, where all the user
 
 ## Team member 3:- Ansh Kathpal
 He is responsible for making the card section of the website to render all the products of the website from different-different categories. This section catching all the products from the API and having various functionalities like-
-1.
+1. Search functionality provides the products on the page with that has been searched by the user with product's title and description.
+2. It's having categories section as well which re-directing to the other pages and rendering the products based on their categories.
+3. Sort functionality based on prices and featured products.
+4. Filter functionality filters the products and render based upon color, stock, brand, size, and product type.
+5. Pagination providing different numbers to render limited data on a single page.
 
 
-Team member 4:- Abhishek
+## Team member 4:- Abhishek
+He is responsible for making the check out section and billing section of the website. It's having form fuctionality which is storing the billing address and other data that are used admin section to store the details of the users who's purchasing the products. It's having alternative details form as well which is functional by radio buttons.
+This stored data is also helping in the admin network section part also.
 
 
 
-Team member 5:- Gourav Tiwari
+## Team member 5:- Gourav Tiwari
+He is responsible for making the product description, login and add to cart page of the website. 
+1. Sign-in/Sign-up page- This section is responsible for Signing-in and Signing-up with the user details.
+2. Product description page- This section is displaying the details of the product selected by the user and after selecting the size as per the user the product can be added to the cart, if the user doesn't select the size in that case the product cannot be added to the cart.
+3. Cart page- This section is displaying the products which has been added to the cart by the user and also responsible to update the quantity as well as displaying the total cost of the products added to the cart. 
+
+
 
