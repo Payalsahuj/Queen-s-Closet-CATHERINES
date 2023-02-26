@@ -4,7 +4,6 @@ let baseUrl = `https://63f1ba774f17278c9a18b9b9.mockapi.io/product`
 
 let key = localStorage.getItem("product-id")
 
-
 fetch(`${baseUrl}/${key}`).then((res)=>{
     return res.json()
 })
@@ -64,7 +63,7 @@ function displayData(element){
       </div>
       <p class="save">${element.category}</p>
 
-      <p class="slsize"><b>Size :</b>${element.size}</p>
+      <p  class="slsize"><b>Size :</b> <b id="slsize">Please Select </b> </p>
 
       <div class="SizeSelect">
         <div class="mm">
@@ -78,13 +77,13 @@ function displayData(element){
       </div>
 <!-- Size Boxea -->
       <div id="sizeBoxes">
-        <div>OX/L</div>
-        <div>1X</div>
-        <div>2X</div>
-        <div>3X</div>
-        <div>4X</div>
-        <div>5X</div>
-        <div>6X</div>
+        <div data-id="1" class="Sizebtn">OX/L</div>
+        <div data-id="2" class="Sizebtn">1X</div>
+        <div data-id="3" class="Sizebtn">2X</div>
+        <div data-id="4" class="Sizebtn">3X</div>
+        <div data-id="5" class="Sizebtn">4X</div>
+        <div data-id="6" class="Sizebtn">5X</div>
+        <div data-id="7" class="Sizebtn">6X</div>
       </div>
         
 <!-- review -->
@@ -106,7 +105,7 @@ function displayData(element){
    </select>
 </div>
 
-<div class="sbn"> <span id="SelectBtn">Add To Bag</span> </div>
+<div id="sbn" class="sbn"> <span id="SelectBtn">Add To Bag</span> </div>
 
 
 </div> 
@@ -141,6 +140,9 @@ function displayData(element){
      <img src="productimage/Screenshot (292).png" alt="">
    </div>
      `
+
+     let TopSweater = document.getElementById("Top-Sweater")
+     TopSweater.innerText = element.title
      element.quantity = 1
     //  Add to cart btn
 
@@ -167,6 +169,103 @@ function displayData(element){
       swal("", "Item Added To Bag", "success");
     }
 })
-  
+let sbn = document.getElementById("sbn")
+let SizeValue = document.getElementById("slsize")
+let SizebtnSelect = document.getElementsByClassName("Sizebtn")
+  for(sizeBtn of SizebtnSelect){
+    sizeBtn.addEventListener("click",(e)=> {
+      e.preventDefault()
+      sbn.style.background="#2a2a7c"
+        sbn.style.color="white"
+      let value = e.target.dataset.id
+      
+      if(value == 1){
+        SizeValue.innerText = "OX/L"
+      }
+      if(value == 2){
+        SizeValue.innerText = "1X"
+      }
+      if(value == 3){
+        SizeValue.innerText = "2X"
+      }
+      if(value == 4){
+        SizeValue.innerText = "3X"
+      }
+      if(value == 5){
+        SizeValue.innerText = "4X"
+      }
+      if(value == 6){
+        SizeValue.innerText = "5X"
+      }
+      if(value == 7){
+        SizeValue.innerText = "6X"
+      }
+    })
+  }
 }
 
+
+// slidshow starts here
+let slideIndex = 0;
+showSlides();
+
+let CartData = JSON.parse(localStorage.getItem("CartData")) || []
+
+let cardlength=document.getElementById("cardlength")
+
+
+let username = localStorage.getItem("username")
+if(username==null){
+  userId.innerText = "SIGN IN";
+}else{
+  userId.innerText = username;
+  cardlength.innerText=CartData.length
+}
+
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  $(document).ready(function() {
+    var btn = $(".button");
+    btn.click(function() {
+      btn.toggleClass("paused");
+      return false;
+    });
+  });
+
+// slidshow end here
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.backgroundColor = "#ddd";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0px";
+}
+
+// search functionality starts here
+function search(){
+  let q = document.querySelector("#search-inp").value;
+  console.log(q);
+  let newData = globalData.filter((e)=>{
+   return e.description.toLowerCase().includes(q.toLowerCase());
+  })
+ //  console.log(newData);
+ menProducts(newData);
+}
+// search ends here
