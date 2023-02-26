@@ -122,4 +122,37 @@ He is responsible for making the product description, login and add to cart page
 ## Footer section
 ![Screenshot (864)](https://user-images.githubusercontent.com/115584065/221433142-fca2296b-323a-407c-a2c6-62a8becda440.png)
 ![Screenshot (863)](https://user-images.githubusercontent.com/115584065/221433129-801ed661-c0b1-4209-b955-00d96b54d2a6.png)
+## Sign-in/Sign-up page
+![Screenshot (865)](https://user-images.githubusercontent.com/115584065/221433240-d5ef04dd-4071-4871-8ce5-719ecd30d4c5.png)
+![Screenshot (866)](https://user-images.githubusercontent.com/115584065/221433248-a23f517e-2ff3-43bd-a7f6-ffd3c8d7ea1b.png)
+## Product display section
+![Screenshot (867)](https://user-images.githubusercontent.com/115584065/221433303-b55f4624-7efc-4f40-840f-6dc1cbea5d8a.png)
+## Sorting and filtering section
+![Screenshot (868)](https://user-images.githubusercontent.com/115584065/221433334-e9c612c6-dd19-422c-a7ce-4807f5aec83a.png)
+## Pagination of website
+![Screenshot (869)](https://user-images.githubusercontent.com/115584065/221433350-63054f33-3603-4da8-a866-72ed0b249219.png)
+## Product description page
+![Screenshot (870)](https://user-images.githubusercontent.com/115584065/221433531-38383c84-a700-4c5f-9432-98fd9e38dd08.png)
+## Card page section
+![Screenshot (871)](https://user-images.githubusercontent.com/115584065/221433637-def680fc-00e6-40c7-9ddb-d199271b40fa.png)
+## Billing section
+![Screenshot (872)](https://user-images.githubusercontent.com/115584065/221433650-3bd3b319-adc7-42b4-b290-c212d32bf856.png)
+## Order confermation page
+![Screenshot (873)](https://user-images.githubusercontent.com/115584065/221433730-7f6561cb-02b4-4065-8cf4-5b7e1c269219.png)
+## Admin login section
+![Screenshot (874)](https://user-images.githubusercontent.com/115584065/221434021-4dc87c15-8a22-4c7a-993a-03c01c0e6e08.png)
+## Dashboard of admin section
+![Screenshot (875)](https://user-images.githubusercontent.com/115584065/221434061-35782764-28b1-46b2-8dba-283c036c2bb8.png)
+## Product CRUD section
+![Screenshot (876)](https://user-images.githubusercontent.com/115584065/221434102-68a3f538-fb4b-4c94-aa1c-5150e19a7c46.png)
+## Order detail section
+![Screenshot (877)](https://user-images.githubusercontent.com/115584065/221434173-811df99a-5e9b-41da-8e8a-ab7dadbf0284.png)
+## Network section
+![Screenshot (878)](https://user-images.githubusercontent.com/115584065/221434197-f646b021-e125-4e16-9d63-ea02dce05280.png)
+## Admin profile section
+![Screenshot (879)](https://user-images.githubusercontent.com/115584065/221434263-531da161-33fb-4960-a503-abbc2beb3bd7.png)
+## Google map location section
+![Screenshot (880)](https://user-images.githubusercontent.com/115584065/221434297-d4a2e996-5b0c-483b-a5b3-a9c9c9c743fb.png)
+## Create admin profile section
+![Screenshot (881)](https://user-images.githubusercontent.com/115584065/221434334-31c426ab-d138-4b63-9cd7-dd463e6ff849.png)
 
