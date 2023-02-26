@@ -4,6 +4,7 @@
 punchy-crayon-507
 
 ├── index.html
+===
 
 │   ├── admin.html 
 
@@ -13,9 +14,8 @@ punchy-crayon-507
 
 
 
-
-
 ├── adminlogin.html
+===
 
 │   ├── network.html
 
@@ -24,6 +24,7 @@ punchy-crayon-507
 
 
 ├── product-display.html
+===
 
 │   ├── product-category-hoodie.html
 
@@ -40,6 +41,7 @@ punchy-crayon-507
 
 
 ├── product.html
+===
 
 │   ├── Cart.html 
 
