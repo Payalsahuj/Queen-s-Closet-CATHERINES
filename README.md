@@ -87,6 +87,10 @@ She is responsible for making the admin page of the website, where the admin pag
 4. Admin profile section contains all information of admins. It has functionality to present the location of admin with the the help of google map.
 5. Create profile section is responsible to add & set the admin details for creating new account to the admin page.
 
+## Admin login page 
+
+![Screenshot (860)](https://user-images.githubusercontent.com/115584065/221432849-0af1cec8-e45a-40f9-9fd6-3decd5e770a4.png)
+
 
 
 ## Team member 2:- Ritesh Kothawade
