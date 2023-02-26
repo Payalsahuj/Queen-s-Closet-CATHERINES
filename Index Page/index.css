@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter Tight", "Helvetica Neue", -apple-system, "system-ui", "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     box-sizing: border-box;
 }
 body {
@@ -106,19 +106,21 @@ img {
 }
 #title-box > #icons > div{
     /* border:1px solid black; */
-    margin: 10px;
+    margin: 7px;
     padding: 5px;
     margin: auto;
-    width:70px;
+    width:100px;
     text-align: center;
 }
 #title-box > #icons > div > a > img{
+    /* border: 1px solid black; */
     height: 40px;
     width: 30px;
 }
-#title-box > #icons > div > a > h3{
+#title-box > #icons > div > a > h4{
     font-size: 11px;
 }
+
 @media screen and (min-width:200px) and (max-width:900px){
     #title-box{
         /* border:1px solid black; */
@@ -178,14 +180,14 @@ img {
 }
 /* categories starts here */
 #categories{
-    border:1px solid black;
+    /* border:1px solid black; */
     display: flex;
     justify-content: space-evenly;
     font-weight: bold;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     
 }
-#mySidenav{
+.sidenav{
     display: none;
 }
 .dropbtn {
@@ -208,7 +210,6 @@ img {
     display: inline-block;
 }
   
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -242,6 +243,7 @@ img {
     left: -100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    transition: transform .2s;
     /* border: 1px solid black; */
 }
 .dropdown-content >.d11 .d21{
@@ -264,7 +266,9 @@ img {
     text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {display: flex;}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
 
 .dropdown-content1 >.d11 .d21{
     width: 170px;
@@ -319,8 +323,43 @@ img {
     text-decoration: 2px underline;
 }
 
-
+@media screen and (min-width:200px) and (max-width:900px){
+    #categories {
+        display: none;
+    }
+    #title-box > .row
+   .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        overflow: auto;
+      }
+      .sidebar > .ddd > .d11 > a{
+        display: flex;
+      }
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+      .sidebar a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+        
+}
 /* categories ends here */
+
 .not2{
     margin: auto;
     text-align: center;
@@ -333,6 +372,19 @@ img {
 }
 
 /* header ends here */
+
+/* sale poster starts here */
+.sale-poster{
+    margin: auto;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+@media screen and (max-width:900px) and (min-width:200px){
+    .sale-poster > a > img{
+        width:80%;
+    }
+}
+/* sale poster ends here */
 
 /* shop items starts here */
 #shop{
@@ -358,14 +410,7 @@ img {
 }
 /* shop item ends here */
 
-.sale-poster{
-    margin: auto;
-    text-align: center;
-    /* border: 1px solid black; */
-}
-@media screen and (max-width:900px) and (min-width:200px){
-     
-}
+/* stars starts here */
 .stars{
     font-size: 35px;
     margin: auto;
@@ -373,6 +418,13 @@ img {
     text-align: center;
     /* border: 1px solid black; */
 }
+@media screen and (max-width:900px) and (min-width:200px){
+    .stars{
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+/* stars starts here */
 
 /* offer poster starts here */
 .offer-poster{
@@ -390,15 +442,17 @@ img {
 }
 .offer-poster > .o1{
     top:30px;
-    left:15%;
+    left:25%;
     display: flex;
+    margin: auto;
+    text-align: center;
     /* border: 1px solid black; */
     color: white;
     position: absolute;
 }
 .offer-poster > .o1 > h1{
     margin: auto;
-    font-size: 42px;
+    font-size: 48px;
     text-align: center;
 }
 .offer-poster > .o2{
@@ -412,13 +466,15 @@ img {
 .offer-poster > .o2 > button {
     background-color: #3a2a7c;
     color: white;
-    padding: 10px;
+    width: 100%;
+    font-size: 21px;
+    padding: 14px;
     border: 1px solid white;
     border-radius: 10px ;
     cursor: pointer;    
 }
 .offer-poster > .o3{
-    border:1px solid black;
+    /* border:1px solid black; */
     padding: 20px;
     top: 25%;
     left: 32%;
@@ -428,40 +484,41 @@ img {
 .offer-poster > .o3 > h2 {
     font-family:"Brush Script MT", "Brush Script Std", "cursive" ;
     padding: 10px 0px;
-    font-size: 30px;
-     /* color: red; */
-    font-style: oblique
+    font-size: 56px;
+    color: red;
+    font-style: italic
 }
 .offer-poster > .o4 > h2 {
     font-family:"Brush Script MT", "Brush Script Std", "cursive" ;
     padding: 10px 0px;
-    font-size: 30px;
+    font-size: 56px;
     color: red;
-    font-style: oblique
+    font-style: italic
 }
 .offer-poster > .o5 > h2 {
     font-family:"Brush Script MT", "Brush Script Std", "cursive" ;
-    font-size: 30px;
+    font-size: 45px;
+    font-size: 56px;
     color: red;
-    padding: 10px 0px;
-    font-style: oblique
+    font-style: italic
 }
 .offer-poster > .o6 > h2 {
     font-family:"Brush Script MT", "Brush Script Std", "cursive" ;
-    font-size: 30px;
+    font-size: 56px;
     color: red;
     padding: 10px 0px;
-    font-style: oblique
+    font-style: italic
 }
 .offer-poster > .o3 > button{
-    padding: 10px;
+    padding: 10px 14px;
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #3a2a7c;
     cursor: pointer;
+    font-size: 18px;
 }
 .offer-poster > .o4{
-    border:1px solid black;
+    /* border:1px solid black; */
     padding: 20px;
     top: 25%;
     left: 76%;
@@ -469,14 +526,15 @@ img {
     color: white;
 }
 .offer-poster > .o4 > button{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 14px;
     margin-top: 10px;
+    border-radius: 5px;
     border: 1px solid #3a2a7c;
     cursor: pointer;
+    font-size: 18px;
 }
 .offer-poster > .o5{
-    border:1px solid black;
+    /* border:1px solid black; */
     padding: 20px;
     top: 70%;
     left: 8%;
@@ -484,14 +542,15 @@ img {
     color: white;
 }
 .offer-poster > .o5 > button{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 14px;
     margin-top: 10px;
+    border-radius: 5px;
     border: 1px solid #3a2a7c;
     cursor: pointer;
+    font-size: 18px;
 }
 .offer-poster > .o6{
-    border:1px solid black;
+    /* border:1px solid black; */
     padding: 20px;
     top: 70%;
     left: 55%;
@@ -499,32 +558,157 @@ img {
     color: white;
 }
 .offer-poster > .o6 > button{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 10px 14px;
     margin-top: 10px;
+    border-radius: 5px;
     border: 1px solid #3a2a7c;
     cursor: pointer;
+    font-size: 18px;
 }
-
-.offer-poster > .o3,.o4,.o5,.o6 > h4{
-    padding-top: 20px;
+.offer-poster > .o3 > h1 {
+    letter-spacing: 1px;
+    font-size: 34px;
+}
+.offer-poster >.o4 > h1{
+    letter-spacing: 1px;
+    font-size: 34px;
+}
+.offer-poster >.o5 > h1{
+    letter-spacing: 1px;
+    font-size: 34px;
+}
+.offer-poster >.o6 > h1{
+    letter-spacing: 1px;
+    font-size: 34px;
+}
+.offer-poster > .o3 > h4{
+    padding-top: 10px;
+    text-decoration: line-through;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.offer-poster > .o4 > h4{
+    text-decoration: line-through;
+    padding-top: 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.offer-poster > .o5 > h4{
+    padding-top: 10px;
+    text-decoration: line-through;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.offer-poster > .o6 > h4{
+    padding-top: 10px;
+    text-decoration: line-through;
     letter-spacing: 1px;
     font-size: 14px;
 }
 @media screen and (min-width:200px) and (max-width:900px){
     .offer-poster > .o1{
-        top: 20px;
-        left:20%
+        top: 15px;
+        left:23%
     }
     .offer-poster > .o1 > h1{
-        font-size: 24px;
+        font-size: 22px;
     }
     .offer-poster > .o2{
-        top: 60px;
-        border: 1px solid white;
+        top: 12%;
+        /* border: 1px solid white; */
         position: absolute;
-        
+        margin: auto;
+        left:35.5%;
     }
+    .offer-poster > .o2 > button {
+        width: 100%;
+        font-size: 13px;
+        padding: 11px;  
+    }
+    .offer-poster > .o3{
+        /* padding: 10px; */
+        top: 20%;
+        left: 29%;
+    }
+    .offer-poster > .o4{
+        /* padding: 10px; */
+        top: 20%;
+        left: 75%; 
+    }
+    .offer-poster > .o5{
+        /* padding: 10px; */
+        top: 63%;
+        left: 6%;  
+    }
+    .offer-poster > .o6{
+        /* padding: 10px; */
+        top: 63%;
+        left: 52%;
+    }
+    .offer-poster > .o3 > h2{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .offer-poster > .o4 > h2{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .offer-poster > .o5 > h2{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .offer-poster > .o6 > h2{
+        padding: 5px;
+        font-size: 28px;
+    }
+    .offer-poster > .o3 > h1{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .offer-poster > .o4 > h1{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .offer-poster > .o5 > h1{
+        margin-top: 0px;
+        font-size: 20px;
+    }.offer-poster > .o6 > h1{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .offer-poster > .o3 > h4{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .offer-poster > .o4 > h4{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .offer-poster > .o5 > h4{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .offer-poster > .o6 > h4{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .offer-poster > .o3 > button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .offer-poster > .o4 > button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .offer-poster > .o5 > button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .offer-poster > .o6 > button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    
 }
 /* offer poster ends here */
 
@@ -577,26 +761,28 @@ img {
 }
 .offer-poster3 > .o11{
     top:5px;
-    left:38%;
+    left:40%;
     /* border: 1px solid black; */
     /* color: white; */
     position: absolute;
 }
 .offer-poster3 > .o11 > h1{
-    font-size: 42px;
+    font-size: 56px;
     font-family: "Trirong", serif;
     font-weight: lighter;
+    font-style: italic;
 }
 .offer-poster3 > .o11 > h2{
-    font-weight: lighter;
-    font-size: 36px;
+    font-weight: bold;
+    font-size: 48px;
     font-family: "Snell Roundhand", serif;
     font-style: italic;
-    color: black;
+    color: red;
 }
 .offer-poster3 > .o11 > h4{
     font-weight: lighter;
     padding-top: 4px;
+    font-size: 24px;
 }
 .offer-poster3 > .o12 {
     top:42%;
@@ -624,6 +810,39 @@ img {
     background-color: #3a2a7c;
     border-radius: 5px;
     cursor: pointer;
+}
+@media screen and (max-width:900px) and (min-width:200px) {
+    .offer-poster3 > .o11{
+        top:5px;
+        left:36%;
+    }
+    .offer-poster3 > .o11 > h1{
+        font-size: 28px;
+    }
+    .offer-poster3 > .o11 > h2{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .offer-poster3 > .o11 > h4{
+        font-size: 14px;
+    }
+    .offer-poster3 > .o12 {
+        top:37%;
+        left:41%;
+    }
+    .offer-poster3 > .o12 > h1{
+        font-size: 16px;
+    }
+    .offer-poster3 > .o12 > h2{
+        font-size: 19px;
+        margin-top: 10px;
+    }
+    .offer-poster3 > .o12 > button{
+        margin-top: 8px;
+        padding: 5px 0px;
+        font-size: 11px;
+        width: 120px;
+    }
 }
 /* offer poster 3 ends here */
 
@@ -666,7 +885,6 @@ img {
     padding-top: 4px;
     font-size: 24px;
 }
-
 .offer-poster4 > .o21 > button{
     display: block;
     margin-top: 15px;
@@ -678,6 +896,30 @@ img {
     background-color: #3a2a7c;
     border-radius: 5px;
     cursor: pointer;
+}
+@media screen and (min-width:200px) and (max-width:900px){
+    .offer-poster4 > .o21{
+        top:25px;
+        left:1%;
+    }
+    .offer-poster4 > .o21 > h1{
+        font-size: 24px;
+    }
+    .offer-poster4 > .o21 > h2{
+        font-size: 20px;
+    }
+    .offer-poster4 > .o21 > h4{
+        font-weight: lighter;
+        padding-top: 4px;
+        font-size: 14px;
+    }
+    .offer-poster4 > .o21 > button{
+        display: block;
+        margin-top: 10px;
+        padding: 7px 0px;
+        font-size: 11px;
+        width: 160px;
+    }
 }
 /* offer poster 4 ends here */
 
@@ -798,6 +1040,54 @@ img {
     font-size: 24px;
     margin-top: 15px;
 }
+@media screen and (max-width:900px) and (min-width:200px){
+    .shoe-offer > .o31{
+        top:0px;
+        left:32%;
+        /* border: 1px solid black; */
+    }
+    .shoe-offer > .o31 > h2{
+        font-size: 34px;
+        padding-top: 6px;
+        padding-left: 10px;
+        /* border:1px solid black; */
+    }
+    .shoe-offer > .o31 > .o311{
+        top:25px;
+        left:45%;
+        padding-left: 10px;
+        font-size: 24px;
+        /* border: 1px solid black; */
+    } 
+    .shoe-offer > .o31 > .o311 > h2{
+        color: red;
+        font-size: 34px;
+        padding-top: 10px;
+        padding-left: 10px;
+        /* border:1px solid black; */
+    }
+    .shoe-offer > .o31 > .o312 > h1{
+        font-size: 38px;
+    }
+    .shoe-offer > .o31 > .o312 > .o3121 > h1{
+        padding-top: 3px;
+        font-size: 14px;
+    }
+    .shoe-offer > .o31 > h3{
+        padding-top: 8px;
+        font-size: 15px;
+    }
+    .shoe-offer > .o31 > button {
+        width: 235px;
+        font-size: 13px;
+        margin-top: 10px;
+        padding:8px 30px;
+    }
+    .shoe-offer > .o31 > p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
 /* shoe offer ends here */
 
 /* outfit offer starts here */
@@ -808,6 +1098,11 @@ img {
     text-align: center;
     margin-top: 20px;
     z-index: 0.4;
+}
+@media screen and (max-width:900px) and (min-width:200px){
+    .outfits > img {
+        width: 100%;
+    }
 }
 /* outfit offer ends here */
 
@@ -877,6 +1172,35 @@ img {
     font-weight: lighter;
     border-radius: 5px;
 }
+@media screen and (max-width:900px) and (min-width:200px){
+    .spring .s01{
+        top : 10px;
+        left: 27%;
+    }
+    .spring > .s01 > h1{
+        font-size: 24px;
+    }
+    .spring > .s01 > h2{
+        font-size: 38px;
+        font-style: italic;
+        width: fit-content;
+        padding-left: 35px;
+    }
+    .spring > .s01 > h3{
+        font-size: 24px;
+    }
+    .spring > .s01 > h4{
+        font-size: 50px;
+        letter-spacing: 2px;
+        padding-left: 40px;
+    }
+    .spring > .s01 > button {
+        width: 300px;
+        padding: 10px 40px;
+        font-size:18px;
+        border-radius: 5px;
+    }
+}
 /* spring ends here */
 
 /* trend not starts here */
@@ -900,13 +1224,22 @@ img {
     font-size: 24px;
     color: #3a2a7c;
 }
+@media screen and (max-width:900px) and (min-width:200px){
+    .trend{
+        padding: 7px 0px;
+    }
+    .trend > h3{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
 /* trend not ends here */
 
 /* trending products are here */
 .trend1{
     width: 80%;
     /* border:1px solid black; */
-    margin: auto;
+    margin: 10px auto;
     text-align: center;
     margin-top: 20px;
 }
@@ -920,8 +1253,7 @@ img {
     /* border: 1px solid black; */
     margin-top: 10px;
     display: flex;
-    margin: 10px 20px;
-    
+    margin: 10px 0px;  
 }
 .trend1 > .t01 > h1{
     width: 30px;
@@ -955,8 +1287,36 @@ img {
     margin-top: 7px;
     font-style: normal;
 }
+@media screen and (max-width:900px) and (min-width:200px){
+    .trend1 > h2{
+        font-size: 24px;
+    }
+    .trend1 > .t01 > .t011{
+        /* border: 1px solid black; */
+        margin: 0px 10px;
+        width: 300px;
+        /* height: 200px; */
+    }
+    .trend1 > .t01 > h1{
+        padding: 130px 0px;
+    }
+    .trend1 > .t01 > .t011 > img{
+        width:100%;
+        height: 170px;
+    }
+    .trend1 > .t01 > .t011 > h3{
+        font-size: 14px;
+    }
+    .trend1 > .t01 > .t011 > h4,p{
+        font-weight: lighter;
+        margin-top: 7px;
+        font-size: 14px;
+        font-style: normal;
+    }
+}
 /* trending products are end here */
 
+/* footer starts here */
 /* footer media starts here */
 #footer{
     width: 80%;
@@ -974,7 +1334,7 @@ img {
     padding: 10px;  
     justify-content: space-around;
 }
-#footer > .footer1 > #icon{
+#footer > .footer1 > a > #icon{
     width: 6.5%;
     margin: 10px;
 }
@@ -1001,7 +1361,7 @@ img {
     /* border: 1px solid black; */
 }
 #footer > .footer2 > .sub1 > .sub12{
-    padding:10px;
+    padding:10px 10px 0px 10px;
     margin: 10px;
     /* border: 1px solid black; */
 }
@@ -1094,7 +1454,7 @@ img {
 }
 
 #footer-brands > div > .fb1{
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
     /* border:1px solid black; */
@@ -1159,4 +1519,41 @@ img {
 }
 #footer-brands > div > p{
     font-size: 12px;
+}
+
+@media screen and (max-width:900px){
+    #footer > .footer1 > a > #icon{
+        width: 10%;
+        margin: 10px;
+    }
+    #footer > .footer2 > .sub1 > .sub12 > h4{
+        margin-bottom: 0px;
+        font-weight: lighter;
+    }
+    #footer-brands > div > .fb1 > p{
+        font-weight: bold;
+        padding: 10px 0px;
+        font-size: 23px;
+        
+    }
+    #footer-brands > div > .fb2 > img{
+        width: 20%;
+        height: 15%;
+        margin: 5px 20px;
+    }
+    #footer-brands > div > .fb3 > img{
+        width: 20%;
+        height: 15%;
+        margin: 5px 20px;
+    }
+    #footer-brands > div > .fb4 > img{
+        width: 20%;
+        height: 15%;
+        margin: 5px 20px;
+    }
+    #footer-brands > div > .fb5 > img{
+        width: 20%;
+        height: 15%;
+        margin: 5px 20px;
+    }
 }
