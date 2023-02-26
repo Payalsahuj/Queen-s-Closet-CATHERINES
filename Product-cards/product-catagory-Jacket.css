@@ -750,7 +750,19 @@ input{
     margin-right: 10px;
 }
 
-@media all and (min-width: 901px){
+#search-inp{
+    border: solid 1px black;
+}
+
+@media all  and (min-width: 901px) and (max-width: 1400px){
+
+
+    #product-container{
+        /* border: solid red; */
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+   }
 
     .products{
         /* border: solid red; */
@@ -866,6 +878,7 @@ img {
 #title-box {
     /* border:1px solid black; */
     width: 100%;
+    height: auto;
     margin: auto;
     text-align: center;
     padding: 0% 2%;
