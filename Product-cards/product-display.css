@@ -11,11 +11,11 @@ a{
     font-size: 24px;
 }
 
-#nav{
+/* #nav{
     border: solid red;
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 
 
 /* #side-container{
@@ -207,7 +207,7 @@ a{
     margin-top: 3%;
 }
 
-.colorpallate{
+/* .colorpallate{
 display: flex;
 justify-content: space-evenly;
 }
@@ -215,7 +215,7 @@ justify-content: space-evenly;
 .colorpallate div{
     border: solid black;
     width: 8%;
-}
+} */
 
 /* Filter Css */
 
@@ -268,7 +268,9 @@ font-size: 16px;
 
 
 
-
+#search-inp{
+    border: 1px solid black;
+}
 
 
 
@@ -752,7 +754,15 @@ input{
 
 
 
-@media all and (min-width: 901px){
+@media all  and (min-width: 901px) and (max-width: 1400px){
+
+
+    #product-container{
+        /* border: solid red; */
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+   }
 
     .products{
         /* border: solid red; */
@@ -868,6 +878,7 @@ img {
 }
 #title-box {
     /* border:1px solid black; */
+    height: auto;
     width: 100%;
     margin: auto;
     text-align: center;
