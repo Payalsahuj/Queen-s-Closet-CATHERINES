@@ -4,7 +4,7 @@ const wrapper = document.querySelector('.wrapper');
 const signUpLink = document.querySelector('.signUp-link');
 const signInLink = document.querySelector('.signIn-link');
 //forms
-let form1 = document.getElementById("form1");
+let form1 = document.getElementById("btn1");
 let form2 = document.getElementById("form2")
 //signup inputs
 let s_name = document.getElementById("name1");
@@ -29,15 +29,19 @@ signInLink.addEventListener('click', () => {
 });
 
 //sign-up
+   let  userName = document.getElementById("name1")
+   let  email=  document.getElementById("email1")
+   let  password= document.getElementById("pass1")
+   let  cpassword= document.getElementById("pass12")
 
 let LSdata = JSON.parse(localStorage.getItem("UserData"))||[]
-form1.addEventListener("submit", (e) => {
+form1.addEventListener("click", (e) => {
   e.preventDefault()
   let obj = {
-    username: form1.name1.value,
-    email: form1.email1.value,
-    password: form1.pass1.value,
-    cpassword: form1.pass12.value
+    username: userName.value,
+    email: email.value,
+    password: password.value,
+    cpassword: cpassword.value
   }
 
   if (obj.password !== obj.cpassword) {
@@ -59,9 +63,11 @@ form1.addEventListener("submit", (e) => {
 
 //sign-in
 let username = localStorage.getItem("username")
-console.log(username);
-let LoginData = JSON.parse(localStorage.getItem("UserData")) || []
+
+
 form2.addEventListener("submit", (e) => {
+  let LoginData = JSON.parse(localStorage.getItem("UserData")) || []
+  console.log("working");
   e.preventDefault();
   LoginData.forEach((element, index) => {
     if (form2.email2.value == element.email && form2.pass2.value == element.password) {
