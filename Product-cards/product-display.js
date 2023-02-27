@@ -65,7 +65,20 @@ let renderData = (data)=>{
             data.map((item)=>{
                 if(item.id==pro.getAttribute("data-id")){
                 localStorage.setItem("product-id",item.id);
-                location.href= "/Product_Description/Product.html"
+
+
+                // let username = localStorage.getItem("username")
+
+                if(userId.innerText == "SIGN IN"){
+                    alert("You have to Sign-in first")
+                    location.href="/Login_Page/Login.html"
+                }
+                else{
+                
+                    location.href= "/Product_Description/Product.html"
+                }
+
+                // location.href= "/Product_Description/Product.html"
             }
 
             })
@@ -95,8 +108,7 @@ let filterData = (e) =>{
     checkbox.forEach((input)=>{
         if(input.checked){
             arr.push(input.name);
-        }else 
-        if(black.checked == false  && pink.checked==false  &&  blue.checked==false && red.checked==false && green.checked==false && white.checked==false && grey.checked==false ){
+        }else if(black.checked == false  && pink.checked==false  &&  blue.checked==false && red.checked==false && green.checked==false && white.checked==false && grey.checked==false ){
             getData();
         }
     })
