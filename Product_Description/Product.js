@@ -8,13 +8,13 @@ fetch(`${baseUrl}/${key}`).then((res)=>{
     return res.json()
 })
 .then((data)=>{
-  
+    Cartlength()
     displayData(data)
 })
 
 
 function displayData(element){
-  
+     Cartlength()
      container.innerHTML = `
       
      <!-- for small images -->
@@ -151,7 +151,7 @@ function displayData(element){
       let CartData = JSON.parse(localStorage.getItem("CartData")) || []
     e.preventDefault()
    
-
+  
     let flag = false
     for(let i = 0 ; i<CartData.length ; i++){
       if(element.id === CartData[i].id){
@@ -167,7 +167,9 @@ function displayData(element){
       CartData.push(element)
       localStorage.setItem("CartData",JSON.stringify(CartData))
       swal("", "Item Added To Bag", "success");
+      Cartlength()
     }
+
 })
 let sbn = document.getElementById("sbn")
 let SizeValue = document.getElementById("slsize")
@@ -204,16 +206,19 @@ let SizebtnSelect = document.getElementsByClassName("Sizebtn")
     })
   }
 
-let CartData = JSON.parse(localStorage.getItem("CartData")) || []
 
-let cardlength=document.getElementById("cardlength")
+
+
+
 
 let username = localStorage.getItem("username")
 if(username==null){
+
   userId.innerText = "SIGN IN";
 }else{
+
   userId.innerText = username;
-  cardlength.innerText=CartData.length
+  
 }
 
 }
@@ -271,3 +276,13 @@ function search(){
  menProducts(newData);
 }
 // search ends here
+
+
+
+function Cartlength(){
+  let CartData = JSON.parse(localStorage.getItem("CartData")) || []
+
+  let cardlength=document.getElementById("cardlength")
+  cardlength.innerText=CartData.length
+}
+Cartlength()
