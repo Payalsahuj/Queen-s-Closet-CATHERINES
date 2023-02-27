@@ -420,11 +420,23 @@ b{
     width: 10%;
     height: 700px;
 }
+.smallImgs div:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.smallImgs div:hover {
+    transition: transform 4s;
+    margin-bottom: 25px;
+    overflow: hidden;
+    margin-top: 25px;
+    cursor: pointer;
+}
 .smallImgs div{
     width: 100%;
 }
 .smallImgs  img{
-    
+    display: block;
+    transition: transform 3s;
     width: 65%;
     display: block;
     margin-bottom: 7px;
