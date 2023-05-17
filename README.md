@@ -90,7 +90,7 @@ She is responsible for making the admin page of the website, where the admin pag
 
 
 ## Team member 2:- Ritesh Kothawade
-He is responsible for making the landing page of the website, where all the user get the first intraction to the website . It contains all the necessary categories, offers, discount banners, new released product and information about the website are provided for the users. It is also responsible for chaining all the sections and collecting data for the website.
+He is responsible for making the landing page of the website, where all the user get the first intraction to the website . It contains all the necessary categories, offers, discount banners, new released product and information about the website are provided for the users. It is also responsible for chaining all the sections and collecting data for the website. Sign-in/Sign-up page- This section is responsible for Signing-in and Signing-up with the user details.
 
 
 ## Team member 3:- Ansh Kathpal
