@@ -450,8 +450,8 @@
     font-size: 22px;
     border-color: #3a2a7c;
     border-radius: 9px;
-    background-color:#3a2a7c ;
-    color: white;
+    background-color:white ;
+    color: black;
 }
 
 #addmember:hover {
@@ -473,7 +473,7 @@
     
 }
 #alltable th{
-    border: 2px solid black; 
+    border: 2px solid white; 
     padding-left: 10px;  
 }
 #alltable td{
@@ -481,7 +481,7 @@
     padding: 3px 3px;  
 }
 #network{
-    background-image: url("https://th.bing.com/th/id/OIP.MoCg7_GPdfiTjecCgQwOzwHaEK?pid=ImgDet&w=1564&h=880&rs=1");
+    background-image: url("https://www.icharts.net/wp-content/uploads/2021/04/Servers.jpg");
 }
 #network:hover{
     border: 3px solid white;
