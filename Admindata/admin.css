@@ -481,7 +481,7 @@
     padding: 3px 3px;  
 }
 #network{
-    background-image: url("https://www.icharts.net/wp-content/uploads/2021/04/Servers.jpg");
+    background-image: url("https://th.bing.com/th/id/R.165e767b5a5632b7b7e5d8def96a708b?rik=m2wRJ0c0vuYGgQ&riu=http%3a%2f%2fgalaxymap.org%2fimages%2f21398.jpg&ehk=ahVzgyEgocFlSigCZ0FTNwfrG1c5JtNnkQ6eG%2b4%2fBg0%3d&risl=&pid=ImgRaw&r=0");
 }
 #network:hover{
     border: 3px solid white;
@@ -490,7 +490,7 @@
 #containClickbtn{
     border:2px solid white;
     padding:2px 2px;
-    background-color: black;
+    background-color: #3a2a7c;
 }
 #containClickbtn:hover{
     cursor: pointer;
