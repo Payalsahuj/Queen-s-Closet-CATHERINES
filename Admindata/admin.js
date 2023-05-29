@@ -88,24 +88,29 @@ function render(data) {
 
     Dashboard.addEventListener("click", () => {
         mainSection.innerHTML = "";
-        mainSection.innerHTML = `<h2 style="font-size: 25px; ">Dashboard</h2>
+        mainSection.innerHTML = `<h2 style="font-size: 25px; color:white;">Dashboard</h2>
                 <div id="dash">
-                    <!-- No of product -->
-                    <div id="firstbox">
-                        <h3 style="text-align: center; font-size: 35px; color: rgb(128, 130, 132);">Number of Products <br><span id="noofproduct">${data.length}</span> </h3>
-                        <img src="./image/icons8-open-box-50.png" style="width: 35%;"  alt="">
-                    </div>
-                    <!-- variety -->
-                    <div id="secondbox">
-                        <h3 style="text-align: center;font-size: 35px; color: rgb(128, 130, 132);">Total Stock <br><span id="noofstock">${count2}</span></h3>
-                        <img src="./image/icons8-successful-delivery-50.png" style="width: 35%;" alt="">
-                    </div>
-                    <!-- Best sellers  -->
-                    <div id="thirdbox">
-                        <h3 style="text-align: center; font-size: 35px; color: rgb(128, 130, 132);">Best Sellers <br><span
-                                id="noofbestseller">${count5}</span></h3><img 
-                            src="./image/icons8-best-seller-80.png" style="width: 35%;" alt="">
-                    </div>
+
+                <!-- No of product -->
+                <div id="firstbox">
+                    <h3 style="text-align: center; font-size: 25px; color: rgb(128, 130, 132);">Number of
+                        Products <br><span id="noofproduct">${data.length}</span> </h3>
+                    <img src="./image/icons8-open-box-50.png" style="width: 32%; display: block;" alt="">
+                </div>
+                <!-- variety -->
+                <div id="secondbox">
+                    <h3 style="text-align: center;font-size: 25px; color: rgb(128, 130, 132);">Total Stock
+                        <br><span id="noofstock">${count2}</span>
+                    </h3>
+                    <img src="./image/icons8-successful-delivery-50.png" style="width: 32%;" alt="">
+                </div>
+                <!-- Best sellers  -->
+                <div id="thirdbox">
+                    <h3 style="text-align: center; font-size: 25px; color: rgb(128, 130, 132);">Best Sellers
+                        <br><span id="noofbestseller">${count5}</span>
+                    </h3><img src="./image/icons8-best-seller-80.png" style="width: 32%;" alt="">
+                </div>
+
 
                     
                 </div>
@@ -165,7 +170,7 @@ function fetchurlofproduct() {
 
 function renderproduct(data) {
     mainSection.innerHTML = `<div>
-        <h2 style="font-size: 25px; margin-bottom: 30px; ">Product list</h2>
+        <h2 style="font-size: 25px; margin-bottom: 30px; color:white;">Product list</h2>
         <div id="crud" style="font-size:18px; margin-bottom: 10px;  display:flex; justify-content: space-around; background-color:white; padding: 10px;">
                     <h3 id="addbtn">Add Product</h3>
                     <h3 id="removebtn">Remove Product</h3>
@@ -741,7 +746,7 @@ createaccount.addEventListener("click", () => {
     mainSection.innerHTML = "";
     mainSection.innerHTML = `
                     <div id="createparentdivv">
-                        <h2 style="margin-bottom: 30px; color:black;">Create Admin Account</h2>
+                        <h2 style="margin-bottom: 30px; color:white;">Create Admin Account</h2>
                         <div style="width:100%;">
                             <form action="">
                                 <div id="createmain">
@@ -833,7 +838,7 @@ orderlist.addEventListener("click", () => {
     mainSection.innerHTML = "";
     mainSection.innerHTML = `
     
-    <h2 style="margin-bottom:30px; color:black">Network of System</h2>
+    <h2 style="margin-bottom:30px; color:white">Network of System</h2>
     <div id="network" style="height:380px; margin-bottom: 20px;">
         <div style=" padding-top: 150px; display:flex; justify-content:center; align-item:center;">
             <div id="containClickbtn" >
@@ -841,9 +846,9 @@ orderlist.addEventListener("click", () => {
     </div>
     </div>
     </div>
-    <h2 style="margin-bottom:30px; color:black">Order Details</h2>
+    <h2 style="margin-bottom:30px; color:white">Order Details</h2>
     <div id="alltable">
-    <table style="color: black; width: 100%; border: 2px solid black; text-align: left; padding-left: 10px;">
+    <table style="color: white; width: 100%; border: 2px solid white; text-align: left; padding-left: 10px;">
     <thead >
         <tr>
             <th>User Name</th>
