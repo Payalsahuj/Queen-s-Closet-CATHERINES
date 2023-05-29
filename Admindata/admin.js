@@ -88,7 +88,7 @@ function render(data) {
 
     Dashboard.addEventListener("click", () => {
         mainSection.innerHTML = "";
-        mainSection.innerHTML = `<h2 style="font-size: 25px; color: white;">Dashboard</h2>
+        mainSection.innerHTML = `<h2 style="font-size: 25px; ">Dashboard</h2>
                 <div id="dash">
                     <!-- No of product -->
                     <div id="firstbox">
@@ -165,7 +165,7 @@ function fetchurlofproduct() {
 
 function renderproduct(data) {
     mainSection.innerHTML = `<div>
-        <h2 style="font-size: 25px; margin-bottom: 30px; color:white;"><u>Product list</u></h2>
+        <h2 style="font-size: 25px; margin-bottom: 30px; ">Product list</h2>
         <div id="crud" style="font-size:18px; margin-bottom: 10px;  display:flex; justify-content: space-around; background-color:white; padding: 10px;">
                     <h3 id="addbtn">Add Product</h3>
                     <h3 id="removebtn">Remove Product</h3>
@@ -626,28 +626,28 @@ function renderproduct(data) {
 
 
     // =================================== (PATCH) operation ==========================
-    // updatesinglebtn.addEventListener('click',()=>{
+    updatesinglebtn.addEventListener('click',()=>{
     
-    //     console.log(patchid.value,patchprice.value)
+        console.log(patchid.value,patchprice.value)
         
-    //     fetch(`${producturl}/${patchid.value}`,{
-    //         method:"PATCH",
-    //         headers:{
-    //             "Content-type": "application/json" 
-    //         },
-    //         body: JSON.stringify({
-    //             "price":`${patchprice.value}`
-    //         })
-    //     })
-    //     .then((res)=>{
-    //         return res.json()
-    //     })
-    //     .then((data)=>{
-    //         console.log(data)
-    //         fetchurlofproduct()
-    //     })
+        fetch(`${producturl}/${patchid.value}`,{
+            method:"PUT",
+            headers:{
+                "Content-type": "application/json" 
+            },
+            body: JSON.stringify({
+                "price":`${patchprice.value}`
+            })
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            fetchurlofproduct()
+        })
 
-    // })
+    })
 
 
 }
@@ -741,7 +741,7 @@ createaccount.addEventListener("click", () => {
     mainSection.innerHTML = "";
     mainSection.innerHTML = `
                     <div id="createparentdivv">
-                        <h2 style="margin-bottom: 30px;"><u>Create Admin Account</u></h2>
+                        <h2 style="margin-bottom: 30px; color:black;">Create Admin Account</h2>
                         <div style="width:100%;">
                             <form action="">
                                 <div id="createmain">
@@ -781,7 +781,7 @@ createaccount.addEventListener("click", () => {
                                 <div style="display: flex; justify-content:center;  text-align:center; padding-right:80px; margin-top: 40px; ">
                                 <input id="addmember"  type="submit">
                                 </div>
-                                <div style="height: 400px; background-color: #3a2a7c;">
+                                <div style="height: 400px; ">
                                 </div>
                             </form>
                         </div>
@@ -833,17 +833,17 @@ orderlist.addEventListener("click", () => {
     mainSection.innerHTML = "";
     mainSection.innerHTML = `
     
-    <h2 style="margin-bottom:30px; color:white"><u>Network of System</u></h2>
-    <div id="network" style="height:300px; margin-bottom: 20px;">
+    <h2 style="margin-bottom:30px; color:black">Network of System</h2>
+    <div id="network" style="height:380px; margin-bottom: 20px;">
         <div style=" padding-top: 150px; display:flex; justify-content:center; align-item:center;">
             <div id="containClickbtn" >
     <h1 style= "border:2px solid white; padding: 5px 10px; color: white; "><a style="color:white; text-decoration: none;" href="network.html">Click to check the network of product<a></h1>
     </div>
     </div>
     </div>
-    <h2 style="margin-bottom:30px; color:white"><u>Order Details</u></h2>
+    <h2 style="margin-bottom:30px; color:black">Order Details</h2>
     <div id="alltable">
-    <table style="color: white; width: 100%; border: 2px solid white; text-align: left; padding-left: 10px;">
+    <table style="color: black; width: 100%; border: 2px solid black; text-align: left; padding-left: 10px;">
     <thead >
         <tr>
             <th>User Name</th>

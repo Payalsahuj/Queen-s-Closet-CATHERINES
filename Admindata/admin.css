@@ -27,7 +27,6 @@
     width: 15%;
     text-align: justify;
     padding-top: 40px;
-
 }
 
 #parenttwo {
@@ -35,20 +34,22 @@
     border-radius: 33px 0px;
     width: 85%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #3a2a7c;
+    background-color: white;
 
 
 }
 
 #parentone>h2 {
     padding: 10px 20px;
+    font-size: 17px;
+    
 
 }
 
 #parentone>h2:hover {
     cursor: pointer;
     color: blue;
-    transform: scale(1.1);
+    font-size: 20px;
 }
 
 #mainsection {
@@ -444,12 +445,13 @@
 }
 
 #addmember {
-    padding: 6px 30px;
+    margin-top: 40px;
+    padding: 6px 45px;
     font-size: 22px;
     border-color: #3a2a7c;
     border-radius: 9px;
-    background-color: white;
-    color: #3a2a7c;
+    background-color:#3a2a7c ;
+    color: white;
 }
 
 #addmember:hover {
@@ -471,7 +473,7 @@
     
 }
 #alltable th{
-    border: 2px solid white; 
+    border: 2px solid black; 
     padding-left: 10px;  
 }
 #alltable td{
@@ -479,7 +481,7 @@
     padding: 3px 3px;  
 }
 #network{
-    background-image: url("https://allamericanmag.com/wp-content/uploads/2020/08/image-1.png");
+    background-image: url("https://th.bing.com/th/id/OIP.MoCg7_GPdfiTjecCgQwOzwHaEK?pid=ImgDet&w=1564&h=880&rs=1");
 }
 #network:hover{
     border: 3px solid white;
@@ -488,7 +490,7 @@
 #containClickbtn{
     border:2px solid white;
     padding:2px 2px;
-    background-color:#3a2a7c;
+    background-color: black;
 }
 #containClickbtn:hover{
     cursor: pointer;
@@ -626,6 +628,7 @@
     #parenttwo {
         width: 100%;
         border: 1px solid rgb(63, 63, 63);
+        border-right: none;
         border-radius: 0px 0px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         background-color: #3a2a7c;
